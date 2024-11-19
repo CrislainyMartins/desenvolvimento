@@ -1,11 +1,237 @@
-.geral{
-    background-image: linear-gradient(90deg, #c8499b, #740182);
+/*menus*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Pacifico&display=swap');
+/*background-image: linear-gradient(270deg, #100d28,#8906e6);*/
+body {
+  background-color: white;
+  max-height: 100%;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+header{
+   background-image: linear-gradient(90deg, #a9016d, #040405);
+    box-shadow: 0px 3px 10px #464646;
 }
 
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    color: #fff;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 15px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.login-button button{
+    border: none;
+    background-color: #0187a7;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.login-button button a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding: 1.2rem;
+    }
+    .mobile-menu .login-button{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button{
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+}
+
+
+/*menu hamburguer*/
+  #menu {
+    z-index: 2;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  /* background: radial-gradient(circle, #100d28,#8906e6);*/
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+   background-color: #a9016d;
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+  }
+
+
+/*fim menus*/
+
+.geral{
+    background-image: linear-gradient(90deg, #c8499b, #740182);
+    margin: 0 auto;
+    width: 800px;
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*coluna de depoimentos 1*/
 .box1{
     display: flex;
     justify-content: space-evenly;
 }
+
+/*caixas de depoimentos*/
 .card-title {
     color: #262626;
     font-size: 1.5em;
@@ -60,6 +286,7 @@
     overflow: hidden;
     background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
     font-family: Arial, Helvetica, sans-serif;
+   
   }
   
   .card:before {
@@ -90,4 +317,29 @@
     transition: all 0.5s ease-out;
     color: #ffffff;
   }
+
+  /*coluna de depoimentos 2*/
+  .box2{
+    display: flex;
+    justify-content: space-evenly;
+}
+ 
+ /*coluna de depoimentos 3*/
+.box3{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input{
+  background-color:  #384c6c;
+  margin-left: 30%;
+  text-align: center;
+  height: 100px;
+  width: 300px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
   
+  border-radius: 10px solid #384c6c;
+}
+

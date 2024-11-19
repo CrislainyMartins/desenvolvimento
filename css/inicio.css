@@ -44,6 +44,7 @@ header{
 
 .nav-item{
     margin: 15px;
+    
 }
 
 .nav-link{
@@ -52,6 +53,7 @@ header{
     color: #fff;
     font-weight: 400;
 }
+
 
 .login-button button{
     border: none;
