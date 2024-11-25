@@ -8,78 +8,180 @@
 </head>
 <body>
 
-     <!--menu principal-->
-   <div class="menus">
-    <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <h1><img src="imgs/logo1.png" width="50"></h1>
-            </div>
+    <!--menu principal-->
+    <div class="menus">
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <h1><img src="assets/img/Ooooomaga (0).png" width="50px"></h1>
+                </div>
 
-            <div class="nav-list">
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="inicio.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="informacoes.html" class="nav-link">Informações</a></li>
+                        <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentios</a></li>
+                    </ul>
+                </div>
+                <div class="login-button">
+                    <button><a href="login.html">Entrar</a></button>
+                </div>
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img src="assets/img/menu_white_36dp.svg" class="icon"></button>
+                </div>
+            </nav>
+
+            <div class="mobile-menu">
                 <ul>
-                    <li class="nav-item"><a href="inicio.html" class="nav-link">Inicio</a></li>
-                    <li class="nav-item"><a href="informacoes.html" class="nav-link">Informações</a></li>
-                    <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentios</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
                 </ul>
-            </div>
-            <div class="login-button">
-                <button><a href="login.html">Entrar</a></button>
-            </div>
 
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img src="assets/img/menu_white_36dp.svg" class="icon"></button>
+                <div class="login-button">
+                    <button><a href="login.html">Entrar</a></button>
+                </div>
             </div>
-        </nav>
+        </header>
 
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-            </ul>
 
-            <div class="login-button">
-                <button><a href="login.html">Entrar</a></button>
+
+        <!--menu hamburguer-->
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
             </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="comodenunciar.html">Como Denunciar</a></li>
+                    <li><a href="apoio.html">Recursos de <br>Apoio</a></li>
+                    
+                </ul>
+            </nav>
         </div>
-    </header>
+
+        <div class="menu-bg" id="menu-bg"></div>
 
 
+        <script>
+            function menuOnClick() {
+                document.getElementById("menu-bar").classList.toggle("change");
+                document.getElementById("nav").classList.toggle("change");
+                document.getElementById("menu-bg").classList.toggle("change-bg");
+            }
+        </script>
 
-    <!--menu hamburguer-->
-    <div id="menu">
-        <div id="menu-bar" onclick="menuOnClick()">
-            <div id="bar1" class="bar"></div>
-            <div id="bar2" class="bar"></div>
-            <div id="bar3" class="bar"></div>
-        </div>
-        <nav class="nav" id="nav">
-            <ul>
-                <li><a href="css/sobre.css">Sobre</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </nav>
+    
     </div>
+     <!--fim menus-->
 
-    <div class="menu-bg" id="menu-bg"></div>
 
 
-    <script>
-        function menuOnClick() {
-            document.getElementById("menu-bar").classList.toggle("change");
-            document.getElementById("nav").classList.toggle("change");
-            document.getElementById("menu-bg").classList.toggle("change-bg");
-        }
-    </script>
+     <div class="geral">
+
+        <div class="titlle"><h1>NOSSA MISSÃO</h1></div>
+       <div class="box">
+        <ul>
+            <li>Facilitar o acesso a denuncia de violência contra as mulheres;</li>
+            <li>Oferecer recursos de apoio às vítimas; </li>
+            <li>Fornecer informações sobre os tipos de violência;</li>
+            <li>Promover  a conscientização e educação sobre o  tema;</li>
+            <li>Facilitar o acesso à serviços de emergência e suporte.</li>
+        </ul>
+
+        <img src="imgs/nossamissao.png" class="img_missao">
+       </div>
+
+
+     </div>
+
+
+
+
+     <!--rodape-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/rodape.css">
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1><img src="assets/img/Ooooomaga (0).png" width="50px"></h1>
+                <p>Isso é tudo sobre seus sonhos</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tecnologia</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Aventura+</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Mais</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">App</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Desktop</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Nuvem</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Registre-se!</h3>
+
+                <P>
+                    Entre com seu e-mail para ser notificado sobre as novas atualizações!
+                </P>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024 todos os direitos reservados para E-domestics
+       
+        </div>
+    </footer>
+
 
     <link rel="stylesheet" href="/js/menumobile.js">
-
-</div>
-
-<!--fim dos menus-->
     
 </body>
 </html>

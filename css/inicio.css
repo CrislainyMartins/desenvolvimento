@@ -213,6 +213,7 @@ header{
     height: 460px;
     transform: translate(-60%,-30%);
   }
+  /*fim menus*/
 
   /*conteudo1*/
 
@@ -253,15 +254,7 @@ header{
 
 
 
-  /*rodape*/
-
-  footer{
-
-    height: 200px;
-    background-color: black;
-
-  }
-
+  
   
 
  

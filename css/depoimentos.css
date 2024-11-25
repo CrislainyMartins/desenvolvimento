@@ -342,3 +342,9 @@ input{
   border-radius: 10px;
 }
 
+.bpd{
+  background-image: linear-gradient(90deg, #a9016d, #740182) ;
+  color: white;
+ 
+}
+

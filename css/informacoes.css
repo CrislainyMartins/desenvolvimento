@@ -265,6 +265,12 @@ h2{
    
 }
 
+.vps{
+  width: 370px;
+}
+
+
+
 /*infor3*/
 .infor3{
     display: flex;
@@ -275,6 +281,10 @@ h2{
 
 .img3{
     box-shadow:20px 0 20px grey; 
+}
+
+.vvs{
+  width: 370px;
 }
 
 /*infor4*/
@@ -289,6 +299,10 @@ h2{
   box-shadow:20px 0 20px grey; 
 }
 
+.vp{
+  width: 370px;
+}
+
 /*infor5*/
 .infor5{
   display: flex;
@@ -299,6 +313,12 @@ h2{
 
 .img3{
   box-shadow:20px 0 20px grey; 
+}
+
+.vm{
+  width: 370px;
+ 
+
 }
 
 .conteudoseta{
