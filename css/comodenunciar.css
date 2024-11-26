@@ -54,19 +54,38 @@ header{
     font-weight: 400;
 }
 
-
+/*botão do pânico*/
 .login-button button{
     border: none;
-    background-color: #0187a7;
+    background-color: #d54a54 ;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
+    width: 100px;
+    height: 60px;
+    
+
 }
+
+.login-button button:hover{
+ transform: scale(1.2);
+ background-color: #bc1823;
+ transition: all 0.4s;
+ opacity: 0.8;
+}
+
 .login-button button a{
     text-decoration: none;
     color: #fff;
     font-weight: 500;
     font-size: 1.1rem;
 }
+
+.panic{
+  width: 30px;
+  height: 30px;
+  
+}
+/*fim do botão do pânico*/
 
 .mobile-menu-icon{
     display: none;
@@ -262,3 +281,46 @@ h2{
   .img_nmmulheres{
     margin-left: 40px;
   }
+  
+  .parte2{
+    margin-top: 20px;
+  }
+
+  .panic_meio{
+    width: 150px;
+    height: 70px;
+    margin-left: 230px;
+    margin-top: 20px;
+    
+  }
+
+  .button-panic button{
+    border: none;
+    background-color: #d54a54 ;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 100px;
+    height: 60px;
+    margin-left: 25px;
+    margin-top: 5px;
+
+  }
+
+  .button-panic button:hover{
+    transform: scale(1.2);
+    background-color: #bc1823;
+    transition: all 0.4s;
+    opacity: 0.8;
+   }
+   
+   .button-panic button a{
+       text-decoration: none;
+       color: #fff;
+       font-weight: 500;
+       font-size: 1.1rem;
+   }
+
+   .conteudo{
+    margin-top: 25px;
+   }
+  
