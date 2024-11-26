@@ -310,7 +310,7 @@ h2{
     transform: scale(1.2);
     background-color: #bc1823;
     transition: all 0.4s;
-    opacity: 0.8;
+    
    }
    
    .button-panic button a{
