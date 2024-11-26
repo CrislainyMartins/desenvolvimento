@@ -213,9 +213,8 @@ header{
     height: 460px;
     transform: translate(-60%,-30%);
   }
-
   /*fim menus*/
- 
+
   .geral {
     min-height: 100vh;
   }
@@ -226,7 +225,7 @@ header{
    padding-right: 50px;
    padding-left: 50px;
    padding-top: 40px;
-   background-image: linear-gradient(90deg, #c8499b, #740182);
+  
    margin: 0 auto;
    border-radius: 20px ;
   }
@@ -248,14 +247,12 @@ header{
     font-size: 60px;
 }
 
+h2{
+    text-align: center;
+    color: #6d1170;
+}
 
-  ul li{
-    color: white;
-    
-
-  }
-
-  .img_missao{
+.img_missao{
     margin-left: 430px;
     margin-top: -110px;
     height: 550px;
