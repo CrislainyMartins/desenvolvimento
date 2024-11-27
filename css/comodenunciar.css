@@ -280,6 +280,7 @@ h2{
 
   .img_nmmulheres{
     margin-left: 40px;
+    margin-top: 1000px;
   }
   
   .parte2{
@@ -324,3 +325,19 @@ h2{
     margin-top: 25px;
    }
   
+
+   /*conteudo parte 2*/
+   .conteudo2{
+    background-image: linear-gradient(90deg, #a9016d, #050547);
+    max-width: 700px;
+    border-radius: 10px ;
+    margin: 0 auto;
+   margin-top: 40px;
+    
+   }
+
+   .conteudo2 p{
+    color: white;
+    padding: 10px;
+   }
+
