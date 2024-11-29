@@ -343,6 +343,28 @@ h2{
 
    .conteudo3{
    background-color: #d9d9d9;
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   width: 1000px;
+    margin-left:-160px ;
+    border-radius: 20px;
+    box-shadow: 20px 0 40px #464646;/*sombreamento*/
 
+   }
+
+   .d1{
+    margin: 20px;
+   }
+
+   .d1 p{
+  text-align: justify;
+   }
+
+   #adicional{
+    margin-top: 20px;
+    color: #6D1170;
+    width: 1000px;
+    font-weight: bold;
    }
 
