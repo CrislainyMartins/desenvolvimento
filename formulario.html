@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Denúncia</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Denuncie Agora</h1>
+        <p class="info">As informações fornecidas serão tratadas com sigilo e segurança.</p>
+
+        <form action="backend/processar_denuncia.php" method="POST" enctype="multipart/form-data">
+            <!-- Nome Opcional -->
+            <label for="nome">Nome (opcional):</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome, se desejar">
+
+            <!-- Descrição do Caso -->
+            <label for="descricao">Descrição do Caso:</label>
+            <textarea id="descricao" name="descricao" rows="5" placeholder="Descreva a situação de violência ou abuso"></textarea>
+
+            <!-- Upload de Provas -->
+            <label for="provas">Anexar Provas (opcional):</label>
+            <input type="file" id="provas" name="provas" accept="image/,video/,audio/*,.pdf">
+
+            <!-- Localização -->
+            <label for="localizacao">Localização (opcional):</label>
+            <input type="text" id="localizacao" name="localizacao" placeholder="Informe a cidade, bairro ou endereço">
+
+            <!-- Canal de Contato -->
+            <label for="contato">Contato (opcional):</label>
+            <input type="text" id="contato" name="contato" placeholder="Digite seu e-mail ou telefone">
+
+            <!-- Botão de Enviar -->
+            <button type="submit">Enviar Denúncia</button>
+        </form>
+    </div>
+
+</body>
+</html>
