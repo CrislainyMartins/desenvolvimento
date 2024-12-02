@@ -346,11 +346,10 @@ h2{
    display: flex;
    justify-content: center;
    margin-top: 50px;
-   width: 1000px;
-    margin-left:-160px ;
-    border-radius: 20px;
-    box-shadow: 20px 0 40px #464646;/*sombreamento*/
-
+   width: 800px;
+   margin-left:-110px ;
+  border-radius: 20px;
+  box-shadow: 20px 0 40px #464646;/*sombreamento*/
    }
 
    .d1{
@@ -361,10 +360,27 @@ h2{
   text-align: justify;
    }
 
+   .conteudo4{
+    background-image: linear-gradient(90deg, #a9016d, #050547);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 800px;
+    margin-left:-115px ;
+    border-radius: 20px;
+    box-shadow: 20px 0 40px #464646;/*sombreamento*/
+    color: white;
+ 
+    }
+
    #adicional{
     margin-top: 20px;
     color: #6D1170;
     width: 1000px;
     font-weight: bold;
+   }
+
+   #coleta{
+    margin-top: 30px;
    }
 

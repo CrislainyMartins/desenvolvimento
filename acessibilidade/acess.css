@@ -1,0 +1,50 @@
+:root {
+    --background-light: #ffffff;
+    --background-dark: #121212;
+    --text-light: #000000;
+    --text-dark: #ffffff;
+    --font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    font-size: var(--font-size);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    padding: 1rem;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#accessibility-controls {
+    margin-top: 1rem;
+}
+
+button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.dark-theme {
+    --background-light: #121212;
+    --background-dark: #ffffff;
+    --text-light: #ffffff;
+    --text-dark: #000000;
+}
