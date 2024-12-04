@@ -289,6 +289,7 @@ body {
     background-image: linear-gradient(90deg, #c8499b, #740182);
     margin: 0 auto;
     width: 800px;
+    height: 1000px;
     border-radius: 15px;
     margin-top: 200px;
     margin-bottom: 40px;
@@ -375,7 +376,8 @@ body {
   }
   
   .card:hover:before {
-    transform: scale(28);
+    transform: scale(40);
+
   }
   
   .card:hover .small-desc {
@@ -412,9 +414,42 @@ input{
   border-radius: 10px;
 }
 
-.bpd{
-  background-image: linear-gradient(90deg, #a9016d, #740182) ;
-  color: white;
- 
+#depoimentos-container {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que os elementos quebrem linha */
+  justify-content: center; /* Centralizar os elementos horizontalmente */
+  gap: 20px; /* Espaçamento entre os depoimentos */
 }
 
+.card {
+  flex: 1 1 calc(50% - 20px); /* Ocupa 50% da largura menos o gap */
+  box-sizing: border-box; /* Garantir que padding e borda sejam incluídos na largura */
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 500px; /* Limitar largura máxima para evitar que fique muito grande */
+}
+#botao-container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente (se necessário) */
+  margin: 20px 0; /* Espaçamento acima e abaixo */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #d4d4d4;
+  color: #0056b3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+  color: white;
+  box-shadow: 0px 3px 10px #6293c8;
+}
