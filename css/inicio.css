@@ -355,7 +355,44 @@ height: 30px;
 
 
 
+/*RESPONSIVIDADE*/
 
+@media screen and (max-width: 480px) {
+  .conteudo1{
+    flex-direction: column-reverse;
+    height: 1200px;
+    margin-top: -80px;
+    align-items: center;
+  }
+
+  .parte1{
+    justify-content: center;
+  }
+  .parte1 h1{
+    font-size: 80px;
+    line-height: 100px;
+    margin-top: -110px;
+  }
+
+  .parte1 p{
+    margin-left: -15px;
+    font-size: 40px;
+  }
+
+  .button-panic{
+    justify-content: center;
+    margin-left: -180px;
+    
+  }
+
+  .imagem1 {
+
+    margin-left: -120px;
+  }
+
+
+   
+}
 
 
   
