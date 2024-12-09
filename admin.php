@@ -18,7 +18,9 @@
                     <th>Descrição</th>
                     <th>Localização</th>
                     <th>Data</th>
+                    <th>Status</th>
                     <th>Ações</th>
+
                 </tr>
             </thead>
             <tbody>
@@ -54,6 +56,7 @@ function aprovarDenuncia(id) {
         });
     }
 }
+
 
 // Função para excluir denúncia
 function excluirDenuncia(id) {

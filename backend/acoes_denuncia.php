@@ -1,6 +1,6 @@
 <?php
 include 'conexao.php';
-$sql = "SELECT id, descricao, localizacao, data, status FROM denuncias WHERE status = 'pendente' ORDER BY data DESC LIMIT 20";
+$sql = "SELECT id, descricao, localizacao, data, status FROM denuncias WHERE status = 'pendente' ORDER BY data_envio DESC LIMIT 20";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $id = intval($_POST['id']);

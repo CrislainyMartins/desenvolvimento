@@ -3,7 +3,7 @@
 include 'conexao.php';
 
 // Query para buscar todas as denúncias ordenadas pela data mais recente
-$sql = "SELECT * FROM denuncias ORDER BY data DESC";
+$sql = "SELECT * FROM denuncias ORDER BY data_envio DESC";
 
 // Executa a query
 $result = $conn->query($sql);
@@ -21,10 +21,11 @@ if ($result->num_rows > 0) {
         echo "<td>{$row['id']}</td>"; // ID da denúncia
         echo "<td>{$row['descricao']}</td>"; // Descrição
         echo "<td>{$row['localizacao']}</td>"; // Localização
-        echo "<td>{$row['data']}</td>"; // Data da denúncia
+        echo "<td>{$row['data_envio']}</td>"; // Data da denúncia
+        echo "<td>{$row['status']}</td>"; 
         echo "<td>
-                <a href='editar.php?id={$row['id']}'>Editar</a> | 
-                <a href='deletar.php?id={$row['id']}' onclick='return confirm(\"Tem certeza que deseja excluir esta denúncia?\");'>Excluir</a>
+                <a href='backend/editar.php?id={$row['id']}'>Editar</a> | 
+                <a href='backend/deletar.php?id={$row['id']}' onclick='return confirm(\"Tem certeza que deseja excluir esta denúncia?\");'>Excluir</a>
               </td>"; // Ações de editar e excluir
         echo "</tr>";
     }
