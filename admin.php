@@ -10,6 +10,7 @@
 <body>
     <div class="container">
         <h1>Gerenciamento de Denúncias</h1>
+   
         <table>
             <thead>
                 <tr>
@@ -22,7 +23,7 @@
             </thead>
             <tbody>
                 <?php
-                include("../desenvolvimento/backend/acoes_denuncia.php");
+                include("../desenvolvimento/backend/listar_denuncias.php");
                 ?>
                 
                 <!-- Denúncias serão exibidas aqui dinamicamente -->
@@ -36,7 +37,7 @@
 function aprovarDenuncia(id) {
     if (confirm("Tem certeza de que deseja aprovar esta denúncia?")) {
         // Envia uma requisição POST para o servidor
-        fetch('acoes_denuncias.php', {
+        fetch('../desenvolvimento/backend/acoes_denuncia.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
@@ -58,7 +59,7 @@ function aprovarDenuncia(id) {
 function excluirDenuncia(id) {
     if (confirm("Tem certeza de que deseja excluir esta denúncia?")) {
         // Envia uma requisição POST para o servidor
-        fetch('acoes_denuncias.php', {
+        fetch('../desenvolvimento/backend/acoes_denuncia.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
