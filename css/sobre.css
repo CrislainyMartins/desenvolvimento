@@ -330,3 +330,41 @@ body {
   .img_nmmulheres{
     margin-left: 40px;
   }
+
+  /*responsividade*/
+
+  @media screen and (max-width: 480px){
+    body{
+      max-width: 480px;
+    }
+    .geral{
+      justify-content: center;
+      flex-direction: column;
+      max-width: 400px;
+    }
+    .titlle h1{
+     
+      font-size: 25px;
+  }
+
+  .titlle{ 
+    width: 300px;
+    margin-left: -2px;
+
+  }
+
+  .box{
+    max-width: 300px;
+    
+    
+  }
+
+  .img_missao{
+    height: 275px;
+    width: 150px;
+    margin-left: -100px;
+  }
+
+
+
+}

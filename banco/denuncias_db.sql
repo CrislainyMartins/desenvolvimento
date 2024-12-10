@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09/12/2024 às 19:00
+-- Tempo de geração: 10/12/2024 às 19:45
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -20,6 +20,25 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `denuncias_db`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `admins`
+--
+
+CREATE TABLE `admins` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `admins`
+--
+
+INSERT INTO `admins` (`id`, `username`, `password`) VALUES
+(1, 'admin', '$2y$10$gqPpcBYxcV9sJuZqcjikTef6FdqpVLQf46frJCZ5GbeLTHzwdZcZG');
 
 -- --------------------------------------------------------
 
@@ -43,11 +62,9 @@ CREATE TABLE `denuncias` (
 --
 
 INSERT INTO `denuncias` (`id`, `nome`, `descricao`, `localizacao`, `contato`, `arquivo`, `data_envio`, `status`) VALUES
-(2, 'Maria', 'Agressão', 'rua da saudade', '123456789', '1732650087_Documentação do protótipo do site.pdf', '2024-11-26 19:41:27', 'pendente'),
-(3, 'Maria', 'Agressão', 'rua da saudade', '123456789', '1732650102_Documentação do protótipo do site.pdf', '2024-11-26 19:41:42', 'pendente'),
 (4, 'Maria das Dores', 'levei uma pisa', 'jua', '123123123', '1732735018_imag.pdf', '2024-11-27 19:16:58', 'pendente'),
 (5, 'ain ze da manga', 'rfsdfsdf', 'dasdas', 'dada', '1733162352_imag.pdf', '2024-12-02 17:59:12', 'pendente'),
-(6, '', 'AJUDA', 'palestina', '', NULL, '2024-12-03 10:39:26', 'Pendente'),
+(6, '', 'AJUDA', 'palestina', '', NULL, '2024-12-03 10:39:26', 'Resolvido'),
 (9, '', 'salve-me', 'Centro', '', NULL, '2024-12-09 14:02:29', 'Resolvido');
 
 -- --------------------------------------------------------
@@ -90,6 +107,13 @@ INSERT INTO `depoimentos` (`id`, `nome`, `mensagem`, `data_envio`) VALUES
 --
 
 --
+-- Índices de tabela `admins`
+--
+ALTER TABLE `admins`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
 -- Índices de tabela `denuncias`
 --
 ALTER TABLE `denuncias`
@@ -104,6 +128,12 @@ ALTER TABLE `depoimentos`
 --
 -- AUTO_INCREMENT para tabelas despejadas
 --
+
+--
+-- AUTO_INCREMENT de tabela `admins`
+--
+ALTER TABLE `admins`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `denuncias`
