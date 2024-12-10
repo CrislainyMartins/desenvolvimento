@@ -8,6 +8,9 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+
+
 .container {
     background-color: #fff;
     border-radius: 10px;
@@ -49,6 +52,9 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+
+
 .cancelar {
     text-align: center;
     margin-top: 10px;

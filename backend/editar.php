@@ -49,7 +49,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Editar Denúncia</title>
 </head>
 <body>
-    
+    <div class="geral">
+    <div class="container">
     <form method="POST">
         <label for="descricao">Descrição:</label><br>
         <textarea name="descricao" id="descricao" rows="4" required><?php echo $denuncia['descricao']; ?></textarea><br><br>
@@ -63,9 +64,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <option value="Resolvido" <?php echo $denuncia['status'] == 'Resolvido' ? 'selected' : ''; ?>>Resolvido</option>
         </select><br><br>
 
-        <button type="submit" >Salvar Alterações</button>
+        <button type="submit" ><a href="../admin.php">Salvar Alterações</a></button>
          
         <a href="../admin.php">Cancelar</a>
     </form>
+    </div>
+
+    </div>
 </body>
 </html>
