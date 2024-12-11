@@ -341,6 +341,7 @@ body {
       justify-content: center;
       flex-direction: column;
       max-width: 400px;
+   
     }
     .titlle h1{
      
@@ -349,21 +350,32 @@ body {
 
   .titlle{ 
     width: 300px;
-    margin-left: -2px;
+    margin-left: -0,5px;
 
   }
 
   .box{
     max-width: 300px;
-    
+    font-size: 10px;
+ 
+
+   
     
   }
 
   .img_missao{
-    height: 275px;
-    width: 150px;
-    margin-left: -100px;
+    height: 162px;
+    width: 100px;
+    margin-left: 175px;
+
+    
+    
   }
+
+  .img_nmmulheres{
+    
+  }
+
 
 
 
