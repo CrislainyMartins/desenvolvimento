@@ -28,7 +28,7 @@
                 include("../desenvolvimento/backend/editardepoimentos.php");
                 ?>
                 
-                <!-- Denúncias serão exibidas aqui dinamicamente -->
+                <!-- Depoimentos serão exibidas aqui dinamicamente -->
             </tbody>
         </table>
 <!--botão de sair admin-->
@@ -49,7 +49,7 @@
 
 <script>
               // Função para aprovar depoimento
-function aprovarDenuncia(id) {
+function aprovarDepoimento(id) {
     if (confirm("Tem certeza de que deseja aprovar esta depoimento?")) {
         // Envia uma requisição POST para o servidor
         fetch('../desenvolvimento/backend/acoes_depoimentos.php', {
@@ -61,7 +61,7 @@ function aprovarDenuncia(id) {
         })
         .then(response => response.text())
         .then(data => {
-            alert("Depoiento aprovada com sucesso!");
+            alert("Depoimento aprovada com sucesso!");
             location.reload(); // Recarrega a página para atualizar a lista
         })
         .catch(error => {
