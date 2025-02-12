@@ -55,14 +55,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <label for="nome">Nome:</label><br>
         <textarea name="nome" id="nome" rows="4" required><?php echo $nome['nome']; ?></textarea><br><br>
 
-        <label for="mensagem">Localização:</label><br>
-        <input type="text" name="localizacao" id="localizacao" value="<?php echo $denuncia['localizacao']; ?>" required><br><br>
+        <label for="mensagem">mensagem:</label><br>
+        <input type="text" name="mensagem" id="mensagem" value="<?php echo $denuncia['mensagem']; ?>" required><br><br>
 
-        <label for="status">Status:</label><br>
-        <select name="status" id="status" required>
-            <option value="Pendente" <?php echo $denuncia['status'] == 'Pendente' ? 'selected' : ''; ?>>Pendente</option>
-            <option value="Resolvido" <?php echo $denuncia['status'] == 'Resolvido' ? 'selected' : ''; ?>>Resolvido</option>
-        </select><br><br>
 
         <button type="submit" ><a href="../admin.php">Salvar Alterações</a></button>
          

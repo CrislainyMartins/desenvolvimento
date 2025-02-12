@@ -19,13 +19,13 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
         echo "<td>{$row['id']}</td>"; // ID da depoimento
-        echo "<td>{$row['nome']}</td>"; // Descrição
-        echo "<td>{$row['mensagem']}</td>"; // Localização
+        echo "<td>{$row['nome']}</td>"; // nome
+        echo "<td>{$row['mensagem']}</td>"; // texto do depoimento
         echo "<td>{$row['data_envio']}</td>"; // Data da depoimento
         echo "<td>
 
-                <a  href='backend/editar.php?id={$row['id']}'>Editar</a> | 
-                <a href='backend/deletar.php?id={$row['id']}' onclick='return confirm(\"Tem certeza que deseja excluir esta denúncia?\");'>Excluir</a>
+                <a  href='backend/editdp.php?id={$row['id']}'>Editar</a> | 
+                <a href='backend/deletardp.php?id={$row['id']}' onclick='return confirm(\"Tem certeza que deseja excluir este depoimento?\");'>Excluir</a>
               </td>"; // Ações de editar e excluir
         echo "</tr>";
     }
