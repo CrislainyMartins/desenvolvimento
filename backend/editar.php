@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <option value="Resolvido" <?php echo $denuncia['status'] == 'Resolvido' ? 'selected' : ''; ?>>Resolvido</option>
         </select><br><br>
 
-        <button type="submit" ><a href="../admin.php">Salvar Alterações</a></button>
+        <button type="submit" onclick="window.location.href='/admin.php'">Salvar Alterações</button><!--ajeitar-->
          
         <a href="../admin.php">Cancelar</a>
     </form>

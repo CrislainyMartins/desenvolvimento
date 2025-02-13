@@ -11,7 +11,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $result = $conn->query($sql);
 
     if ($result && $result->num_rows > 0) {
-        $denuncia = $result->fetch_assoc();
+        $depoimento = $result->fetch_assoc();
     } else {
         echo "depoimento não encontrado.";
         exit;
@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="text" name="mensagem" id="mensagem" value="<?php echo $denuncia['mensagem']; ?>" required><br><br>
 
 
-        <button type="submit" ><a href="../admin.php">Salvar Alterações</a></button>
+        <button type="submit" ><a href="gerenciar_depoimento.php">Salvar Alterações</a></button>
          
         <a href="../admin.php">Cancelar</a>
     </form>
