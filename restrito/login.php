@@ -33,12 +33,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/login.css">
     <title>Login - Admin</title>
 </head>
+
 <body>
     <div class="container">
         <h1>Login Admin</h1>
@@ -49,7 +51,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="text" name="username" placeholder="Usuário" required>
             <input type="password" name="password" placeholder="Senha" required>
             <button type="submit">Entrar</button>
+            <button onclick="window.location.href='/desenvolvimento/inicio.html'">Voltar ao inicio</button>
+
         </form>
     </div>
 </body>
+
 </html>
