@@ -64,6 +64,7 @@ button {
     border: none;
     background:  #6200ee;
     margin-top: 40px;
+  
    }
    
    button > svg {
@@ -71,6 +72,7 @@ button {
     margin-left: 5px;
     font-size: 20px;
     transition: all 0.4s ease-in;
+    
    }
    
    button:hover > svg {

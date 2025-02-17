@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Verifica a senha usando password_verify
         if (password_verify($password, $admin['password'])) {
             $_SESSION['admin_logged_in'] = true; // Cria a sessão
-            header("Location: ../admin.php"); // Redireciona para a página do admin
+            header("Location: ../backend/admin.php"); // Redireciona para a página do admin
             exit;
         } else {
             $erro = "Senha incorreta.";

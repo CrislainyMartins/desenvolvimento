@@ -11,7 +11,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
     if ($conn->query($sql)) {
         echo "Denúncia excluída com sucesso.";
-        header("Location: ../admin.php");
+        header("Location: ../backend/admin.php");
         exit;
     } else {
         echo "Erro ao excluir a denúncia: " . $conn->error;
@@ -19,4 +19,3 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 } else {
     echo "ID inválido.";
 }
-?>

@@ -42,34 +42,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/editar.css">
     <title>Editar Denúncia</title>
 </head>
+
 <body>
     <div class="geral">
-    <div class="container">
-    <form method="POST">
-        <label for="descricao">Descrição:</label><br>
-        <textarea name="descricao" id="descricao" rows="4" required><?php echo $denuncia['descricao']; ?></textarea><br><br>
+        <div class="container">
+            <form method="POST">
+                <label for="descricao">Descrição:</label><br>
+                <textarea name="descricao" id="descricao" rows="4" required><?php echo $denuncia['descricao']; ?></textarea><br><br>
 
-        <label for="localizacao">Localização:</label><br>
-        <input type="text" name="localizacao" id="localizacao" value="<?php echo $denuncia['localizacao']; ?>" required><br><br>
+                <label for="localizacao">Localização:</label><br>
+                <input type="text" name="localizacao" id="localizacao" value="<?php echo $denuncia['localizacao']; ?>" required><br><br>
 
-        <label for="status">Status:</label><br>
-        <select name="status" id="status" required>
-            <option value="Pendente" <?php echo $denuncia['status'] == 'Pendente' ? 'selected' : ''; ?>>Pendente</option>
-            <option value="Resolvido" <?php echo $denuncia['status'] == 'Resolvido' ? 'selected' : ''; ?>>Resolvido</option>
-        </select><br><br>
+                <label for="status">Status:</label><br>
+                <select name="status" id="status" required>
+                    <option value="Pendente" <?php echo $denuncia['status'] == 'Pendente' ? 'selected' : ''; ?>>Pendente</option>
+                    <option value="Resolvido" <?php echo $denuncia['status'] == 'Resolvido' ? 'selected' : ''; ?>>Resolvido</option>
+                </select><br><br>
 
-        <button type="submit" onclick="window.location.href='/admin.php'">Salvar Alterações</button><!--ajeitar-->
-         
-        <a href="../admin.php">Cancelar</a>
-    </form>
-    </div>
+                <button type="submit" onclick="window.location.href='admin.php'">Salvar Alterações</button><!--ajeitar-->
+
+                <a href="../admin.php">Cancelar</a>
+            </form>
+        </div>
 
     </div>
 </body>
+
 </html>
