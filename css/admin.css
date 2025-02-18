@@ -64,8 +64,11 @@ button {
     border: none;
     background:  #6200ee;
     margin-top: 40px;
+    margin-left: 10px;
+    color: white;
+}
   
-   }
+   
    
    button > svg {
     margin-right: 5px;
@@ -97,4 +100,8 @@ a{
 
 a:hover{
     color: #176fff;
+}
+
+.botoes{
+    display: flex;
 }

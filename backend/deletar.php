@@ -9,6 +9,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     // Query para deletar a denúncia
     $sql = "DELETE FROM denuncias WHERE id = $id";
 
+
     if ($conn->query($sql)) {
         echo "Denúncia excluída com sucesso.";
         header("Location: ../backend/admin.php");

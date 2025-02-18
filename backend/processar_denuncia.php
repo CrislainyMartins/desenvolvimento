@@ -33,12 +33,16 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param("sssss", $nome, $descricao, $localizacao, $contato, $arquivo);
 
 if ($stmt->execute()) {
-    echo "Denúncia enviada com sucesso!";
+    //echo "Denúncia enviada com sucesso!";
+    echo "Denúncia enviada com sucesso.";
+
+    header("Location: /desenvolvimento/formulario.html");
+    exit;
 } else {
     echo "Erro ao enviar denúncia: " . $stmt->error;
 }
 
+
 // Fechar conexão
 $stmt->close();
 $conn->close();
-?>
