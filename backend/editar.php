@@ -25,10 +25,11 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $descricao = $_POST['descricao'];
     $localizacao = $_POST['localizacao'];
+    $arquivo=$_POST['arquivo'];
     $status = $_POST['status'];
 
     // Atualiza os dados da denúncia no banco
-    $sql = "UPDATE denuncias SET descricao = '$descricao', localizacao = '$localizacao', status = '$status' WHERE id = $id";
+    $sql = "UPDATE denuncias SET descricao = '$descricao', localizacao = '$localizacao', arquivo = '$arquivo',status = '$status' WHERE id = $id";
 
     if ($conn->query($sql)) {
         echo "Denúncia atualizada com sucesso.";
@@ -59,6 +60,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <label for="localizacao">Localização:</label><br>
                 <input type="text" name="localizacao" id="localizacao" value="<?php echo $denuncia['localizacao']; ?>" required><br><br>
+
+                <button><a href="provas.php">Ver provas</a></button><!--ajeitar-->
 
                 <label for="status">Status:</label><br>
                 <select name="status" id="status" required>
