@@ -226,12 +226,6 @@ height: 30px;
   .menu-bg {
     position: fixed;
 
-
-
-
-
-
-
     z-index: 1;
     width: 0;
     height: 0;
@@ -268,6 +262,11 @@ height: 30px;
   }
   /*fim menus*/
 
+  .geral{
+    display: flex;
+
+  }
+
   /*conteudo1*/
 
   .conteudo1{
@@ -276,6 +275,7 @@ height: 30px;
    display: flex;
    justify-content: space-evenly;
    margin-top: 180px ;
+   width: 100px;
   
   }
 
