@@ -22,11 +22,6 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-
-
-
-
- 
   background-image: linear-gradient(90deg, #a9016d, #040405);
   box-shadow: 0px 3px 10px #464646;
 }
@@ -197,14 +192,6 @@ height: 30px;
   /*mexi para deixar o menu fixo: position: fixed;*/
   .nav {
     position: fixed;
-   
-
-
-
-
-
-
-
     transition: 0.3s ease;
     display: none;
   }
@@ -289,6 +276,7 @@ height: 30px;
    display: flex;
    justify-content: space-evenly;
    margin-top: 180px ;
+  
   }
 
   .conteudo1 h1{
@@ -302,12 +290,15 @@ height: 30px;
     font-family: "Dancing Script", cursive;
     color: #c451c9;
     margin-left: 70px;
+   
   }
 
   .imagem1 img{
-    margin-top: 80px;
-    width: 300px;
-    height: 500px;
+    margin-top: -200px;
+    width: 1000px;
+    height: 1000px;
+    margin-left: -800px;
+    
     
   }
 
