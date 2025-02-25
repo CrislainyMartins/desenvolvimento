@@ -278,7 +278,7 @@ body {
     /*fim menus*/
 
 .geral{
-    height: 500px;
+    height: 1000px;
     margin-bottom: 100px;
     margin-top: 200px;
     
@@ -293,8 +293,43 @@ body {
 .titlle h1{
     font-family:fantasy;
     color: #210037;
-    font-size: 55px;
+    font-size: 60px;
 
 }
 
 
+
+.conteudo1{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  
+
+}
+
+.d1{
+  width: 350px;
+  height: 300px;
+  margin-left: 50px;
+  background-color: white;
+  margin-top: 35px;
+}
+
+.d1 h2{
+  color: #CF3A35;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.d1 p{
+  color: #210037;
+  width: 200px;
+  height: 100px;
+  text-align: justify;
+  font-weight: bolder;
+   margin: 0 auto;
+   font-size: 20px;
+   margin-top: 25px;
+   
+ 
+}
