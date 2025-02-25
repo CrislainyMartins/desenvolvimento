@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="dp2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--menu principal-->
+   <div class="menus">
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1><img src="imgs/logo1.png" width="50"></h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="inicio.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="informacoes.html" class="nav-link">Informações</a></li>
+                    <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                </ul>
+            </div>
+
+            <!--botão do pânico-->
+               <div class="login-button">
+                <button onclick="window.location.href='formulario.html'"><img src="imgs/botaopanico.png" class="panic"></button>
+            </div>  <!-- fim botão do pânico-->
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img src="assets/img/menu_white_36dp.svg" class="icon"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--menu hamburguer-->
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="comodenunciar.html">Como Denunciar</a></li>
+                <li><a href="recursos.html">Recursos de <br>Apoio</a></li>
+               
+            </ul>
+        </nav>
+    </div>
+
+    <div class="menu-bg" id="menu-bg"></div>
+
+
+    <script>
+        function menuOnClick() {
+            document.getElementById("menu-bar").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+    </script>
+
+    <link rel="stylesheet" href="/js/menumobile.js"><!--rever o local desse JS-->
+
+</div>
+
+<!--fim dos menus-->
+
+    <div class="geral">
+        
+        
+
+
+    </div>
+    
+</body>
+</html>

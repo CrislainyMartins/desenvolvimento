@@ -1,0 +1,284 @@
+/*menus*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Pacifico&display=swap');
+/*background-image: linear-gradient(270deg, #100d28,#8906e6);*/
+body {
+  max-height: 100%;
+    background-image: url("/imgs/img_de_fundo_dp.png");
+    background-size: cover; /* Isso faz a imagem cobrir todo o elemento */
+    background-position: center; /* Isso centraliza a imagem */
+
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+/*mexi para deixar o menu fixo: position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  */
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;/*mexi para as caixas de depoimento não sobrepor o menu*/
+    background-image: linear-gradient(90deg, #a9016d, #040405);
+    box-shadow: 0px 3px 10px #464646;
+  }
+  
+  .nav-bar{
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem 6rem;
+  }
+  
+  .logo{
+      display: flex;
+      align-items: center;
+  }
+  
+  .logo h1{
+      color: #fff;
+  }
+  
+  .nav-list{
+      display: flex;
+      align-items: center;
+  }
+  
+  .nav-list ul{
+      display: flex;
+      justify-content: center;
+      list-style: none;
+  }
+  
+  .nav-item{
+      margin: 15px;
+      
+  }
+  
+  .nav-link{
+      text-decoration: none;
+      font-size: 1.15rem;
+      color: #fff;
+      font-weight: 400;
+  }
+  
+  /*botão do pânico*/
+  .login-button button{
+    border: none;
+    background-color: #d54a54 ;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 100px;
+    height: 60px;
+    cursor: pointer;
+    
+  
+  }
+  
+  .login-button button:hover{
+  transform: scale(1.2);
+  background-color: #bc1823;
+  transition: all 0.4s;
+  opacity: 0.8;
+  }
+  
+  .login-button button a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  .panic{
+  width: 30px;
+  height: 30px;
+  
+  }
+  /*fim do botão do pânico*/
+  
+  .mobile-menu-icon{
+      display: none;
+  }
+  
+  .mobile-menu{
+      display: none;
+  }
+  
+  @media screen and (max-width: 730px) {
+      .nav-bar{
+          padding: 1.5rem 4rem;
+      }
+      .nav-item{
+          display: none;
+      }
+      .login-button{
+          display: none;
+      }
+      .mobile-menu-icon{
+          display: block;
+      }
+      .mobile-menu-icon button{
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+      }
+      .mobile-menu ul{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          padding-bottom: 1rem;
+      }
+  
+      .mobile-menu .nav-item{
+          display: block;
+          padding: 1.2rem;
+      }
+      .mobile-menu .login-button{
+          display: block;
+          padding: 1rem 2rem;
+      }
+      .mobile-menu .login-button button{
+          width: 100%;
+      }
+      .open{
+          display: block;
+      }
+  }
+  
+  
+  /*menu hamburguer*/
+    #menu {
+      margin-top: 80px;
+      z-index: 1000;/*mexi para o menu hamburguer aparecer apòs a sobreposição do menu principal*/
+    }
+    
+     /*mexi para deixar o menu fixo: position: fixed;,top: 0;,
+      left: 0;*/
+    #menu-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+  
+  
+  
+  
+  
+      width: 45px;
+      height: 40px;
+      margin: 30px 0 20px 20px;
+      cursor: pointer;
+    }
+    
+    .bar {
+      height: 5px;
+      width: 100%;
+      background-color: white;
+      display: block;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
+    
+    #bar1 {
+      transform: translateY(-4px);
+    }
+    
+    #bar3 {
+      transform: translateY(4px);
+    }
+    
+      
+    /*mexi para deixar o menu fixo: position: fixed;*/
+    .nav {
+      position: fixed;
+     
+  
+  
+  
+  
+  
+  
+  
+      transition: 0.3s ease;
+      display: none;
+    }
+    
+    .nav ul {
+      padding: 0 22px;
+    }
+    
+    .nav li {
+      list-style: none;
+      padding: 12px 0;
+    }
+    
+    .nav li a {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    
+    .nav li a:hover {
+      font-weight: bold;
+    }
+    
+    .menu-bg, #menu {
+      top: 0;
+      left: 0;
+      position: absolute;
+    }
+    
+    /* background: radial-gradient(circle, #100d28,#8906e6);*/
+    /*mexi para deixar o menu fixo:   position: fixed; */
+    .menu-bg {
+      position: fixed;
+  
+  
+  
+  
+  
+  
+  
+      z-index: 1;
+      width: 0;
+      height: 0;
+      margin: 30px 0 20px 20px;
+     background-color: #a9016d;
+      border-radius: 50%;
+      transition: 0.3s ease;
+    }
+    
+    .change {
+      display: block;
+    }
+    
+    .change .bar {
+      background-color: white;
+    }
+    
+    .change #bar1 {
+      transform: translateY(4px) rotateZ(-45deg);
+    }
+    
+    .change #bar2 {
+      opacity: 0;
+    }
+    
+    .change #bar3 {
+      transform: translateY(-6px) rotateZ(45deg);
+    }
+    
+    .change-bg {
+      width: 520px;
+      height: 460px;
+      transform: translate(-60%,-30%);
+    }
+    /*fim menus*/
+
+    
