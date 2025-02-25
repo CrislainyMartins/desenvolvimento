@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*background-image: linear-gradient(270deg, #100d28,#8906e6);*/
 body {
+  background-color: white;
   max-height: 100%;
   }
 
@@ -24,11 +22,9 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #210037;
+  background-image: linear-gradient(90deg, #a9016d, #040405);
   box-shadow: 0px 3px 10px #464646;
 }
-
-/*background-image: linear-gradient(90deg, #a9016d, #040405);*/
 
 .nav-bar{
     display: flex;
@@ -268,8 +264,6 @@ height: 30px;
 
   .geral{
     display: flex;
-    background-color:#3d0066 ;
-    
 
   }
 
@@ -277,12 +271,11 @@ height: 30px;
 
   .conteudo1{
    height:800px;
-   margin-left: -60px;
+   margin-left: 100px;
    display: flex;
    justify-content: space-evenly;
    margin-top: 180px ;
    width: 100px;
-   background-color: #3d0066;
   
   }
 
@@ -290,7 +283,6 @@ height: 30px;
     font-size: 180px;
     font-family: "Bebas Neue", sans-serif;
     line-height: 190px;
-    
   }
 
   .parte1 p{
@@ -298,46 +290,28 @@ height: 30px;
     font-family: "Dancing Script", cursive;
     color: #c451c9;
     margin-left: 70px;
-    
-
    
   }
 
   .imagem1 img{
-    margin-top: -230px;
+    margin-top: -200px;
     width: 1000px;
-    height: 1030px;
-    margin-left: -420px;
+    height: 1000px;
+    margin-left: -800px;
     
     
   }
 
   .parte1 h1{
     margin-left: 20px;
-    color: white;
   }
 
-  .p1{
-    font-size: 30px;
-    font-family: "Kanit", serif;
-    margin-left: -50px;
-    font-weight: bold;
-    color: white;
-  }
-
-  .p2{
-    font-family: "Kanit", serif;
-    margin-left: -30px;
-    font-size: 20px;
-    font-weight: bolder;
-    color: white;
-  }
 
   /*BOTÃO DO PANICO*/
   .panic_meio{
     width: 150px;
     height: 70px;
-    margin-left: 160px;
+    margin-left: 230px;
     margin-top: 20px;
     
   }
@@ -369,36 +343,7 @@ height: 30px;
        font-size: 1.1rem;
    }
 
-/*conteudo2*/
 
-.conteudo2{
-  margin-left: 800px;
-  margin-top: 70px;
-  background-color: #af86ff;
-  padding-top: 115px;
-  width: 500px;
-}
-
-.conteudo2 h1{
-  font-size: 180px;
-  font-family: "Bebas Neue", sans-serif;
-  line-height: 190px;
-  padding-left: 20px;
-  color: #3d0066;
-
-}
-
-.conteudo2 p{
-  font-family: "Dancing Script", serif;
-  font-size:45px ;
-  padding-left: 30px;
-  color: #bc1823;
-}
-
-.logo3{
-  padding-left: 300px;
-  padding-top: 300px;
-}
 
 
 /*RESPONSIVIDADE*/
