@@ -311,7 +311,6 @@ body {
   width: 350px;
   height: 300px;
   margin-left: 50px;
-  background-color: white;
   margin-top: 35px;
 }
 
@@ -325,11 +324,34 @@ body {
   color: #210037;
   width: 200px;
   height: 100px;
-  text-align: justify;
+  /*text-align: justify;*/
   font-weight: bolder;
    margin: 0 auto;
-   font-size: 20px;
+   font-size: 25px;
    margin-top: 25px;
    
  
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  
+  margin-top: 100px;
+
+}
+
+.box1{
+  background-color: gray;
+  height: 100px;
+  width: 300px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #613AA9;
+  margin-left: 20px;
+}
+
+.box1 p{
+  margin-top: 30px;
+  color: white;
 }
