@@ -278,7 +278,7 @@ body {
     /*fim menus*/
 
 .geral{
-    height: 1000px;
+    height: 2000px;
     margin-bottom: 100px;
     margin-top: 200px;
     
@@ -354,4 +354,50 @@ body {
 .box1 p{
   margin-top: 30px;
   color: white;
+}
+
+/*estilização v. sexual*/
+.conteudo2{
+display: flex;
+justify-content: center;
+ margin-top: 30px;
+ 
+}
+.d2 h2{
+  margin-left: 60px;
+}
+
+.box2{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+
+}
+
+
+.d2{
+  width: 500px;
+  height: 400px;
+  margin-left: 50px;
+  margin-top: 35px;
+}
+
+.d2 h2{
+  color: #CF3A35;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.d2 p{
+  color: #210037;
+  width: 300px;
+  height: 200px;
+  /*text-align: justify;*/
+  font-weight: bolder;
+   margin: 0 auto;
+   font-size: 25px;
+   margin-top: 25px;
+   text-align: justify;
+   
+ 
 }
