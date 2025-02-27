@@ -300,17 +300,21 @@ height: 30px;
     font-family: "Dancing Script", cursive;
     color: #c451c9;
     margin-left: 70px;
-    
-
-   
+  
   }
 
+  
+
+  
   .imagem1 img{
     margin-top: -230px;
     width: 1000px;
     height: 1030px;
     margin-left: -420px;
-    
+  }
+
+  .falamaria{
+    margin-top:-670px;
     
   }
 

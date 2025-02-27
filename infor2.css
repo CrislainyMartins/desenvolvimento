@@ -13,6 +13,7 @@ body {
       margin: 0;
       
   }
+
   header{
     position: fixed;
     top: 0;
@@ -278,7 +279,8 @@ body {
     /*fim menus*/
 
 .geral{
-    height: 2000px;
+    height: 3600px;
+   
     margin-bottom: 100px;
     margin-top: 200px;
     
@@ -341,7 +343,7 @@ body {
 
 }
 
-.box1{
+.caixa1{
   background-color: gray;
   height: 100px;
   width: 300px;
@@ -351,16 +353,27 @@ body {
   margin-left: 20px;
 }
 
-.box1 p{
+.caixa1 p{
   margin-top: 30px;
   color: white;
 }
 
+
+
+
 /*estilização v. sexual*/
+.cor_de_fundo{
+  background-color: #a26cd0;
+  height: 800px; 
+  width: 1200px;
+  margin-left: 150px;
+  
+}
 .conteudo2{
 display: flex;
 justify-content: center;
- margin-top: 30px;
+ margin-top: -250px;
+ padding-top: 50px;
  
 }
 .d2 h2{
@@ -373,7 +386,6 @@ justify-content: center;
   margin-top: 100px;
 
 }
-
 
 .d2{
   width: 500px;
@@ -400,4 +412,197 @@ justify-content: center;
    text-align: justify;
    
  
+}
+
+.caixa2{
+  background-color: gray;
+  height: 100px;
+  width: 300px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #af86ff;
+  margin-left: 20px;
+  
+}
+
+.caixa2 p{
+  margin-top: 30px;
+  color: white;
+} 
+
+/*estilização v. psicológoca*/
+.img_lateral{
+  margin-left: -300px;
+  /*colocar sombra nessa imagem*/
+}
+
+.conteudo3{
+  display: flex;
+justify-content: center;
+ margin-top: -400px;
+ padding-top: 50px;
+
+}
+
+.conteudo3 img{
+  height: 300px;
+  width: 500px;
+}
+
+.conteudo3 img{
+   margin-top: 30px;
+}
+
+
+.caixa3{
+  background-color: gray;
+  height: 100px;
+  width: 300px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #8127bd;
+  margin-left: 20px;
+  margin-bottom: 20px ;
+
+}
+
+.caixa3 p{
+  color: white;
+  /*deixar as palavras no centro*/
+}
+
+.d3{
+  height: 300px;
+  width: 800px;
+  margin-left: 270px;
+}
+
+.d3 h2{
+  color: #CF3A35;
+  font-size: 40px;
+  font-weight: bolder;
+
+}
+
+.d3 p{
+  color: #210037;
+  width: 800px;
+  height: 200px;
+  /*text-align: justify;*/
+  font-weight: bolder;
+   margin: 0 auto;
+   font-size: 25px;
+   margin-top: 25px;
+   text-align: justify;
+}
+
+/*v. patrimonial*/
+.conteudo4{
+  display: flex;
+  justify-content: center;
+   
+   padding-top: 50px;
+   
+  }
+  .conteudo4 img{
+    width: 432px;
+    height: 236px;
+    margin-top: 50px;
+  }
+
+
+  .d4 h2{
+    margin-left: 60px;
+  }
+
+  .d4{
+    width: 500px;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 35px;
+  }
+
+  
+  .d4 h2{
+    color: #CF3A35;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+
+  .d4 p{
+    color: #210037;
+    width: 300px;
+    height: 200px;
+    /*text-align: justify;*/
+    font-weight: bolder;
+     margin: 0 auto;
+     font-size: 25px;
+     margin-top: 25px;
+     text-align: justify;
+  }  
+
+.box4{
+  
+    display: flex;
+    justify-content: center;
+  
+}
+
+.img_finalizando{
+  margin-top: 90px;
+}
+
+/*button final*/
+/*no lugar da imagem do intagran, pensei em colocar uma img do icon de site*/
+.button_sb{
+  height: 100px;
+}
+
+button {
+  background-color: #3d0066;
+  border: 1px solid white;
+  padding: 5px;
+  position: relative;/*está sobreposto ao mause, analisar se é por causa desse código ou position: absolute*/
+  width: 8.2em;
+  height: 2em;
+  transition: 0.5s;
+  font-size: 17px;
+  border-radius: 0.4em;
+  margin-left: 215px;/*não consegui deixar no centro*/
+  margin-top: 50px;
+}
+
+button p {
+  position: absolute;
+  top: 0.4em;
+  left: 1.2em;
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+  color:#ccc1d1 ;
+}
+
+button svg {
+  position: absolute;
+  top: 0.45em;
+  right: 0.5em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+  fill: #fff
+}
+
+button:hover p {
+  left: 0.6em;
+  color: #fff
+}
+
+button:hover svg {
+  opacity: 1;
+}
+
+button:hover {
+  background-color: #af86ff;
 }
