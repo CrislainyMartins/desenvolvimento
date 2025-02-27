@@ -1,20 +1,25 @@
 body {
+    background-image: url('../imgs/fundo_formden.png');
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
     color: #333;
     padding: 20px;
 }
 .form-container {
     max-width: 500px;
     margin: 0 auto;
-    background: #fff;
+    background: #4e0082;
+    opacity: 75%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    color: white;
 }
 .form-container h1 {
-    font-size: 1.5rem;
-    color: #6a1b9a;
+    font-size: 2.5rem;
+    color: whitesmoke;
     margin-bottom: 10px;
 }
 .form-container label {
@@ -25,12 +30,18 @@ body {
 .form-container input, 
 .form-container textarea, 
 .form-container select {
-    width: 100%;
-    padding: 10px;
+    width: 90%;
+    
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+   
+    border-radius: 15px;
     font-size: 1rem;
+    
+
+      border: 2px solid transparent; /* Define o tamanho da borda e a cor inicial transparente */
+      border-image: linear-gradient(to right, #c968d8, #5202ad, #f36cff); /* Define o gradiente de cores */
+      border-image-slice: 1; /* Aplica o gradiente ao redor da borda */
+      padding: 10px; /* Adiciona um pouco de espaço dentro do input */
 }
 .form-container button {
     width: 100%;
@@ -48,7 +59,7 @@ body {
 }
 .info {
     font-size: 0.9rem;
-    color: #555;
+    color: white;
     margin-top: -10px;
     margin-bottom: 10px;
 }
