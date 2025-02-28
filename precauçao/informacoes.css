@@ -3,17 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Pacifico&display=swap');
 /*background-image: linear-gradient(270deg, #100d28,#8906e6);*/
 body {
-  
-    max-height: 100%;
-    background-color: #ccc1d1;
-    }
-  
-  *{
-      padding: 0;
-      margin: 0;
-      
+  background-color: white;
+  max-height: 100%;
   }
 
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+/*mexi para deixar o menu fixo: position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  */
   header{
     position: fixed;
     top: 0;
@@ -24,7 +28,7 @@ body {
   
   
    
-    background-color: #000000;
+    background-image: linear-gradient(90deg, #a9016d, #040405);
     box-shadow: 0px 3px 10px #464646;
   }
   
@@ -278,331 +282,125 @@ body {
     }
     /*fim menus*/
 
+
+
+
+
+
 .geral{
-    height: 3600px;
-   
+    max-height: 100%;
     margin-bottom: 100px;
     margin-top: 200px;
-    
 }/*usei para deixar as divs afastadas*/
 
 /*TITULO*/
 .titlle{
-    display: flex;
-    justify-content: center;
+    background-image: linear-gradient(90deg, #a9016d, #040405);
+    color: white;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 40px;
+    box-shadow: 20px 0 20px grey;/*sombreamento*/
 }
 
 .titlle h1{
-    font-family:fantasy;
-    color: #210037;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 60px;
-
 }
 
-
-
-.conteudo1{
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  
-
-}
-
-.d1{
-  width: 350px;
-  height: 300px;
-  margin-left: 50px;
-  margin-top: 35px;
-}
-
-.d1 h2{
-  color: #CF3A35;
-  font-size: 40px;
-  font-weight: bolder;
-}
-
-.d1 p{
-  color: #210037;
-  width: 200px;
-  height: 100px;
-  /*text-align: justify;*/
-  font-weight: bolder;
-   margin: 0 auto;
-   font-size: 25px;
-   margin-top: 25px;
-   
- 
-}
-
-.box{
-  display: flex;
-  justify-content: center;
-  
-  margin-top: 100px;
-
-}
-
-.caixa1{
-  background-color: gray;
-  height: 100px;
-  width: 300px;
-  font-size: 20px;
-  text-align: center;
-  background-color: #613AA9;
-  margin-left: 20px;
-}
-
-.caixa1 p{
-  margin-top: 30px;
-  color: white;
-}
-
-
-
-
-/*estilização v. sexual*/
-.cor_de_fundo{
-  background-color: #a26cd0;
-  height: 800px; 
-  width: 1200px;
-  margin-left: 150px;
-  
-}
-.conteudo2{
-display: flex;
-justify-content: center;
- margin-top: -250px;
- padding-top: 50px;
- 
-}
-.d2 h2{
-  margin-left: 60px;
-}
-
-.box2{
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-
-}
-
-.d2{
-  width: 500px;
-  height: 400px;
-  margin-left: 50px;
-  margin-top: 35px;
-}
-
-.d2 h2{
-  color: #CF3A35;
-  font-size: 40px;
-  font-weight: bolder;
-}
-
-.d2 p{
-  color: #210037;
-  width: 300px;
-  height: 200px;
-  /*text-align: justify;*/
-  font-weight: bolder;
-   margin: 0 auto;
-   font-size: 25px;
-   margin-top: 25px;
-   text-align: justify;
-   
- 
-}
-
-.caixa2{
-  background-color: gray;
-  height: 100px;
-  width: 300px;
-  font-size: 20px;
-  text-align: center;
-  background-color: #af86ff;
-  margin-left: 20px;
-  
-}
-
-.caixa2 p{
-  margin-top: 30px;
-  color: white;
-} 
-
-/*estilização v. psicológoca*/
-.img_lateral{
-  margin-left: -300px;
-  /*colocar sombra nessa imagem*/
-}
-
-.conteudo3{
-  display: flex;
-justify-content: center;
- margin-top: -400px;
- padding-top: 50px;
-
-}
-
-.conteudo3 img{
-  height: 300px;
-  width: 500px;
-}
-
-.conteudo3 img{
-   margin-top: 30px;
-}
-
-
-.caixa3{
-  background-color: gray;
-  height: 100px;
-  width: 300px;
-  font-size: 20px;
-  text-align: center;
-  background-color: #8127bd;
-  margin-left: 20px;
-  margin-bottom: 20px ;
-
-}
-
-.caixa3 p{
-  color: white;
-  /*deixar as palavras no centro*/
-}
-
-.d3{
-  height: 300px;
-  width: 800px;
-  margin-left: 270px;
-}
-
-.d3 h2{
-  color: #CF3A35;
-  font-size: 40px;
-  font-weight: bolder;
-
-}
-
-.d3 p{
-  color: #210037;
-  width: 800px;
-  height: 200px;
-  /*text-align: justify;*/
-  font-weight: bolder;
-   margin: 0 auto;
-   font-size: 25px;
-   margin-top: 25px;
-   text-align: justify;
-}
-
-/*v. patrimonial*/
-.conteudo4{
-  display: flex;
-  justify-content: center;
-   
-   padding-top: 50px;
-   
-  }
-  .conteudo4 img{
-    width: 432px;
-    height: 236px;
-    margin-top: 50px;
-  }
-
-
-  .d4 h2{
-    margin-left: 60px;
-  }
-
-  .d4{
-    width: 500px;
-    height: 400px;
-    margin-left: 50px;
-    margin-top: 35px;
-  }
-
-  
-  .d4 h2{
-    color: #CF3A35;
-    font-size: 40px;
-    font-weight: bolder;
-  }
-
-  .d4 p{
-    color: #210037;
-    width: 300px;
-    height: 200px;
-    /*text-align: justify;*/
-    font-weight: bolder;
-     margin: 0 auto;
-     font-size: 25px;
-     margin-top: 25px;
-     text-align: justify;
-  }  
-
-.box4{
-  
+/*tipos de violencias*/
+.infor1{
     display: flex;
-    justify-content: center;
-  
+    margin-left: 300px;
+    margin-top: 30px;
 }
 
-.img_finalizando{
-  margin-top: 90px;
+h2{
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 50px;
+    
 }
 
-/*button final*/
-/*no lugar da imagem do intagran, pensei em colocar uma img do icon de site*/
-.button_sb{
-  height: 100px;
+.linha-vertical {
+    width: 2px; /* Largura da linha */
+    height: 400px; /* Altura da linha */
+    background-color: #000; /* Cor da linha (preto) */
+    margin: 20px; /* Margem para espaçamento */
 }
 
-button {
-  background-color: #3d0066;
-  border: 1px solid white;
-  padding: 5px;
-  position: relative;/*está sobreposto ao mause, analisar se é por causa desse código ou position: absolute*/
-  width: 8.2em;
-  height: 2em;
-  transition: 0.5s;
-  font-size: 17px;
-  border-radius: 0.4em;
-  margin-left: 215px;/*não consegui deixar no centro*/
-  margin-top: 50px;
+/*infor2*/
+.infor2{
+    display: flex;
+    margin-left: 300px;
+    margin-top: 30px;
+   
 }
 
-button p {
-  position: absolute;
-  top: 0.4em;
-  left: 1.2em;
-  margin: 0;
-  padding: 0;
-  transition: .5s;
-  color:#ccc1d1 ;
+.vps{
+  width: 370px;
 }
 
-button svg {
-  position: absolute;
-  top: 0.45em;
-  right: 0.5em;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-  transition: 0.5s;
-  height: 1em;
-  fill: #fff
+
+
+/*infor3*/
+.infor3{
+    display: flex;
+    margin-left: 300px;
+    margin-top: 30px;
+   
 }
 
-button:hover p {
-  left: 0.6em;
-  color: #fff
+.img3{
+    box-shadow:20px 0 20px grey; 
 }
 
-button:hover svg {
-  opacity: 1;
+.vvs{
+  width: 370px;
 }
 
-button:hover {
-  background-color: #af86ff;
+/*infor4*/
+.infor4{
+  display: flex;
+  margin-left: 300px;
+  margin-top: 30px;
+ 
 }
+
+.img4{
+  margin-top: 80px; 
+}
+
+.vp{
+  width: 370px;
+}
+
+/*infor5*/
+.infor5{
+  display: flex;
+  margin-left: 300px;
+  margin-top: 30px;
+ 
+}
+
+.img5{
+  margin-top: 70px;
+
+}
+
+.vm{
+  width: 370px;
+ 
+
+}
+
+.conteudoseta{
+  margin-top: 30px;
+}
+
+.setas{
+  font-size: 15px;
+}
+
