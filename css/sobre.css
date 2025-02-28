@@ -281,7 +281,7 @@ body {
   .geral {
     margin-top: 100px;
     min-height: 100vh;
-    background-color: #d54a54;
+  
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
@@ -289,38 +289,59 @@ body {
 
   .box1{
    
-    background-color: #a9016d;
-    width: 1500px;
-
-    
+    background-color: #a26cd0;
+    width: 1000px;
   }
 
   .box1 h1{
     margin-top: 300px;
-    margin-left: 400px;
-    background-color: #fff;
+    margin-left: 200px;
+    background-color: #8127bd;
+    color: white;
     width: 300px;
     text-align: center;
-
     font-family: "Bebas Neue", sans-serif;
     font-size: 60px;
+   
   }
 
   .box2{
    
-    background-color: #af86ff;
+    background-color: #550c86;
     height: 900px;
     width: 1500px;
     margin-left: -150px;
+    padding-left: 50px;
+   
 
   }
 
   .box2 ul{
     
-    background-color: aqua;
-    margin-top:200px ;
-    font-size: 35px;
+    background-color: #af86ff;
+    margin-top:100px ;
+    font-size: 25px;
     width: 800px;
-  
+    padding-left: 50px;
+    border-radius: 20px;
+    height: 500px;
+  }
+
+  .box2 h2{
+    font-size: 35px;
+    color: #210037;
+    font-weight: bolder;
+    padding-top: 30px;
+  }
+
+  .box2 ul li{
+    padding-bottom: 10px;
+    margin-top: 30px;
+  }
+
+  .img_nmmulheres{
    
+    margin-left: 700px;
+    margin-top:-10px ;
+    
   }
