@@ -281,24 +281,210 @@ body {
     /*fim menus*/
 
   .geral {
-    min-height: 100vh;
-    display: flex;
+    min-height: 120vh;
+    margin-top: 110px;
+    background-image: url(../imgs/img2.jpg);
    
   }
 
+  .container1{
+    display: flex;
+  }
+
   .box1{
-    background-color: #bc1823;
+    background-color: #550c86;
     width: 1000px;
+    height: 800px;
   }
 
-  .tittle{
+  .box1 h1{
     color: white;
-    margin-top: 500px;
+    margin-top: 100px;
+    height: 80px;
+    width: 500px;
+    margin-left: 100px;
+    background-color: #4e0082;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    padding-top:10px ;
   }
 
-  .box2{
-    background-color: aqua;
-    width: 1000px;
+  .content1{
+    width: 400px;
+    height: 250px;
+    font-size: 25px;
+    background-color: #af86ff;
+    margin-left: 150px;
+    margin-top: 180px;
+    border-radius: 20px;
   }
 
+  .content1 p{
+    text-align: center;
+    padding-top: 30px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
   
+  }
+  .box2{
+    width: 1000px; 
+    height: 800px;
+    background-color: #a26cd0;
+    border-radius: 50px;
+  }
+
+  .box2 h2{
+    margin-top: 100px;
+    width: 400px;
+    font-size: 40px;
+    color: #a9016d;
+    font-weight: bolder;
+    padding-left: 10px;
+    margin-left: 60px;
+  }
+
+  .content2{
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+  }
+
+  .content2 p{
+    margin-top: 70px;
+    color: white;
+    font-size: 25px;
+  }
+
+  .descricao2{
+    margin-top: 50px;
+  }
+
+  .container2{
+    display: flex;
+    height: 300px;
+    background-color: ;/*se não quiser usar a imagem de fundo, é só apagar da body e coloar uma cor aqui*/
+    
+  }
+
+  .container2 img{
+    height:150px;
+    width: 300px;
+    margin-left: 90px;
+    margin-top: 80px;
+  }
+
+  .content3{
+    background-color: #210037;
+    height: 150px;
+    width: 700px;
+    margin-top: 70px;
+    margin-left:130px;
+    border-radius: 40px;
+    
+  }
+
+  .content3 p{
+    color: white;
+    text-align: center;
+    text-align: justify;
+    margin-top: 15px;
+    padding: 0 40px 0 40px;
+    font-size: 25px;
+
+  }
+
+  .container3{
+  
+    display: flex;
+    height: 500px;
+  }
+  .img_mulheres_denuncia{
+    background-color: #af86ff;
+  }
+  
+  .container3 img{
+    margin-top: -80px;
+  }
+
+  .box3{
+    background-color: #e6dceb;
+    width: 1000px;
+    padding-left: 90px;
+   
+  }
+
+  .content4{
+    background-color: #d89ecd;
+    margin-top: 50px;
+    height: 120px;
+    width:750px;
+    border-radius: 20px;
+    display: flex;
+  }
+
+  .content4 img{
+    height: 100px;
+    width: 150px;
+    margin-top: 5px;
+  }
+  
+  .content4 p{
+    padding-left: 30px;
+    padding-top: 30px;
+    color: #040405;
+    font-size: 20px;
+  }
+  
+
+  .content5{
+   background-color: #8127bd;
+   margin-top:50px;
+   height: 100px;
+   width:700px;
+   border-radius: 20px;
+   display: flex;
+   margin-left: 40px;
+
+  }
+
+  .content5 img{
+    height: 100px;
+    width: 150px;
+    margin-top: 5px;
+  }
+
+  .content5 p{
+    padding-left: 30px;
+    padding-top: 30px;
+    color: #040405;
+    font-size: 20px;
+  }
+
+
+  .content6{
+    background-color: #4e0082;
+    margin-top: 50px;
+    height: 120px;
+    width:700px;
+    border-radius: 20px;
+    display: flex;
+
+  }
+
+  .content6 img{
+    height: 100px;
+    width: 150px;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-radius: 20px;
+  }
+
+  .content6 p{
+    padding-left: 30px;
+    padding-top: 30px;
+    color: white;
+    font-size: 20px;
+  }
