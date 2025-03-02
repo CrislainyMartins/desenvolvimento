@@ -280,101 +280,49 @@ body {
     }
     /*fim menus*/
 
-    .geral{
-      min-height: 120vh;
-    margin-top: 110px;
+#geral{
+  margin-top: 200px;
+    height: 1000px;
+}
+
+/*TITULO*/
+.titlle{
+    background-image: linear-gradient(90deg, #a9016d, #040405);
+    color: white;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 40px;
+    box-shadow: 20px 0 20px grey;/*sombreamento*/
+}
+
+.titlle h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+}
+
+h2{
+    text-align: center;
+    color: #6d1170;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+
+.conteudo3{
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    width: 1000px;
+    height: 100px;
+    margin-left:-110px ;
+    border-radius: 20px;
+    box-shadow: 20px 0 40px #464646;/*sombreamento*/
+    margin: 0 auto;
     }
 
-    .container1{
-      display: flex;
+    ul li{
+        margin-top: 10px;
     }
-  
-    .box1{
-      background-color: #550c86;
-      width: 1000px;
-      height: 800px;
-    }
-  
-    .box1 h1{
-      color: #210037;
-      margin-top: 150px;
-      height: 80px;
-      width: 500px;
-      margin-left: 100px;
-      background-color:#a98edd;
-      border-radius: 20px;
-      font-weight: bolder;
-      font-size: 40px;
-      text-align: center;
-      padding-top:10px ;
-    }
-
-    .img_seta img{
-      height: 150px;
-      width: 260px;
-      margin-left: 150px;
-      margin-top: 20px;
-
-    }
-
-    .mulher_negra img{
-      height: 300px;
-      width: 300px;
-     margin-top: 100px;
-     margin-left: -20px;
-    }
-
-    
-  
-
-    
-
-    .box2{
-      width: 1000px; 
-      height: 800px;
-      background-color: #a26cd0;
-      
-     
-    }
-  
-    .box2 h2{
-      margin-top: 100px;
-      width: 400px;
-      font-size: 40px;
-      color: white;
-      font-weight: bolder;
-      padding-left: 10px;
-      margin-left: 60px;
-    }
-
-    .content2{
-      width: 550px;
-      height: 300px;
-      margin-left: 50px;
-      background-color: #4e0082;
-      border-radius: 20px;
-    }
-  
-    .content2 p{
-      margin-top: 70px;
-      color: white;
-      font-size: 25px;
-      padding: 10px 10px 0 20px;
-    }
-
-    .descricao2{
-      margin-top: 50px;
-    }
-  
-    .container2{
-      display: flex;
-      height: 300px;
-      /*background-color: ;se não quiser usar a imagem de fundo, é só apagar da body e coloar uma cor aqui*/
-      
-    }
-  
-  
-
-
-
-
