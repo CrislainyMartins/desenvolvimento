@@ -556,5 +556,20 @@ body {
     height: 300px;
   }
 
+  /*RESPONSIVIDADE*/
+
+@media screen and (max-width: 480px) {
+  body{
+    width: 430;
+    height: 100%;
+  }
+  .menus{
+    width: 430;
+    height: 100%;
+  }
+
+
+}
+
   
   

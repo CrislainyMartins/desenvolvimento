@@ -270,9 +270,7 @@ height: 30px;
   .geral{
     display: flex;
     background-color:#3d0066 ;
-    
-    
-
+  
   }
 
   /*conteudo1*/
@@ -311,11 +309,13 @@ height: 30px;
     width: 1000px;
     height: 1030px;
     margin-left: -420px;
+    overflow: hidden;
   }
 
   .falamaria{
     margin-top:-670px;
-    
+  
+    float: right;
   }
 
   .parte1 h1{
@@ -441,9 +441,6 @@ height: 30px;
 
     margin-left: -120px;
   }
-
-
-   
 }
 
 
