@@ -293,6 +293,10 @@ height: 30px;
     
   }
 
+  .parte1{
+   
+  }
+
   .parte1 p{
     font-size: 50px;
     font-family: "Dancing Script", cursive;
@@ -301,9 +305,7 @@ height: 30px;
   
   }
 
-  
 
-  
   .imagem1 img{
     margin-top: -230px;
     width: 1000px;
@@ -314,7 +316,7 @@ height: 30px;
 
   .falamaria{
     margin-top:-670px;
-  
+    margin-left: 190px;
     float: right;
   }
 
@@ -378,11 +380,11 @@ height: 30px;
 /*conteudo2*/
 
 .conteudo2{
-  margin-left: 800px;
+  margin-left: 1100px;
   margin-top: 70px;
   background-color: #af86ff;
   padding-top: 115px;
-  width: 800px;
+  width: 700px;
 }
 
 .conteudo2 h1{
@@ -402,7 +404,7 @@ height: 30px;
 }
 
 .logo3{
-  padding-left: 530px;
+  padding-left:200px ;
   padding-top: 300px;
 }
 
