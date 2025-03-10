@@ -21,7 +21,7 @@ body {
   width: 100%;
   */
 header{
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -267,70 +267,64 @@ height: 30px;
   }
   /*fim menus*/
 
-  #geral{
+  #geral {
     max-height: 100%;
     max-width: 2000px;
     display: flex;
     background-color: #3d0066;
+}
 
-  }
+.container1 {
+  position: relative;
+}
+#imagem1{
+  position: absolute;
+  right: 50px;
+  z-index: 1;
+}
 
-  .container1{
-    max-width: 666px;
-    display: flex;
-    
-  }
+.img_principal, .fale_maria {
+    width: 700px;
+    height: 700px; /* Evita distorções nas imagens */
+}
 
-  .img_principal{
-    margin-left: -420px;
-   /* overflow: hidden;*/
-    
-  }
+.container2 {
+    width: 100%; /* Garante que a largura ocupe toda a tela */
+    max-width: 350px; /* Limita a largura máxima */
+}
 
-  .fale_maria{
-    margin-left: -360px;
-    width: 500px;
-   /* float: right;*/
-  }
-
-  .container2{
-    width: 350px;
-    
-  }
-
-.conteudo1{
+.conteudo1 {
     margin-top: 200px;
     color: white;
 }
 
-.conteudo1 h1{
-    font-size: 150px;
+.conteudo1 h1 {
+    font-size: 10vw; /* Tamanho de fonte responsivo */
     font-weight: bolder;
     color: white;
     font-family: "Bebas Neue", sans-serif;
     margin-left: 80px;
 }
 
-.parte_1{
+.parte_1 {
     font-size: 30px;
 }
 
-.parte_2{
+.parte_2 {
     font-size: 20px;
 }
 
-/*BOTÃO DO PANICO*/
-.panic_meio{
+/* BOTÃO DO PANICO */
+.panic_meio {
     width: 150px;
     height: 70px;
     margin-left: 160px;
     margin-top: 20px;
-    
-  }
+}
 
-  .button-panic button{
+.button-panic button {
     border: none;
-    background-color: #d54a54 ;
+    background-color: #d54a54;
     padding: 10px 20px;
     border-radius: 20px;
     width: 100px;
@@ -338,51 +332,63 @@ height: 30px;
     margin-left: 80px;
     margin-top: 20px;
     cursor: pointer;
+}
 
-  }
-
-  .button-panic button:hover{
+.button-panic button:hover {
     transform: scale(1.2);
     background-color: #bc1823;
     transition: all 0.4s;
-    
-   }
-   
-   .button-panic button a{
-       text-decoration: none;
-       color: #fff;
-       font-weight: 500;
-       font-size: 1.1rem;
-   }
- 
-   .container3{
-    width: 380px;
-    background-color: #af86ff;
-   }
+}
 
-   .conteudo2 h1{
-    font-size: 150px;
+.button-panic button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.container3 {
+    width: 100%;
+    max-width: 380px;
+    background-color: #af86ff;
+}
+
+.conteudo2 h1 {
+    font-size: 10vw; /* Tamanho de fonte responsivo */
     font-weight: bolder;
     color: #3d0066;
     font-family: "Bebas Neue", sans-serif;
+}
 
-   }
-
-   .conteudo2{
+.conteudo2 {
     margin-top: 200px;
+}
 
-   }
-
-   .conteudo2 p{
+.conteudo2 p {
     font-size: 40px;
     font-family: "Dancing Script", serif;
-    color:#bc1823;
+    color: #bc1823;
     margin-left: 30px;
-   }
+}
 
+@media screen and (max-width: 480px) {
+    .button-panic button {
+        width: 80px; /* Tamanho reduzido em dispositivos móveis */
+        height: 50px;
+        font-size: 0.9rem; /* Fonte reduzida */
+    }
 
-   @media screen and (max-width: 480px) {
-    
-   }
-  
+    .conteudo1 h1 {
+        font-size: 8vw; /* Tamanho da fonte reduzido em telas menores */
+    }
+
+    .conteudo2 h1 {
+        font-size: 8vw; /* Tamanho da fonte reduzido em telas menores */
+    }
+
+    .conteudo2 p {
+        font-size: 30px; /* Ajuste de tamanho de fonte em telas menores */
+    }
+}
+
 
