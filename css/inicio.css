@@ -276,17 +276,26 @@ height: 30px;
 
 .container1 {
   position: relative;
+  
+  
 }
 #imagem1{
   position: absolute;
-  right: 50px;
+  
   z-index: 1;
+  margin-left: -380px;
+  margin-top: -50px;
+ 
+  
 }
 
 .img_principal, .fale_maria {
-    width: 700px;
-    height: 700px; /* Evita distorções nas imagens */
+    width: 800px;
+    height: 900px; /* Evita distorções nas imagens */
+   
 }
+
+
 
 .container2 {
     width: 100%; /* Garante que a largura ocupe toda a tela */
