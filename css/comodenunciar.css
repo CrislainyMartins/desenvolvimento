@@ -11,7 +11,7 @@ body {
     margin: 0;
     
 }
-/*mexi para deixar o menu fixo: position: fixed;
+/*meexi para deixar o menu fixo: position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -360,7 +360,7 @@ body {
   .container2{
     display: flex;
     height: 300px;
-    background-color: ;/*se não quiser usar a imagem de fundo, é só apagar da body e coloar uma cor aqui*/
+    /*background-color: ;se não quiser usar a imagem de fundo, é só apagar da body e coloar uma cor aqui*/
     
   }
 
@@ -369,6 +369,7 @@ body {
     width: 300px;
     margin-left: 90px;
     margin-top: 80px;
+    
   }
 
   .content3{
@@ -406,7 +407,7 @@ body {
 
   .box3{
     background-color: #e6dceb;
-    width: 1000px;
+    width: 1500px;
     padding-left: 90px;
    
   }
@@ -560,7 +561,7 @@ body {
 
 @media screen and (max-width: 480px) {
   body{
-    width: 430;
+    width: 430px;
     height: 100%;
   }
   .menus{
@@ -571,5 +572,130 @@ body {
 
 }
 
+
+/*responsividade para tablet*/
+@media screen and (max-width: 1024px) {
+  body{
+    height: 100%;
+  }
+
+  .geral{
+    height: 100%;
+    width: 1024px;
+  }
+
+  .container1{
+  
+  }
+
+  .box1{
+    width: 500px;
+    height: 800px;
+    border-radius: 40px;
+      }
+    
+      .box1 h1{
+        margin-left:-0px;
+        margin-top:150px;
+      }
+
+      .content1{
+        margin-top:100px;
+        margin-left:60px;
+        
+      }
+
+      .box2{
+        width:500px;
+        height:800px;
+      }
+      
+      .content2{
+        margin-left:70px;
+        margin-top:-40px;
+        width:350px;
+      }
+
+      .content3{
+        height:220px;
+      }
+    
+      .container2 img{
+        
+      }
+
+      .container3{
+        height:1000px;
+      }
+
+      .box3{
+        width:600px;
+      }
+    
+      .content4{
+        height:250px;
+        width:500px;
+        margin-left:-40px;
+        
+      }
+      .content4 p{
+        width:300px;
+        text-align:justify;
+      }
+
+      .content4 img{
+        margin-top:60px;
+      }
+
+      .content5{
+        height:250px;
+        width:500px;
+        margin-left:-40px;
+        
+      }
+      .content5 p{
+        width:300px;
+        text-align:justify;
+        margin-top:40px;
+      }
+
+      .content5 img{
+        margin-top:60px;
+        height:140px;
+      }
+
+      .content6{
+        height:250px;
+        width:500px;
+        margin-left:-40px;
+        
+      }
+      .content6 p{
+        width:300px;
+        text-align:justify;
+        margin-top:50px;
+      }
+
+      .content6 img{
+        margin-top:60px;
+      }
+
+      .box4{
+       
+        width:420px;
+      }
+
+      .box5 ul{
+        height:600px;
+        width:500px;
+        margin-left:170px;
+        
+      }
+      .box5 ul li{
+       padding-top:20px;
+      }
+/*rever a imagem das muheres com a mao para cima e o rodape que nao esta aparecendo*/
+
+}
   
   

@@ -281,10 +281,10 @@ height: 30px;
 }
 #imagem1{
   position: absolute;
-  
   z-index: 1;
   margin-left: -380px;
   margin-top: -50px;
+  height: 950px;
  
   
 }
@@ -358,7 +358,7 @@ height: 30px;
 
 .container3 {
     width: 100%;
-    max-width: 380px;
+    max-width: 550px;
     background-color: #af86ff;
 }
 
@@ -380,8 +380,12 @@ height: 30px;
     margin-left: 30px;
 }
 
+/*responsividade para celular*/
+
 @media screen and (max-width: 480px) {
-    .button-panic button {
+    
+  /*nao sei para que e, mas nao mexe*/
+  .button-panic button {
         width: 80px; /* Tamanho reduzido em dispositivos móveis */
         height: 50px;
         font-size: 0.9rem; /* Fonte reduzida */
@@ -397,7 +401,46 @@ height: 30px;
 
     .conteudo2 p {
         font-size: 30px; /* Ajuste de tamanho de fonte em telas menores */
+    } 
+    /*nao sei para que e, mas nao mexe*/
+
+
+    #geral{
+      max-height: 100%;
+      
+      
+
+
     }
+
 }
 
+/*responsividade para tablet*/
+@media screen and (max-width: 1024px) {
+  #geral{
+    height: 100%;
+  }
 
+  .fale_maria{
+    margin-left: -200px;
+
+  }
+
+  .container2{
+    margin-left:-60px;
+    
+}
+
+  .conteudo1{
+    margin-left:30px;
+   
+}
+
+.conteudo1 h1{
+  margin-left:-2px;
+}
+
+.conteudo2 h1{
+    margin-left:10px;
+}
+}
