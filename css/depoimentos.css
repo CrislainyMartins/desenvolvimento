@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Pacifico&display=swap');
 /*background-image: linear-gradient(270deg, #100d28,#8906e6);*/
 body {
-  background-color: white;
+ background-image: url(../imgs/img_de_fundo_dp.png);
+ background-repeat: no-repeat;
+ background-size:cover ;
   max-height: 100%;
   }
 
@@ -199,14 +201,6 @@ body {
     /*mexi para deixar o menu fixo: position: fixed;*/
     .nav {
       position: fixed;
-     
-  
-  
-  
-  
-  
-  
-  
       transition: 0.3s ease;
       display: none;
     }
@@ -240,13 +234,6 @@ body {
     /*mexi para deixar o menu fixo:   position: fixed; */
     .menu-bg {
       position: fixed;
-  
-  
-  
-  
-  
-  
-  
       z-index: 1;
       width: 0;
       height: 0;
@@ -286,20 +273,25 @@ body {
 
 
 .geral{
-    background-image: linear-gradient(90deg, #c8499b, #740182);
+    background-color: #210037;
     margin: 0 auto;
-    width: 800px;
+    width: 1200px;
     min-height: 100%;
     border-radius: 15px;
-    margin-top: 200px;
+    margin-top: 140px;
     margin-bottom: 40px;
+
+
 }
 
 /*coluna de depoimentos 1*/
 .box1{
- 
     display: flex;
     justify-content: space-evenly;
+    padding-top: 70px;
+   
+    
+    
 }
 
 /*caixas de depoimentos*/
@@ -309,6 +301,7 @@ body {
     line-height: normal;
     font-weight: 700;
     margin-bottom: 0.5em;
+  
   }
   
   .small-desc {
@@ -355,8 +348,11 @@ body {
     text-decoration: none;
     z-index: 0;
     overflow: hidden;
-    background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
+    background: linear-gradient(to bottom, #c2cdd2,#838f97);
     font-family: Arial, Helvetica, sans-serif;
+    
+ 
+   
    
   }
   
@@ -366,13 +362,15 @@ body {
     z-index: -1;
     top: -16px;
     right: -16px;
-    background: linear-gradient(135deg, #364a60, #384c6c);
+    /**background: linear-gradient(135deg, #364a60, #384c6c);*/
     height: 32px;
     width: 32px;
     border-radius: 32px;
     transform: scale(1);
     transform-origin: 50% 50%;
     transition: transform 0.35s ease-out;
+    
+  
   }
   
   .card:hover:before {
