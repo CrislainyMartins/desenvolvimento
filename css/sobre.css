@@ -112,12 +112,6 @@ body {
       .nav-bar{
           padding: 1.5rem 4rem;
       }
-      .nav-item{
-          display: none;
-      }
-      .login-button{
-          display: none;
-      }
       .mobile-menu-icon{
           display: block;
       }
@@ -365,4 +359,105 @@ body {
     
   }
 
+  
+  /*responsividade*/
+  @media screen  and (max-width: 1024px){
+
+    .box1{
+      margin-top: -150px;
+      margin-left: -50px;
+    
+    }
+
+    .box1 h1{
+     
+    margin-left: 370px;
+    }
+   .box2{
+    height: 700px;
+    width: 900px;
+    margin-top: 300px;
+    margin-left: -1000px;
+    padding-left: 50px;
+
+   }
+
+   .box2 ul{
+    width: 800px;
+    padding-left: 50px;
+    border-radius: 20px;
+    height: 500px;
+
+   }
+
+   .img_nmmulheres{
+    margin-left: -20px;
+   }
+
+   .img_seta{
+    display: none;
+   }
+
+   .img_hexagono{
+    display: none;
+   }
+    
+  }
+
+  @media screen  and (max-width: 430px){
+    
+
+    .box1{
+      width: 470px;
+      margin-top: -200px;
+      height: 1800px;
+
+    }
+
+    .box1 h1{
+      margin-left: 100px;
+      font-size: 40px;
+      justify-content: center;
+    }
+
+      .box2 {
+        width: 400px;
+        height: 1000px;
+        margin-left: -430px;
+       
+
+      }
+
+      .box2 ul{
+        height: 850px;
+        width: 300px;
+        font-size: 20px;
+        padding-top: 20px;
+        
+      }
+
+      .box2 ul li{
+        margin-top: 20px;
+      }
+
+      .nav-bar{
+        padding: 1.0rem 2rem;
+        margin-top: 50px;
+
+      }
+
+      .login-button{
+        margin-top: -50px;
+        margin-left: -120px;
+      }
+
+      .logo{
+        display: none;
+      }
+
+      .icon{
+        display: none;
+      }
+
+  }
   
