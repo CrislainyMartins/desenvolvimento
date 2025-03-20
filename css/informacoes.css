@@ -18,6 +18,7 @@ body {
 
   header{
     position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -526,20 +527,20 @@ justify-content: center;
 }
 
 .img_finalizando{
-  margin-top: 90px;
+  margin-top: 50px;
 }
 
 /*button final*/
 /*no lugar da imagem do intagran, pensei em colocar uma img do icon de site*/
 .button_sb{
   height: 100px;
+  margin-left: 100px;
+  margin-top: 40px;
 }
 
 button {
   background-color: #3d0066;
-  border: 1px solid white;
   padding: 5px;
-  /*position: relative;está sobreposto ao mause, analisar se é por causa desse código ou position: absolute*/
   width: 9.8em;
   height: 2em;
   transition: 0.5s;
