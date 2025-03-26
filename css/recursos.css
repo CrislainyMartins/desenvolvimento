@@ -343,6 +343,191 @@ body {
   
   
 
+    /*responividade para tablet*/
+
+    @media screen and (max-width: 1024px){
+      .container1{
+        flex-direction: column;
+        
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+      }
+
+      .box1{
+        display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+      }
+
+      .img_seta{
+        display: none;
+      }
+
+      .box2{
+        display: flex
+;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -40px;
+       
+      }
+
+      .box2 h2{
+        margin-top: -300px;
+      }
+
+      .content2{
+        margin-top: 20px;
+      }
+
+
+      .content2 p{
+        margin-top: 20px;
+      }
+
+
+
+
+    }
+  
+  
+
+
+
+/*responividade para celular*/
+    @media screen and (max-width: 430px) {
+      
+      .geral{
+        margin-top: auto;
+        width: 430px;
+      }
+
+
+      .container1{
+        flex-direction: column;
+
+      }
+
+      .box1{
+        flex-wrap: wrap;
+        
+        width: 100%;
+        min-width: 320px;  /* Garante que a div não fique menor que 320px */
+        max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+        margin: 0 auto;    /* Centraliza a div horizontalmente */
+
+      }
+
+      .box1 h1{
+        height: 120px;
+        width: 300px;
+        
+        font-size: 40px;
+        color: white;
+        font-family: "Bebas Neue", sans-serif;
+        text-align: center;       /* Centraliza o texto */
+        margin: 0;                /* Remove margens */
+        padding: 0; 
+        margin-top: 100px;              /* Remove o preenchimento, se necessário */
+
+      }
+
+      .img_seta{
+        display: none;
+      }
+
+      .mulher_negra{
+        text-align: center;       /* Centraliza o texto */
+        margin: 0;                /* Remove margens */
+        padding: 0; 
+      }
+
+      
+     
+      
+      .box2{
+        height: 100%;
+        width: 100%;
+        min-width: 320px;  /* Garante que a div não fique menor que 320px */
+        max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+        margin: 0 auto;    /* Centraliza a div horizontalmente */
+        margin-top: -50px;
+        padding-bottom: 50px ;
+
+
+      }
+
+      .box2 h2{
+        font-size: 30px;
+        text-align: center;       /* Centraliza o texto */
+        margin: 0;                /* Remove margens */
+        padding: 0; 
+        margin-top: 50px;
+      }
+
+      .content2{
+        width: 75%;
+        height: 300px;
+              /* Centraliza o texto */
+        margin: 0;                /* Remove margens */
+        padding: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+      }
+
+      .content2 p{
+        font-size: 20px;
+        margin-top: 20px;
+      }
+
+      .descricao2{
+        margin-top: -20px;
+      }
+
+      .nav-bar{
+        padding: 1.0rem 0.1rem;
+        margin-top: 50px;
+        
+
+      }
+
+      .login-button{
+        margin-top: -50px;
+        margin-left: -150px;
+      }
+
+      .logo{
+        display: none;
+      }
+
+      .icon{
+        display: none;
+      }
+
+      header{
+        
+        width: 100%;
+        min-width: 320px;  /* Garante que a div não fique menor que 320px */
+        max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+       
+      }
+
+      footer{
+        width: 100%;
+        min-width: 320px;  /* Garante que a div não fique menor que 320px */
+        max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+       
+      }
+
+      
+
+    }
 
 
 

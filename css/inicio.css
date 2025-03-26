@@ -389,6 +389,14 @@ height: 30px;
         font-size: 0.9rem; /* Fonte reduzida */
     }
 
+  
+.img_principal, .fale_maria {
+  width: 400px;
+  height: 450px; /* Evita distorções nas imagens */
+  margin-left: 500px;
+ 
+}
+
     .conteudo1 h1 {
         font-size: 8vw; /* Tamanho da fonte reduzido em telas menores */
     }
@@ -414,9 +422,10 @@ height: 30px;
 }
 
 /*responsividade para tablet*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   #geral{
     height: 100%;
+    width: 768px;
   }
 
   .fale_maria{
@@ -426,6 +435,7 @@ height: 30px;
 
   .container2{
     margin-left:-60px;
+    
     
 }
 
