@@ -17,7 +17,8 @@ body {
   width: 100%;
   */
   header{
-    position: relative;
+ 
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -259,6 +260,7 @@ body {
   .geral {
     min-height: 120vh;
     background-image: url(../imgs/img2.jpg);
+    margin-top: 70px;
    
   }
 

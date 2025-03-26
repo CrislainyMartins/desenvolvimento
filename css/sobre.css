@@ -18,6 +18,7 @@ body {
   */
   header{
     position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -257,7 +258,7 @@ body {
     /*fim menus*/
  
   .geral {
-    margin-top: -20px;
+    margin-top: 20px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -345,28 +346,32 @@ body {
   
   /*responsividade*/
   @media screen  and (max-width: 1024px){
+    .geral{
+      justify-content: unset;
+    }
 
     .box1{
       margin-top: -150px;
-      margin-left: -50px;
+      width: 768px;
+      
     
     }
 
     .box1 h1{
      
-    margin-left: 370px;
+    margin-left: 250px;
     }
    .box2{
     height: 700px;
-    width: 900px;
+    width: 750px;
     margin-top: 300px;
-    margin-left: -1000px;
+    margin-left: -760px;
     padding-left: 50px;
 
    }
 
    .box2 ul{
-    width: 800px;
+    width: 650px;
     padding-left: 50px;
     border-radius: 20px;
     height: 500px;
@@ -374,7 +379,7 @@ body {
    }
 
    .img_nmmulheres{
-    margin-left: -20px;
+    display: none;
    }
 
    .img_seta{
@@ -391,7 +396,7 @@ body {
     
 
     .box1{
-      width: 470px;
+      width: 100%;
       margin-top: -200px;
       height: 1800px;
 
