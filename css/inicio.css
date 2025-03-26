@@ -380,6 +380,48 @@ height: 30px;
 
 /*responsividade para celular*/
 
+
+/*responsividade para tablet*/
+@media screen and (max-width: 768px) {
+  #geral{
+    height: 100%;
+    width: 768px;
+  }
+
+  .fale_maria{
+    margin-left: -300px;
+    
+
+  }
+
+ 
+
+  .container1{
+    margin-left:-100px;
+    width: 400px;
+    
+    
+}
+
+.container1 .img_principal{
+  margin-left: 400px;
+ }
+
+  .conteudo1{
+    margin-left:30px;
+   
+}
+
+.conteudo1 h1{
+  margin-left:-2px;
+}
+
+.conteudo2 h1{
+    margin-left:10px;
+}
+}
+
+
 @media screen and (max-width: 480px) {
     
   /*nao sei para que e, mas nao mexe*/
@@ -419,36 +461,4 @@ height: 30px;
 
     }
 
-}
-
-/*responsividade para tablet*/
-@media screen and (max-width: 768px) {
-  #geral{
-    height: 100%;
-    width: 768px;
-  }
-
-  .fale_maria{
-    margin-left: -200px;
-
-  }
-
-  .container2{
-    margin-left:-60px;
-    
-    
-}
-
-  .conteudo1{
-    margin-left:30px;
-   
-}
-
-.conteudo1 h1{
-  margin-left:-2px;
-}
-
-.conteudo2 h1{
-    margin-left:10px;
-}
 }

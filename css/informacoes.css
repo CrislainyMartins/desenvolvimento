@@ -586,6 +586,7 @@ button:hover {
 
 /*fim button 2*/
 
+/*responsividade: tblet deitado*/
 @media screen and (max-width: 1024px) {
   .geral{
     justify-content: center;
@@ -603,6 +604,13 @@ button:hover {
   .cor_de_fundo{
     width: 900px;
     height: 600px; 
+    text-align: center;       /* Centraliza o texto */
+    margin: 0;                /* Remove margens */
+    padding: 0; 
+    margin-left: 70px;
+    
+    
+
 
   }
 
@@ -653,6 +661,84 @@ button:hover {
     word-spacing: -4px;
   }
 }
+
+
+/*responsividade: tablet em pé*/
+@media screen and (max-width: 768px) {
+  .geral{
+    justify-content: center;
+  }
+  .conteudo1 img{
+    height: 150px;
+    width: 250px;
+  }
+  .d1 p{
+    margin-top: -5px;
+    padding-top: 10px;
+    word-spacing: -2px;
+    width: auto;
+  }
+  .cor_de_fundo{
+    width: 900px;
+    height: 600px; 
+    text-align: center;       /* Centraliza o texto */
+    margin: 0;                /* Remove margens */
+    padding: 0; 
+    margin-left: 70px;
+    
+    
+
+
+  }
+
+  .conteudo2 img{
+    height: 300px;
+    width: 500px;
+    margin-top: 80px;
+    margin-left: 50px;
+    
+    
+  }
+
+  .d2 h2{
+    margin-top: -20px;
+  }
+
+  .d2 p{
+    margin-top: -10px;
+    padding-top: 10px;
+    word-spacing: -4px
+  }
+
+  .box2{
+    margin-top: -15px;
+
+  }
+
+  .caixa2{
+    height: 100px;
+  width: 200px;
+  font-size: 20px;
+  }
+
+
+
+  .d3{
+   
+  margin-left: 100px;
+   
+  }
+
+  .conteudo4 img{
+    margin-left: 40px;
+  }
+  .d4{
+    margin-top: -10px;
+    padding-top: 10px;
+    word-spacing: -4px;
+  }
+}
+
 
 @media screen and (max-width: 430px) {
   .geral{
