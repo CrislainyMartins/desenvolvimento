@@ -740,8 +740,10 @@ button:hover {
 }
 
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 480px) {
   .geral{
+    flex-direction: column;
+    flex-wrap: wrap;
    
    
   }
@@ -749,12 +751,16 @@ button:hover {
     height: 150px;
     width: 250px;
   }
+
+  
   
   .nav-bar{
-    padding: 1.0rem 2rem;
+    padding: 1.0rem 0.1rem;
     margin-top: 50px;
 
   }
+
+  
 
   .login-button{
     margin-top: -50px;
