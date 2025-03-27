@@ -137,12 +137,6 @@ body {
       .nav-bar{
           padding: 1.5rem 4rem;
       }
-      .nav-item{
-          display: none;
-      }
-      .login-button{
-          display: none;
-      }
       .mobile-menu-icon{
           display: block;
       }
@@ -352,20 +346,20 @@ body {
 
     .box1{
       margin-top: -150px;
-      width: 768px;
+      width: 1024px;
       
     
     }
 
     .box1 h1{
      
-    margin-left: 250px;
+    margin-left: 350px;
     }
    .box2{
     height: 700px;
     width: 750px;
     margin-top: 300px;
-    margin-left: -760px;
+    margin-left: -900px;
     padding-left: 50px;
 
    }
@@ -403,7 +397,7 @@ body {
     }
 
     .box1 h1{
-      margin-left: 100px;
+      margin-left: 50px;
       font-size: 40px;
       justify-content: center;
     }
@@ -411,7 +405,7 @@ body {
       .box2 {
         width: 400px;
         height: 1000px;
-        margin-left: -430px;
+        margin-left: -400px;
        
 
       }
@@ -429,14 +423,18 @@ body {
       }
 
       .nav-bar{
-        padding: 1.0rem 2rem;
+        font-size: 5px;
+        padding: 0.3rem 0.3rem;
         margin-top: 50px;
 
+      }
+      .nav-list{
+        word-spacing: -2px;
       }
 
       .login-button{
         margin-top: -50px;
-        margin-left: -120px;
+        margin-left: -200px;
       }
 
       .logo{
