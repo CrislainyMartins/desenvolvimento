@@ -137,12 +137,7 @@ body {
       .nav-bar{
           padding: 1.5rem 4rem;
       }
-      .nav-item{
-          display: none;
-      }
-      .login-button{
-          display: none;
-      }
+      
       .mobile-menu-icon{
           display: block;
       }
@@ -341,6 +336,12 @@ body {
       /*background-color: ;se não quiser usar a imagem de fundo, é só apagar da body e coloar uma cor aqui*/
       
     }
+
+    @media screen and (min-width: 1025px){
+     .geral{
+      margin-bottom: -100px;
+     }
+    }
   
   
 
@@ -352,6 +353,7 @@ body {
         
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+        width: 100%;
 
       }
 
@@ -362,6 +364,7 @@ body {
                 align-items: center;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 2rem;
+                width: 100%;
       }
 
       .img_seta{
@@ -375,6 +378,7 @@ body {
         justify-content: center;
         align-items: center;
         margin-top: -40px;
+        width: 100%;
        
       }
 
@@ -391,21 +395,85 @@ body {
         margin-top: 20px;
       }
 
+      footer{
+        margin-top: 820px;
+      }
+
+
+
+
+    }
+
+    
+    @media screen and (max-width: 768px){
+      .container1{
+        flex-direction: column;
+        
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        width: 100%;
+
+      }
+
+      .box1{
+        display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                width: 100%;
+      }
+
+      .img_seta{
+        display: none;
+      }
+
+      .box2{
+        display: flex
+;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -40px;
+        width: 100%;
+       
+      }
+
+      .box2 h2{
+        margin-top: -300px;
+      }
+
+      .content2{
+        margin-top: 20px;
+      }
+
+
+      .content2 p{
+        margin-top: 20px;
+      }
+
+      footer{
+        margin-top: 550px;
+      }
+
 
 
 
     }
   
   
+  
+  
 
 
 
 /*responividade para celular*/
-    @media screen and (max-width: 430px) {
+    @media screen and (max-width: 480px) {
       
       .geral{
         margin-top: auto;
-        width: 430px;
+       
       }
 
 
@@ -491,11 +559,24 @@ body {
         margin-top: -20px;
       }
 
-      .nav-bar{
-        padding: 1.0rem 0.1rem;
-        margin-top: 50px;
-        
+      .nav-item{
+        margin-left: -3px;
 
+      }
+
+      .nav-link{
+        margin: 0;
+        text-align: center;
+      }
+
+      .nav-bar{
+        font-size: 5px;
+        padding: 0.3rem 0.3rem;
+        margin-top: 50px;
+
+      }
+      .nav-list{
+        word-spacing: -2px;
       }
 
       .login-button{
@@ -523,6 +604,8 @@ body {
         width: 100%;
         min-width: 320px;  /* Garante que a div não fique menor que 320px */
         max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+        margin-top: 500px;
+        margin-top: 450px;
        
       }
 
