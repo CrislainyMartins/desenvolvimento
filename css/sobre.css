@@ -316,6 +316,7 @@ body {
     padding-left: 50px;
     border-radius: 20px;
     height: 500px;
+    padding-top: 20px;
   }
 
   .box2 h2{
@@ -386,6 +387,56 @@ body {
     
   }
 
+ /*responsividade*/
+ @media screen  and (max-width: 768px){
+  .geral{
+    justify-content: unset;
+  }
+
+  .box1{
+    margin-top: -150px;
+    width: 100%;
+    
+  
+  }
+
+  .box1 h1{
+   
+  margin-left: 230px;
+  }
+ .box2{
+  height: 700px;
+  width: 750px;
+  margin-top: 300px;
+  margin-left: -760px;
+  padding-left: 50px;
+ 
+
+ }
+
+ .box2 ul{
+  width: 650px;
+  padding-left: 50px;
+  border-radius: 20px;
+  height: 500px;
+
+ }
+
+ .img_nmmulheres{
+  display: none;
+ }
+
+ .img_seta{
+  display: none;
+ }
+
+ .img_hexagono{
+  display: none;
+ }
+  
+}
+
+
   @media screen  and (max-width: 430px){
     
 
@@ -400,18 +451,19 @@ body {
       margin-left: 50px;
       font-size: 40px;
       justify-content: center;
+    
     }
 
       .box2 {
         width: 400px;
-        height: 1000px;
+        height: 800px;
         margin-left: -400px;
        
 
       }
 
       .box2 ul{
-        height: 850px;
+        height: 600px;
         width: 300px;
         font-size: 20px;
         padding-top: 20px;
@@ -420,6 +472,16 @@ body {
 
       .box2 ul li{
         margin-top: 20px;
+      }
+
+      .nav-item{
+        margin-left: -3px;
+
+      }
+
+      .nav-link{
+        margin: 0;
+        text-align: center;
       }
 
       .nav-bar{

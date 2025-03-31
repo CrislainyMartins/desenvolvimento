@@ -19,6 +19,7 @@ footer{
     width: 100%;
     color: var(--color-neutral-40);
     
+    
 }
 
 .footer-link {
@@ -148,7 +149,10 @@ footer{
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 480px) {
+    footer{
+       
+    }
     #footer_content{
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
