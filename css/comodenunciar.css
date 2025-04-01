@@ -859,19 +859,20 @@ body {
   .box1{
     width: 100%;
     display: flex;
-    border-radius: 40px;
+   border-radius: 0;
     flex-direction: column;
         justify-content: center;
         align-items: center;
+    height: 600px;    
   
   }
-      }
+      
     
       .box1 h1{
         text-align: center;
         margin: 0;
         padding: 0;
-        margin-top:150px;
+        margin-top:50px;
         width: 300px;
         height: fit-content;
    
@@ -881,7 +882,7 @@ body {
         text-align: center;
         margin: 0;
         padding: 0;
-        margin-top:100px;
+        margin-top:50px;
         width: 90%;
         
         
@@ -894,36 +895,81 @@ body {
         justify-content: center;
         align-items: center;
       }
+
+      .box2 h2{
+        margin-top: -120px;
+      }
       
       .content2{
-       
+        text-align: justify;
+        word-spacing: -2px;
         margin: 0;
         padding: 0;
-        margin-left:70px;
         margin-top:-40px;
         width:90%;
       }
 
-      .content3{
-        height:220px;
-      }
-    
-      .container2 img{
-        
+      .descricao2{
+        margin: 0;
+        margin-top: -20px;
       }
 
+      .container2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+
+      }
+
+      .container2 img{
+        display: none;
+      }
+
+      
+      .content3{
+        
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+        width: 90%;
+        height: 60%;
+        word-spacing: -6px;
+      }
+
+      .content3 p{
+        word-spacing: -5;
+      }
+    
+
       .container3{
-        height:1000px;
+        flex-direction: column;
+        height: max-content;
       }
 
       .box3{
-        width:600px;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+      
       }
     
       .content4{
-        height:250px;
-        width:500px;
-        margin-left:-40px;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+
         
       }
       .content4 p{
@@ -936,9 +982,13 @@ body {
       }
 
       .content5{
-        height:250px;
-        width:500px;
-        margin-left:-40px;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
         
       }
       .content5 p{
@@ -953,9 +1003,13 @@ body {
       }
 
       .content6{
-        height:250px;
-        width:500px;
-        margin-left:-40px;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
         
       }
       .content6 p{
@@ -982,6 +1036,7 @@ body {
       .box5 ul li{
        padding-top:20px;
       }
+    }
 
 
 
