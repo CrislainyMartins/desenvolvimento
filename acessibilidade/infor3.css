@@ -1,0 +1,124 @@
+body {
+     
+    max-height: 100%;
+    max-width: 100%;
+    background-color: blanchedalmond;
+    
+    }
+  
+  *{
+      padding: 0;
+      margin: 0;
+      
+  }
+
+  #parte1{
+    background-color:white;
+  }
+
+  #parte1 ul{
+    display: flex;
+    padding: 40px;
+    justify-content: space-around;
+    
+  }
+
+  .text-eco{
+    font-size: 15px; 
+    list-style: none;
+   
+  }
+
+  .text-eco a{
+    text-decoration: none;
+   
+  }
+
+ .text-eco a:hover{
+    color: blueviolet; /* Cor do link ao passar o mouse */
+    text-decoration: underline;
+ }
+
+ .text-eco a{
+    color: #000;
+ }
+
+ hr {
+    border: 0; /* Remove a borda padrão */
+    height: 2px; /* Define a altura da linha */
+    background-color: #333; /* Define a cor da linha */
+    width: 100%; /* Define a largura da linha */
+    margin: 5px auto; /* Centraliza a linha e adiciona espaçamento */
+  }
+
+  .title{
+    text-align: center;
+    padding: 30px;
+  }
+
+  .title h1{
+    font-size: 60px;
+    font-weight: bolder;
+  }
+
+  .title p{
+    font-size: 20px;
+  }
+
+#parte2{
+    display: flex;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de largura igual */
+    gap: 20px; /* Espaçamento horizontal entre as divs */ 
+}
+
+
+.box1 img{
+    height: 300px;
+    width: 400px;
+}
+
+.box2{
+    max-width: 300px;
+}
+
+/*quero colocar animaça para crescer o ink*/
+.box2 a{
+    transition: transform 0.1s ease; /* Animação suave ao aumentar */
+}
+
+.box2 a:hover{
+    color: #333;
+    transform: scale(1.2); /* Aumenta o tamanho para 120% */
+}
+
+
+#parte-n{
+   
+    background-color:#d89ecd ;
+    display: flex;
+    text-align: justify;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de largura igual */
+    gap: 20px; /* Espaçamento horizontal entre as divs */ 
+}
+
+.p-parte-n p{
+    padding-left: 100px;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+.parte-n-n a{
+    list-style: none;
+    text-decoration: none;color: #000;
+}
+
+#carrossel2{
+    font-weight: bolder;
+    font-size: 100px;
+    padding: 100px;
+}
