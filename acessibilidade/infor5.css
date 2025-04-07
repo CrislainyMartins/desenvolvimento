@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  body {
+    background: linear-gradient(to bottom, #a34fc1, #eac0f5);
+    padding: 20px;
+  }
+
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+  }
+
+  .left,
+  .right {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .left {
+    flex: 3;
+  }
+
+  .right {
+    flex: 1;
+    background: #f2e3f8;
+  }
+
+  .header-title {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-size: 0.9em;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .info-card {
+    background: #f7f7f7;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 colunas de largura igual */
+    gap: 20px; /* Espaçamento horizontal entre as divs */ 
+    
+    
+  }
+
+  .info-card .image-placeholder {
+    background: #ccc;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    margin-bottom: 10px;
+  }
+
+  .info-card .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #4a0072;
+  }
+
+  .info-card .desc {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  .info-card .link {
+    font-size: 0.85em;
+    color: #7a00b3;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+
+  .info-card .btn {
+    background: #c16af7;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85em;
+  }
+
+  .right .news-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 0.9em;
+  }
+
+  .right .news-item .thumb {
+    background: #000;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 6px;
+  }
+
+  .right .news-item .text {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 60px);
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+
+
+
+
+  
