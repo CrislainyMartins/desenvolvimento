@@ -463,12 +463,6 @@ height: 30px;
   
     /* fim cabeçalho*/
 
-    .geral{
-      max-height: 100%;
-    display: flex;
-    flex-direction: column;
-    }
-    
   /*nao sei para que e, mas nao mexe*/
   .button-panic button {
         width: 80px; /* Tamanho reduzido em dispositivos móveis */
@@ -476,11 +470,58 @@ height: 30px;
         font-size: 0.9rem; /* Fonte reduzida */
     }
 
+    
+    #geral{
+      max-height: 100%;
+       display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-width: 320px;
+      max-width: 1200px;
+      
+      
+
+
+    }
   
-.img_principal, .fale_maria {
-  
- 
-}
+      /* Ajusta o contêiner para que as imagens não saiam da tela */
+      .container1 {
+        width: 100%;  /* Garante que o contêiner ocupe toda a largura da tela */
+        height: auto;  /* Ajusta a altura conforme o conteúdo */
+        margin-bottom: 410px;
+
+      }
+    
+      /* Ajustes para a imagem principal */
+      #imagem1 {
+        position: absolute;
+        z-index: 1;
+        margin-left: -25%;  /* Remove o margin-left negativo */
+        margin-top: 25%;  /* Ajusta o topo para dar mais espaço */
+        width: 90%;  /* A largura da imagem será 90% da tela */
+        height: auto;  /* Ajusta a altura proporcionalmente */
+      }
+    
+    
+      /* Ajustes adicionais, se necessário, para a imagem fale_maria */
+      #imagem2 {
+        position: absolute;
+        top: 60%;  /* Ajusta a posição da segunda imagem */
+        left: 50%;  /* Centraliza a segunda imagem horizontalmente */
+        transform: translateX(-50%);  /* Centraliza corretamente a imagem */
+        width: 80%;  /* Largura ajustada para tela pequena */
+        height: auto; /* Mantém a proporção */
+      }
+    
+      .container2{
+        
+        background-color: #af86ff;
+        width: 100%;
+        min-width: 320px;
+        max-width: 1200px;
+
+      }
+
 
     .conteudo1 h1 {
         font-size: 8vw; /* Tamanho da fonte reduzido em telas menores */
@@ -495,13 +536,4 @@ height: 30px;
     } 
     /*nao sei para que e, mas nao mexe*/
 
-
-    #geral{
-      max-height: 100%;
-      
-      
-
-
-    }
-
-}
+  }
