@@ -8,6 +8,7 @@
   body {
     background: linear-gradient(to bottom, #a34fc1, #eac0f5);
     padding: 20px;
+    
   }
 
   .container {
@@ -30,7 +31,15 @@
 
   .right {
     flex: 1;
-    background: #f2e3f8;
+    background: white;
+  }
+
+  #destaque{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+   margin: 0 10% 0 10%;
+    
   }
 
   .header-title {
@@ -38,12 +47,25 @@
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 10px;
+    
+
+    
   }
 
   .subtitle {
-    font-size: 0.9em;
+    font-size: 1em;
     color: #fff;
     margin-bottom: 20px;
+  }
+
+  #destaque img{
+    height: 200px;
+    width: 200px;
+    margin-top: -50px;
+
+    
+   
+   
   }
 
   .info-card {
@@ -63,21 +85,31 @@
 
   .info-card .image-placeholder {
     background: #ccc;
-    height: 120px;
+    height: 200px;
     text-align: center;
     line-height: 120px;
     margin-bottom: 10px;
+    border-radius: 20px;
   }
+
+  
 
   .info-card .title {
     font-weight: bold;
     margin-bottom: 5px;
     color: #4a0072;
+    font-size: 1.5em;
+   
   }
 
   .info-card .desc {
-    font-size: 0.9em;
+    font-size: 1em;
     margin-bottom: 10px;
+    margin-top: 30px;
+  }
+
+  .desc ul li{
+    margin-bottom: 20px; /* Espaço vertical entre os itens */
   }
 
   .info-card .link {
@@ -99,6 +131,7 @@
     font-size: 0.85em;
   }
 
+  
   .right .news-item {
     background: #fff;
     border-radius: 8px;
@@ -114,6 +147,7 @@
     display: inline-block;
     margin-right: 10px;
     border-radius: 6px;
+    
   }
 
   .right .news-item .text {
@@ -123,8 +157,46 @@
   }
 
   h2 {
-    font-size: 1.2em;
+    font-size: 2em;
     margin-bottom: 10px;
+    color: rgb(16, 16, 112);
+  }
+
+  .h2-right{
+    color: #4a0072;
+  }
+  
+  .hr-titlle{
+    background-color: #4a0072;
+    height: 3px; /* Altera a altura da linha */
+    border: none; /* Remove a borda padrão */
+    width: 80%; /* Altera a largura da linha */
+    margin: 20px 150px; /* Altera o espaço acima e abaixo da linha */
+  }
+  
+  hr{
+    background-color: #ffe4e4; 
+  height: 3px; /* Altera a altura da linha */
+  border: none; /* Remove a borda padrão */
+  width: 100%; /* Altera a largura da linha */
+  margin: 20px 0; /* Altera o espaço acima e abaixo da linha */
+  }
+
+  .hr-right{
+    background-color: #4a0072;
+    height: 3px; /* Altera a altura da linha */
+    border: none; /* Remove a borda padrão */
+    width: 100%; /* Altera a largura da linha */
+    margin: 20px 0; /* Altera o espaço acima e abaixo da linha */
+
+  }
+
+  .hr-roxa{
+    background-color: #4a0072;
+    height: 3px; /* Altera a altura da linha */
+    border: none; /* Remove a borda padrão */
+    width: 100%; /* Altera a largura da linha */
+    margin: 20px 0; /* Altera o espaço acima e abaixo da linha */
   }
 
 
