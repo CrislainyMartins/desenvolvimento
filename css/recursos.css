@@ -473,6 +473,12 @@ body {
       
       .geral{
         margin-top: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        width: 100%;
+        width: 100%;
+        min-width: 320px;
+        max-width: 1200px;
        
       }
 
