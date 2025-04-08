@@ -32,13 +32,15 @@
   .right {
     flex: 1;
     background: white;
+    height: 100%;
+    
   }
 
   #destaque{
     display: flex;
     height: 100px;
     justify-content: space-between;
-   margin: 0 10% 0 10%;
+    margin: 0 10% 0 10%;
     
   }
 
@@ -98,14 +100,20 @@
     font-weight: bold;
     margin-bottom: 5px;
     color: #4a0072;
-    font-size: 1.5em;
+    font-size: 2em;
    
   }
 
   .info-card .desc {
     font-size: 1em;
     margin-bottom: 10px;
-    margin-top: 30px;
+  }
+
+  .desc p{
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    text-align: justify;
+    word-spacing: -4px;
   }
 
   .desc ul li{
@@ -114,11 +122,15 @@
 
   .info-card .link {
     font-size: 0.85em;
-    color: #7a00b3;
+    color: #1900ff;
     text-decoration: underline;
     cursor: pointer;
     margin-bottom: 5px;
     display: inline-block;
+  }
+
+  .info-card .link:hover{
+    transform: scale(1.2);
   }
 
   .info-card .btn {
@@ -129,6 +141,13 @@
     border-radius: 6px;
     cursor: pointer;
     font-size: 0.85em;
+    
+    margin-left: 180px;
+  }
+
+  .info-card .btn:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 5px 5px 0px #4a0072;
   }
 
   
@@ -138,6 +157,8 @@
     padding: 10px;
     margin-bottom: 12px;
     font-size: 0.9em;
+
+    display: flex;
   }
 
   .right .news-item .thumb {
