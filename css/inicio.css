@@ -142,12 +142,7 @@ height: 30px;
     .nav-bar{
         padding: 1.5rem 4rem;
     }
-    .nav-item{
-        display: none;
-    }
-    .login-button{
-        display: none;
-    }
+    
     .mobile-menu-icon{
         display: block;
     }
@@ -423,6 +418,56 @@ height: 30px;
 
 
 @media screen and (max-width: 480px) {
+    /*cabeçalho*/
+  
+    .nav-item{
+      margin-left: -3px;
+  
+    }
+  
+    .nav-link{
+      margin: 0;
+      text-align: center;
+    }
+  
+    .nav-bar{
+      font-size: 5px;
+      padding: 0.3rem 0.3rem;
+      margin-top: 50px;
+  
+    }
+    .nav-list{
+      word-spacing: -2px;
+    }
+  
+    .login-button{
+      margin-top: -50px;
+      margin-left: -150px;
+    }
+  
+    .logo{
+      display: none;
+    }
+  
+    .icon{
+      display: none;
+    }
+  
+    header{
+      
+      width: 100%;
+      min-width: 320px;  /* Garante que a div não fique menor que 320px */
+      max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+     
+    }
+  
+    /* fim cabeçalho*/
+
+    .geral{
+      max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    }
     
   /*nao sei para que e, mas nao mexe*/
   .button-panic button {
@@ -433,9 +478,7 @@ height: 30px;
 
   
 .img_principal, .fale_maria {
-  width: 400px;
-  height: 450px; /* Evita distorções nas imagens */
-  margin-left: 500px;
+  
  
 }
 
