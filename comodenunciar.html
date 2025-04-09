@@ -24,8 +24,8 @@
                 </div>
 
                 <!--botão do pânico-->
-                <div class="login-button" id="login-button">
-                    <button onclick="window.location.href='formulario.html'" ><img src="imgs/botaopanico.png" class="panic"></button>
+                <div class="login-button">
+                    <button onclick="window.location.href='formulario.html'"  id="botaopanico"><img src="imgs/botaopanico.png" class="panic"></button>
                 </div>  <!-- fim botão do pânico-->
 
 
@@ -47,7 +47,7 @@
         </header>
 
         <!--Script para diminuir o menu-->
-        <script>const header = document.getElementById('login-button');
+        <script>const header = document.getElementById('nav-bar');
 
             window.addEventListener('scroll', () => {
               if (window.scrollY > 50) {
@@ -59,7 +59,7 @@
             </script>
 
              <!--Script para diminuir o botão-->
-        <script>const botaopanico = document.getElementById('nav-bar');
+        <script>const botaopanico = document.getElementById('botaopanico');
 
             window.addEventListener('scroll', () => {
               if (window.scrollY > 50) {

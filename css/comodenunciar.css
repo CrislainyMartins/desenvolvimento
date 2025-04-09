@@ -40,6 +40,9 @@ body {
 
   .nav-bar.shrink {
     padding: 0.1875rem 1.5rem;
+    font-size: 0.5rem;
+
+   
     
   }
 
@@ -133,10 +136,9 @@ body {
   
   }
 
-  .login-button .shrink {
-    padding: 0.1875rem 1.5rem;
-    
-  }
+ 
+
+  
 
 
   /*fim do botão do pânico*/
@@ -532,7 +534,7 @@ body {
 
   .box5 ul{
     background-color: #210037;
-    margin-top:30px ;
+    margin-top:150px ;
     font-size: 25px;
     width: 700px;
     padding-left: 50px;
