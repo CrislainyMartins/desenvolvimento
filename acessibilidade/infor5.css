@@ -567,4 +567,39 @@
 /*fim do carrossel*/
 
 
+
+/*responsividade para celular*/
+@media screen and (max-width: 480px) {
+  body{
+    max-width: 390px;
+
+
+  }
+
+  .container{
+    max-width:300px;
+    
+    
+  }
+
+  .info-card{
+    width: 100px;
+  }
+
   
+}
+  
+
+/*responsividade para tablet*/
+@media screen and (max-width: 768px) {
+  body{
+    max-width: 768px;
+
+  }
+
+  .container{
+    max-width:710px;
+  }
+
+
+}
