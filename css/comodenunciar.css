@@ -567,6 +567,9 @@ body {
   .geral{
     height: 100%;
     width:  100%;
+        min-width: 320px;
+        max-width: 1200px;
+        
   }
 
   .container1{
@@ -576,9 +579,12 @@ body {
   }
 
   .box1{
-    width: 500px;
-    height: 800px;
-    border-radius: 40px;
+    width: 100%;
+    display: flex;
+   border-radius: 0;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
     
       .box1 h1{
@@ -861,7 +867,6 @@ body {
   .geral{
     height: 100%;
     width:  100%;
-    width: 100%;
         min-width: 320px;
         max-width: 1200px;
   }
