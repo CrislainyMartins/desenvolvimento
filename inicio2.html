@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/inicio2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio 2</title>
+</head>
+<body>
+
+     <!--menu principal-->
+     <div class="menus">
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <h1><img src="" width="50px"></h1>
+                </div>
+
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="inicio.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="informacoes.html" class="nav-link">Informações</a></li>
+                        <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                    </ul>
+                </div>
+
+                <!--botão do pânico-->
+                <div class="login-button">
+                    <button onclick="window.location.href='formulario.html'">DENÚNCIE AGORA</button>
+                </div>  <!-- fim botão do pânico-->
+
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img src="assets/img/menu_white_36dp.svg" class="icon"></button>
+                </div>
+            </nav>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                </ul>
+
+               
+            
+            </div>
+        </header>
+
+
+
+        <!--menu hamburguer-->
+
+<!--teste menu hamburguer-->
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="sobre.html">Sobre</a></li>
+      <li><a class="menu__item" href="comodenunciar.html">Como Denuciar</a></li>
+      <li><a class="menu__item" href="recursos.html">Recursos</a></li>
+    
+    </ul>
+  </div>
+
+    <!--fim menus-->
+
+    <!--inicio da geral-->
+    <div class="geral">
+          <!--inicio da container1-->
+        <div class="container1">
+            <h1>Fala Maria!</h1>
+
+            <div class="text-descricao">
+            <p>O Fala Maria é um site seguro e anônimo para mulheres 
+                denunciarem qualquer tipo de violência destinada 
+                a mulher. É um espaço de proteção e empoderamento, 
+                ajudando as mulheres a buscarem ajuda e segurança.
+            </p>
+            </div>
+            
+            <div class="button-panic-meio">
+                <button onclick="window.location.href='formulario.html'">DENÚNCIE AGORA</button>
+                <a href="formulario.html"><img src="#" class="panic-meio"></a>
+           </div>
+
+           <div class="imgs-redes-sociais">
+            <a href=""><img src="imgs/Instagram_icon.png" alt="instagram"></a>
+            <a href=""><img src="imgs/logo whats.png" alt="whatsapp"></a>
+           <a href=""><img src="imgs/icon twiter.png" alt="twiter"></a>
+            <a href=""><img src="" alt="tiktok"></a>
+           </div>
+        </div> <!--fim da container1-->
+
+         <!--inicio da container2-->
+        <div class="container2">
+            <img src="imgs/mulher_negra.png" alt="imagem principal da inicio">
+        </div> <!--fim da container2-->
+
+    </div><!--fim da geral-->
+
+    <!--inicio do rodape-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/rodape.css">
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1><img src="imgs/logo 2.png" width="120px"></h1>
+                <p>Procure mais sobre</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Oferecemos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tecnologia</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Informação</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Acolhimento</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Parcerias</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Delegacia de Caririaçu</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Conselho da Mulher</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">...</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Feedback</h3>
+
+                <P>
+                   Avalie-nos
+                </P>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024 todos os direitos reservados para E-domestics
+       
+        </div>
+    </footer>
+
+
+    <link rel="stylesheet" href="/js/menumobile.js">
+
+    
+</body>
+</html>
