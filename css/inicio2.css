@@ -321,3 +321,52 @@ body {
    margin-left: 70px;
 
   }
+
+  /*responsividade para tablet*/
+@media screen and (max-width: 768px) {
+  .geral{
+    height: 100%;
+    width: 768px;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .container1{
+    margin-left: -100px;
+  }
+}
+
+/*resppnsividade para celular*/
+@media screen and (max-width: 480px) {
+  .geral{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .container1{
+    margin-left: -120px;
+  }
+
+  /*parte do menu*/
+  .nav-bar{
+    padding: 1.0rem 0.1rem;
+    margin-top: 50px;
+
+  }
+
+  
+
+  .login-button{
+    margin-top: -50px;
+    margin-left: -220px;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .icon{
+    display: none;
+  }
+}
