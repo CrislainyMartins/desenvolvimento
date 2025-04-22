@@ -319,6 +319,8 @@ body {
 
   .container2 img{
    margin-left: 70px;
+   width: 205.5px ;
+   height: 216px  ;
 
   }
 
@@ -412,7 +414,7 @@ body {
 
 
   .geral{
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
     width: 100%;
     min-width: 320px;  /* Garante que a div não fique menor que 320px */
@@ -430,17 +432,22 @@ body {
   }
 
   .container1 h1{
-    font-size: 3.5rem;
-    margin-left:50%;
-    margin-right:50%;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+  padding: 0;
   }
 
   .text-descricao{
-    width:70%;
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left:25px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
    
   }
 
@@ -448,10 +455,45 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   
     margin: 0;
     padding: 0;
-    
+    font-size: 1.25rem;
+    word-spacing: -8px;
   }
   
-}
+  .button-panic-meio{
+    margin-left: 50px;
+  }
+
+  .imgs-redes-sociais{
+    margin-left: 50px;
+    margin-top: -20px;
+  }
+
+  .container2{
+    
+    flex-wrap: wrap;
+        
+    width: 100%;
+    min-width: 320px;  /* Garante que a div não fique menor que 320px */
+    max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;    /* Centraliza a div horizontalmente */
+  }
+
+  .container2 img{
+
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+
+  
+
+  }
+
+  
+
+  }
