@@ -20,15 +20,16 @@ body {
   left: 0;
   width: 100%;
   */
+  /*inicio menus*/
   header{
     position: relative;
     position: fixed;
+    z-index:2 ;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #210037;
     box-shadow: 0px 3px 10px #464646;
-    z-index: 1002;
   }
   
   /*background-image: linear-gradient(90deg, #a9016d, #040405);*/
@@ -37,7 +38,7 @@ body {
       display: flex;
       justify-content: space-between;
       padding: 1.5rem 6rem;
-      height: 120px;
+      height: 80px;
   }
   
   .logo{
@@ -94,41 +95,30 @@ body {
       font-size: 1.15rem;
       color: #fff;
       font-weight: 400;
-     
   }
   
   /*botão do pânico*/
+
+  .login-button{
+    margin-left: -100px;
+  
+  }
+
   .login-button button{
-    border: none;
-    background-color: #d54a54 ;
-    padding: 10px 20px;
-    border-radius: 20px;
-    width: 100px;
-    height: 60px;
-    cursor: pointer;
-    
-  
+    background-color: crimson;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    font-weight:bolder ;
+    font-size: 1rem;
   }
-  
+
   .login-button button:hover{
-  transform: scale(1.2);
-  background-color: #bc1823;
-  transition: all 0.4s;
-  opacity: 0.8;
+    transition: all 0.5s ease-out;
+    transform: scale(1.2);
+    color: plum;
   }
   
-  .login-button button a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.1rem;
-  }
-  
-  .panic{
-  width: 30px;
-  height: 30px;
-  
-  }
   /*fim do botão do pânico*/
   
   .mobile-menu-icon{
@@ -143,6 +133,7 @@ body {
       .nav-bar{
           padding: 1.5rem 4rem;
       }
+      
       .mobile-menu-icon{
           display: block;
       }
@@ -176,90 +167,89 @@ body {
   
   
   /*menu hamburguer*/
-  .hamburger-menu{
-    position: absolute;
-    z-index: 1003;
-
-  }
+    /*teste menu hamburguer*/
   
-  #menu__toggle {
-    opacity: 0;
- 
+    .hamburger-menu{
+      position: absolute;
+  
+    }
     
-  }
-  #menu__toggle:checked + .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked + .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0deg);
-  }
-  #menu__toggle:checked + .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    left: 0 !important;
-  }
-  .menu__btn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 4;
-  }
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    transition-duration: .25s;
-  }
-  .menu__btn > span::before {
-    content: '';
-    top: -8px;
-  }
-  .menu__btn > span::after {
-    content: '';
-    top: 8px;
-  }
-  .menu__box {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 300px;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    background-color: #210037;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-    transition-duration: .25s;
-    z-index: 3;
-  }
-  .menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    transition-duration: .25s;
-  }
-  .menu__item:hover {
-    background-color: #CFD8DC;
-    color: black;
-  }
-    /*fim menus*/
-
-
+    #menu__toggle {
+      opacity: 0;
+   
+      
+    }
+    #menu__toggle:checked + .menu__btn > span {
+      transform: rotate(45deg);
+    }
+    #menu__toggle:checked + .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0deg);
+    }
+    #menu__toggle:checked + .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+      left: 0 !important;
+    }
+    .menu__btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      z-index: 4;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      transition-duration: .25s;
+    }
+    .menu__btn > span::before {
+      content: '';
+      top: -8px;
+    }
+    .menu__btn > span::after {
+      content: '';
+      top: 8px;
+    }
+    .menu__box {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 300px;
+      height: 100%;
+      margin: 0;
+      padding: 80px 0;
+      list-style: none;
+      background-color: #210037;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+      transition-duration: .25s;
+      z-index: 3;
+    }
+    .menu__item {
+      display: block;
+      padding: 12px 24px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      transition-duration: .25s;
+    }
+    .menu__item:hover {
+      background-color: #CFD8DC;
+      color: black;
+    }
+  /*fim menus*/
 
 .geral{
     background-color: #210037;
@@ -270,6 +260,8 @@ body {
     border-radius: 15px;
     margin-top: 200px;
     margin-bottom: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
 
    
 
