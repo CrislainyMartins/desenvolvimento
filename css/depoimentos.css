@@ -331,7 +331,8 @@ body {
     text-decoration: none;
     z-index: 0;
     overflow: hidden;
-    background: linear-gradient(to bottom, #c2cdd2,#838f97);
+    /*background: linear-gradient(to bottom, #c2cdd2,#838f97);*/
+    opacity: 100%;
     font-family: Arial, Helvetica, sans-serif;
     
  

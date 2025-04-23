@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*background-image: linear-gradient(270deg, #100d28,#8906e6);*/
+body {
+  max-height: 100%;
+ 
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+/*mexi para deixar o menu fixo: position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  */
+header{
+  position: relative;
+  position: fixed;
+  z-index:2 ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #210037;
+  box-shadow: 0px 3px 10px #464646;
+}
+
+/*background-image: linear-gradient(90deg, #a9016d, #040405);*/
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    color: #fff;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    
+   
+}
+
+
+.nav-list ul:hover{
+  color: #000;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+  
+}
+
+.nav-item{
+    margin: 15px;
+    transition-duration: .25s;
+    padding: 10px;
+    
+  
+   
+}
+
+.nav-item:hover{
+  background-color: #CFD8DC;
+
+    
+
+}
+.nav-link:hover{
+  color: black;
+  
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+   
+}
+
+/*botão do pânico*/
+.login-button button{
+  border: none;
+  background-color: #d54a54 ;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 100px;
+  height: 60px;
+  cursor: pointer;
+  
+
+}
+
+.login-button button:hover{
+transform: scale(1.2);
+background-color: #bc1823;
+transition: all 0.4s;
+opacity: 0.8;
+}
+
+.login-button button a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.panic{
+width: 30px;
+height: 30px;
+
+}
+/*fim do botão do pânico*/
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding: 1.2rem;
+    }
+    .mobile-menu .login-button{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button{
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+}
+
+
+/*menu hamburguer*/
+  /*teste menu hamburguer*/
+
+  .hamburger-menu{
+    position: absolute;
+
+  }
+  
+  #menu__toggle {
+    opacity: 0;
+ 
+    
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+  .menu__btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 4;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #210037;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+    z-index: 3;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+    color: black;
+  }
+  /*fim menus*/
+
+  #geral {
+    max-height: 100%;
+    max-width: 2000px;
+    display: flex;
+    background-color: #3d0066;
+}
+
+.container1 {
+  position: relative;
+  
+  
+}
+#imagem1{
+  position: absolute;
+  z-index: 1;
+  margin-left: -380px;
+  margin-top: -45px;
+  height: 950px;
+ 
+  
+}
+
+.img_principal, .fale_maria {
+    width: 800px;
+    height: 900px; /* Evita distorções nas imagens */
+   
+}
+
+
+
+.container2 {
+    width: 100%; /* Garante que a largura ocupe toda a tela */
+    max-width: 350px; /* Limita a largura máxima */
+}
+
+.conteudo1 {
+    margin-top: 200px;
+    color: white;
+}
+
+.conteudo1 h1 {
+    font-size: 10vw; /* Tamanho de fonte responsivo */
+    font-weight: bolder;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    margin-left: 80px;
+}
+
+.parte_1 {
+    font-size: 30px;
+}
+
+.parte_2 {
+    font-size: 20px;
+}
+
+/* BOTÃO DO PANICO */
+.panic_meio {
+    width: 150px;
+    height: 70px;
+    margin-left: 160px;
+    margin-top: 20px;
+}
+
+.button-panic button {
+    border: none;
+    background-color: #d54a54;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 100px;
+    height: 60px;
+    margin-left: 80px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.button-panic button:hover {
+    transform: scale(1.2);
+    background-color: #bc1823;
+    transition: all 0.4s;
+}
+
+.button-panic button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.container3 {
+    width: 100%;
+    max-width: 550px;
+    background-color: #af86ff;
+}
+
+.conteudo2 h1 {
+    font-size: 10vw; /* Tamanho de fonte responsivo */
+    font-weight: bolder;
+    color: #3d0066;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.conteudo2 {
+    margin-top: 200px;
+}
+
+.conteudo2 p {
+    font-size: 40px;
+    font-family: "Dancing Script", serif;
+    color: #bc1823;
+    margin-left: 30px;
+}
+
+/*responsividade para celular*/
+
+
+/*responsividade para tablet*/
+@media screen and (max-width: 768px) {
+  #geral{
+    height: 100%;
+    width: 768px;
+  }
+
+  .fale_maria{
+    margin-left: -300px;
+    
+
+  }
+
+ 
+
+  .container1{
+    margin-left:-100px;
+    width: 400px;
+    
+    
+}
+
+.container1 .img_principal{
+  margin-left: 400px;
+ }
+
+  .conteudo1{
+    margin-left:30px;
+   
+}
+
+.conteudo1 h1{
+  margin-left:-2px;
+}
+
+.conteudo2 h1{
+    margin-left:10px;
+}
+}
+
+
+@media screen and (max-width: 480px) {
+    /*cabeçalho*/
+  
+    .nav-item{
+      margin-left: -3px;
+  
+    }
+  
+    .nav-link{
+      margin: 0;
+      text-align: center;
+    }
+  
+    .nav-bar{
+      font-size: 5px;
+      padding: 0.3rem 0.3rem;
+      margin-top: 50px;
+  
+    }
+    .nav-list{
+      word-spacing: -2px;
+    }
+  
+    .login-button{
+      margin-top: -50px;
+      margin-left: -150px;
+    }
+  
+    .logo{
+      display: none;
+    }
+  
+    .icon{
+      display: none;
+    }
+  
+    header{
+      
+      width: 100%;
+      min-width: 320px;  /* Garante que a div não fique menor que 320px */
+      max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+     
+    }
+  
+    /* fim cabeçalho*/
+
+  /*nao sei para que e, mas nao mexe*/
+  .button-panic button {
+        width: 80px; /* Tamanho reduzido em dispositivos móveis */
+        height: 50px;
+        font-size: 0.9rem; /* Fonte reduzida */
+    }
+
+    
+    #geral{
+      max-height: 100%;
+       display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-width: 320px;
+      max-width: 1200px;
+      
+      
+
+
+    }
+  
+      /* Ajusta o contêiner para que as imagens não saiam da tela */
+      .container1 {
+        width: 100%;  /* Garante que o contêiner ocupe toda a largura da tela */
+        height: auto;  /* Ajusta a altura conforme o conteúdo */
+        margin-bottom: 410px;
+
+      }
+    
+      /* Ajustes para a imagem principal */
+      #imagem1 {
+        position: absolute;
+        z-index: 1;
+        margin-left: -25%;  /* Remove o margin-left negativo */
+        margin-top: 25%;  /* Ajusta o topo para dar mais espaço */
+        width: 90%;  /* A largura da imagem será 90% da tela */
+        height: auto;  /* Ajusta a altura proporcionalmente */
+      }
+    
+    
+      /* Ajustes adicionais, se necessário, para a imagem fale_maria */
+      #imagem2 {
+        position: absolute;
+        top: 60%;  /* Ajusta a posição da segunda imagem */
+        left: 50%;  /* Centraliza a segunda imagem horizontalmente */
+        transform: translateX(-50%);  /* Centraliza corretamente a imagem */
+        width: 80%;  /* Largura ajustada para tela pequena */
+        height: auto; /* Mantém a proporção */
+      }
+    
+      .container2{
+        
+        background-color: #af86ff;
+        width: 100%;
+        min-width: 320px;
+        max-width: 1200px;
+
+      }
+
+
+    .conteudo1 h1 {
+        font-size: 8vw; /* Tamanho da fonte reduzido em telas menores */
+    }
+
+    .conteudo2 h1 {
+        font-size: 8vw; /* Tamanho da fonte reduzido em telas menores */
+    }
+
+    .conteudo2 p {
+        font-size: 30px; /* Ajuste de tamanho de fonte em telas menores */
+    } 
+    /*nao sei para que e, mas nao mexe*/
+
+  }

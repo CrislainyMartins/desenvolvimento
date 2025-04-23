@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="css/inicio.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Inicio 2</title>
 </head>
-
 <body>
-    <!--menu principal-->
-    <div class="menus">
+
+     <!--menu principal-->
+     <div class="menus">
         <header>
             <nav class="nav-bar">
                 <div class="logo">
                     <h1><img src="" width="50px"></h1>
                 </div>
-
+    
                 <div class="nav-list">
                     <ul>
                         <li class="nav-item"><a href="inicio.html" class="nav-link">Inicio</a></li>
@@ -24,30 +23,29 @@
                         <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
                     </ul>
                 </div>
-
+    
                 <!--botão do pânico-->
-                <div class="login-button">
-                    <button onclick="window.location.href='formulario.html'"><img src="imgs/botaopanico.png" class="panic"></button>
-                </div>  <!-- fim botão do pânico-->
-
-
+ <div class="login-button">
+    <button onclick="window.location.href='formulario.html'">DENÚNCIE AGORA</button>
+</div>  <!-- fim botão do pânico-->
+    
+    
                 <div class="mobile-menu-icon">
                     <button onclick="menuShow()"><img src="assets/img/menu_white_36dp.svg" class="icon"></button>
                 </div>
             </nav>
-
+    
             <div class="mobile-menu">
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
                 </ul>
-
+    
                
             
             </div>
         </header>
-
 
 
         <!--menu hamburguer-->
@@ -69,45 +67,41 @@
 
     <!--fim menus-->
 
-    <!--inicio da div geral-->
-    <div id="geral">
+    <!--inicio da geral-->
+    <div class="geral">
+          <!--inicio da container1-->
         <div class="container1">
-            <img id="imagem1" src="imgs/imgprincipal.png"  class="img_principal" alt="img_principal" >
-            <img id="imagem2" src="imgs/falamaria.png" class="fale_maria" alt="fale_maria" >
-        </div>
+            <h1>Fala Maria!</h1>
 
-        
+            <div class="text-descricao">
+            <p>O Fala Maria é um site seguro e anônimo para mulheres 
+                denunciarem qualquer tipo de violência destinada 
+                a mulher. É um espaço de proteção e empoderamento, 
+                ajudando as mulheres a buscarem ajuda e segurança.
+            </p>
+            </div>
+            
+            <div class="button-panic-meio">
+                <button onclick="window.location.href='formulario.html'">DENÚNCIE AGORA</button>
+                <a href="formulario.html"><img src="#" class="panic-meio"></a>
+           </div>
+
+           <div class="imgs-redes-sociais">
+            <a href=""><img src="imgs/Instagram_icon.png" alt="instagram"></a>
+            <a href=""><img src="imgs/logo whats.png" alt="whatsapp"></a>
+           <a href=""><img src="imgs/icon twiter.png" alt="twiter"></a>
+            <a href=""><img src="" alt="tiktok"></a>
+           </div>
+        </div> <!--fim da container1-->
+
+         <!--inicio da container2-->
         <div class="container2">
-            <div class="conteudo1"> <!--usei poorque precisei puxar as informaçoes para baixo, pois o menu estava por ima-->
-            <h1> FALA</h1>
-            <div class="parte_1"> O Grito Silenciado: </div>
-            <div class="parte_2">  A Mulher Contra a Violência</div>
+            <img src="imgs/mulher_negra.png" alt="imagem principal da inicio" >
+        </div> <!--fim da container2-->
 
-            <div class="button-panic">
-                 <button onclick="window.location.href='formulario.html'">
-                <img src="imgs/botaopanico.png" class="panic"></button>
-            </div>
-           </div> <!--fim da div conteudo1 -->
+    </div><!--fim da geral-->
 
-        
-        </div><!--fim da div container2 -->
-
-        
-        <div class="container3">
-            <div class="conteudo2">
-            <h1>MARIA</h1>
-            <p>Todos contra a violência!</p>
-            </div>
-        </div>
-
-    </div> <!--fim da div geral-->
-
-
-
-
-
-
-<!--inicio do rodape-->
+    <!--inicio do rodape-->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/rodape.css">
@@ -189,8 +183,5 @@
     <link rel="stylesheet" href="/js/menumobile.js">
 
     
-
-
 </body>
-
 </html>
