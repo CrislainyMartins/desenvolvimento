@@ -259,7 +259,7 @@ body {
   }
   
   .container1{
-   margin-left: 100px;
+   margin-left: 170px;
    
   }
 
@@ -319,9 +319,11 @@ body {
   }
 
   .container2 img{
-   margin-left: 70px;
-   width: 205.5px ;
-   height: 216px  ;
+   margin-left:150px;
+   width: 513.25px;
+   height: 535px;
+
+   
 
   }
 
@@ -430,6 +432,7 @@ body {
     margin: 0;
     padding: 0;
     margin-bottom: 60px;
+   
 
   
 
@@ -594,6 +597,8 @@ body {
     margin: 0;
     padding: 0;
     margin-bottom: 60px;
+    width: 205.5px ;
+    height: 216px 
 
   
 
