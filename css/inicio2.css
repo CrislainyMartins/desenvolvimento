@@ -7,6 +7,7 @@
 
 body {
     max-height: 100%;
+    background-color: #1f0052;
    
     }
   
@@ -284,7 +285,7 @@ body {
     background-color: crimson;
     padding: 10px;
     color: white;
-    border-radius: 10px;
+    border-radius: 10px ;
     font-weight:bolder ;
     font-size: 1rem;
   }
@@ -326,17 +327,114 @@ body {
 
   /*responsividade para tablet*/
 @media screen and (max-width: 768px) {
+  /*menu*/
+  .nav-bar{
+    font-size: 5px;
+    padding: 1.5rem 3rem;
+    
+
+  }
+
+  .login-button{
+   
+    margin-left: -50px;
+    
+
+  }
+  
+  /*fim do menu*/
+
   .geral{
     height: 100%;
-    width: 768px;
-
-    flex-direction: column;
+    width: 100%;
+    min-width: 320px;  /* Garante que a div não fique menor que 320px */
+    max-width: 1200px; /* Garante que a div não fique maior que 1200px */
     flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+   
   }
 
   .container1{
-    margin-left: -100px;
+
+    min-width: 320px;  /* Garante que a div não fique menor que 320px */
+    max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
   }
+
+  .container1 h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+  padding: 0;
+  }
+
+  .text-descricao{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+  }
+
+  .text-descricao p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+
+  }
+  
+  .button-panic-meio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .imgs-redes-sociais{
+    margin-left: 150px;
+    margin-top: -20px;
+  }
+
+  .container2{
+    
+    flex-wrap: wrap;
+        
+    width: 100%;
+    min-width: 320px;  /* Garante que a div não fique menor que 320px */
+    max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;    /* Centraliza a div horizontalmente */
+  }
+
+  .container2 img{
+
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+
+  
+
+  }
+
 }
 
 /*resppnsividade para celular*/
@@ -462,7 +560,14 @@ body {
   }
   
   .button-panic-meio{
-    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .imgs-redes-sociais{
