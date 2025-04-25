@@ -34,8 +34,15 @@ footer{
     overflow: hidden;
 }
 
+.logo-3-footer{
+    margin-top: -100px;
+    margin-left: -60px;
+
+}
+
+
 #footer_contacts h1{
-    margin-bottom: 0.75rem;
+    margin-bottom: -6rem;
 }
 
 #footer_social_media{
