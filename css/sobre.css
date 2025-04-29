@@ -438,10 +438,84 @@ body {
 
 
   @media screen  and (max-width: 480px){
+
+     /*cabeçalho*/
+  
+  .nav-item{
+    margin-left: -3px;
+
+  }
+
+  .nav-link{
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav-bar{
+    font-size: 5px;
+    padding: 0.3rem 0.3rem;
+    margin-top: 50px;
+
+  }
+  .nav-list{
+    word-spacing: -2px;
+  }
+
+  .login-button{
+    margin-top: -50px;
+    margin-left: -150px;
+  }
+  
+
+  .logo{
+    display: none;
+  }
+
+  .icon{
+    display: none;
+  }
+
+  header{
+    
+    width: 100%;
+    min-width: 320px;  /* Garante que a div não fique menor que 320px */
+    max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+   
+  }
+
+  
+
+  /*parte do menu*/
+  .nav-bar{
+    padding: 1.0rem 0.1rem;
+    margin-top: 50px;
+
+  }
+
+  
+
+  .login-button{
+    margin-top: -50px;
+    margin-left: -220px;
+    height: 100%;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .icon{
+    display: none;
+  }
+
+  /* fim cabeçalho*/
+
+
+
     .geral{
       
-      height: 100%;
-    width:  100%;
+        height: 100%;
+        width:  100%;
         min-width: 320px;
         max-width: 1200px;
 
@@ -467,57 +541,30 @@ body {
     }
 
       .box2 {
-        width: 400px;
-        height: 800px;
-        margin-left: -400px;
+        width: 100%;
+        height: 100%;
+        margin-left: -430px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    
        
 
       }
 
       .box2 ul{
+        margin: 0;
         height: 600px;
         width: 300px;
         font-size: 20px;
         padding-top: 20px;
-        
+      
       }
 
       .box2 ul li{
         margin-top: 20px;
       }
 
-      .nav-item{
-        margin-left: -3px;
-
-      }
-
-      .nav-link{
-        margin: 0;
-        text-align: center;
-      }
-
-      .nav-bar{
-        font-size: 5px;
-        padding: 0.3rem 0.3rem;
-        margin-top: 50px;
-
-      }
-      .nav-list{
-        word-spacing: -2px;
-      }
-
-      .login-button{
-        margin-top: -50px;
-        margin-left: -150px;
-      }
-
-      .logo{
-        display: none;
-      }
-
-      .icon{
-        display: none;
-      }
+     
 
 
 

@@ -633,10 +633,14 @@
 .nav-list{
   word-spacing: -2px;
 }
-
 .login-button{
   margin-top: -50px;
-  margin-left: -150px;
+  margin-left: -220px; 
+  height: 100%;
+}
+
+.login-button button{
+  width: 200px;
 }
 
 .logo{

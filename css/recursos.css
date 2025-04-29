@@ -585,7 +585,12 @@ body {
 
       .login-button{
         margin-top: -50px;
-        margin-left: -150px;
+        margin-left: -250px; 
+        height: 100%;
+      }
+    
+      .login-button button{
+        width: 200px;
       }
 
       .logo{
