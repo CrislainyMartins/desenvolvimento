@@ -563,7 +563,8 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1.25rem;
-    word-spacing: -8px;
+    word-spacing: -3px;
+    text-align: justify;
   }
   
   .button-panic-meio{

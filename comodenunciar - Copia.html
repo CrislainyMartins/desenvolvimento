@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/comodenunciar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Denunciar</title>
+</head>
+<body>
+    <!--menu principal-->
+    <div class="menus">
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <h1><img src="" width="50px"></h1>
+                </div>
+    
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="inicio.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="informacoes.html" class="nav-link">Informações</a></li>
+                        <li class="nav-item"><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+                    </ul>
+                </div>
+    
+                <!--botão do pânico-->
+ <div class="login-button">
+    <button onclick="window.location.href='formulario.html'">DENÚNCIE AGORA</button>
+</div>  <!-- fim botão do pânico-->
+    
+    
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img src="assets/img/menu_white_36dp.svg" class="icon"></button>
+                </div>
+            </nav>
+    
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                </ul>
+    
+               
+            
+            </div>
+        </header>
+        <!--Script para diminuir o menu-->
+        <script>const header = document.getElementById('nav-bar');
+
+            window.addEventListener('scroll', () => {
+              if (window.scrollY > 50) {
+                header.classList.add('shrink');
+              } else {
+                header.classList.remove('shrink');
+              }
+            });
+            </script>
+
+             <!--Script para diminuir o botão-->
+        <script>const botaopanico = document.getElementById('botaopanico');
+
+            window.addEventListener('scroll', () => {
+              if (window.scrollY > 50) {
+                header.classList.add('shrink');
+              } else {
+                header.classList.remove('shrink');
+              }
+            });
+            </script>
+
+
+
+        <!--menu hamburguer-->
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+                <li><a class="menu__item" href="sobre.html">Sobre</a></li>
+                <li><a class="menu__item" href="comodenunciar.html">Como Denuciar</a></li>
+                <li><a class="menu__item" href="recursos.html">Recursos</a></li>
+            </ul>
+          </div>
+     <!--fim menus-->
+
+
+     <!--inicio da div geral-->
+     <div class="geral">
+
+        <!--inicio da container1-->
+
+        <div class="container1">
+
+        <div class="box1">
+        <h1>Como Denunciar?</h1>
+        <div class="content1"><p>Nosso site conta com um botão de denúncia direta, disponível em todas as páginas, para agilizar o processo e garantir sua segurança:
+        </p></div>
+       </div>
+
+       <div class="box2">
+        <h2>Como funciona:</h2>
+       <div class="content2">
+        <p class="descricao1">Ao clicar no botão, você será direcionada para um formulário anônimo. Ele permite que você descreva a situação, anexe provas (como fotos, áudios ou mensagens), e indique a localização do incidente (opcional).
+        </p>
+        <p  class="descricao2">Encaminhamento Automático: Após o envio, sua denúncia será encaminhada automaticamente às autoridades competentes.
+        </p>
+    
+      </div>
+       </div>
+    </div> <!--fim da container1-->
+ 
+
+    <!--inicio da container2-->
+       <div class="container2">
+        <div class="content3"><p>Se você presenciou ou tem conhecimento de um caso de violência e deseja denunciar sem se identificar, existem canais ,além do nosso site, seguros para isso:</p></div>
+        <img src="imgs/img setas.png" alt="">
+       </div><!--fim da container2-->
+
+
+       <!--inicio da container3-->
+       <div class="container3">
+        <div class="img_mulheres_denuncia"><img src="imgs/mulheres_denuncia.png" alt=""></div>
+        
+
+        <div class="box3">
+        <div class="content4">
+            <img src="imgs/ligue180.png" alt="">
+            <p> Canal nacional gratuito que funciona 24 horas por dia, todos os dias. Permite denunciar anonimamente qualquer forma de violência contra a mulher.</p>
+        </div>
+
+        <div class="content5">
+            <img src="imgs/policiamilitar.png" alt="">
+            <p>Se a situação for de emergência, não hesite em acionar a polícia militar imediatamente</p>
+        </div>
+        
+        <div class="content6">
+            <img src="imgs/patrulha.png" alt="">
+            <p>Ao ligar: Informe sua localização e descreva a situação de forma clara.</p>
+        </div>
+       </div>
+
+       </div><!--fim da container3-->
+
+       <!--incio da container4-->
+       <div class="container4">
+        <div class="box4">
+
+            
+            <div class="tittle_2"><h1>Coleta de Provas e Documentação!</h1></div>
+    
+            <img src="imgs/img setas.png" alt="">
+        </div>
+
+        <div class="box5">
+            
+            <ul>
+                <li>Se a vítima decidir denunciar, é importante reunir evidências que possam ser usadas no processo:
+                </li>
+                <li>Mensagens e Chamadas: Capture prints de mensagens abusivas ou de ameaças.</li>
+                <li>Fotos e Vídeos: Registre marcas de agressão ou danos materiais.
+                </li>
+                <li>Relatórios Médicos: Busque atendimento médico para registrar ferimentos e obter um laudo que comprove a violência.
+                </li>
+            </ul>
+            
+        </div>
+
+       </div><!--fim da container4-->
+
+       <div class="img_mulheres"><img src="imgs/nmmulheres.png" alt=""></div>
+        
+
+    </div> <!--fim da div geral=->
+
+
+
+       
+
+
+
+    
+
+
+
+    
+
+
+    <!-rodape-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/rodape.css">
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1><img src="imgs/logo2.png" class="logo-3-footer" width="290px"></h1>
+                <p>Procure mais sobre</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Oferecemos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tecnologia</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Informação</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Acolhimento</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Parcerias</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Delegacia de Caririaçu</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Conselho da Mulher</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">...</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Feedback</h3>
+
+                <P>
+                   Avalie-nos
+                </P>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2024 todos os direitos reservados para E-domestics
+       
+        </div>
+    </footer>
+
+
+    <link rel="stylesheet" href="/js/menumobile.js">
+
+    
+    
+</body>
+</html>
