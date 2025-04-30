@@ -399,13 +399,33 @@
   }
 
   .right .news-item .thumb {
-    background: #000;
+   
     height: 50px;
     width: 50px;
     display: inline-block;
     margin-right: 10px;
     border-radius: 6px;
     
+  }
+
+  #tumb1{
+    background: url(../imgs/flor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  
+  #tumb2{
+    background: url(../imgs/forma.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  
+  #tumb3{
+    background: url(../imgs/forma.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .right .news-item .text-1 {
@@ -583,6 +603,9 @@
     max-width:300px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
   }
 
   .desc{
@@ -592,6 +615,7 @@
   .info-card{
     width: 380px;
     margin-left: -13px;
+    
   }
 
   .desc p{

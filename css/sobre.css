@@ -535,19 +535,25 @@ body {
     }
 
     .box1 h1{
-      margin-left: 170px;
+      
+      width: 100%;
+      margin-left: 25px;
+     margin-right: 25px;
       font-size: 40px;
       justify-content: center;
     
     }
 
       .box2 {
+        margin: 0;
+        margin-top: 250px;
         max-width: 480px;
         min-width: 360px;
         height: 100%;
         margin-left: -430px;
         padding-top: 50px;
         padding-bottom: 50px;
+
        
     
        
@@ -556,11 +562,14 @@ body {
 
       .box2 ul{
         margin: 0;
-        height: 600px;
-        width: 80%;
+        padding:0;
+        height: max-content;
+        width:90%;
         font-size: 20px;
         padding-top: 20px;
-        padding-left: 50px;
+        margin-left: 30px;
+        margin-left:20px;
+        
       
       }
 
