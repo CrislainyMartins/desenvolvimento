@@ -536,7 +536,7 @@ button:hover {
 
 
 
-
+  
 
 
 
@@ -545,6 +545,117 @@ button:hover {
   
 
 }
+
+
+@media screen and (max-width: 720px) and (max-height: 1600px) {
+  /* Estilos específicos para o Moto G34 5G */
+  
+  /*cabeçalho*/
+  
+  .nav-item{
+    margin-left: -3px;
+
+  }
+
+  .nav-link{
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav-bar{
+    font-size: 5px;
+    padding: 0.3rem 0.3rem;
+    margin-top: 50px;
+
+  }
+  .nav-list{
+    word-spacing: -2px;
+  }
+
+  .login-button{
+    margin-top: -50px;
+    margin-left: -150px;
+  }
+  
+
+  .logo{
+    display: none;
+  }
+
+  .icon{
+    display: none;
+  }
+
+  header{
+    
+    width: 100%;
+    min-width: 320px;  /* Garante que a div não fique menor que 320px */
+    max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+   
+  }
+
+  
+
+  /*parte do menu*/
+  .nav-bar{
+    padding: 1.0rem 0.1rem;
+    margin-top: 50px;
+
+  }
+
+  
+
+  .login-button{
+    margin-top: -50px;
+    margin-left: -220px; 
+    height: 100%;
+  }
+
+  .login-button button{
+    width: 200px;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .icon{
+    display: none;
+  }
+
+  /* fim cabeçalho*/
+
+
+  body{
+    max-width: 390px;
+
+
+  }
+
+  .geral{
+    max-width:300px;
+    padding: 20px;
+    margin: 20px;
+    margin-top:250px ;
+  }
+
+  .card{
+    width: 180px;
+  }
+
+
+
+  
+
+
+
+
+
+  
+
+
+}
+
 
 /*responsividade para tablet*/
 @media screen and (max-width: 768px) {

@@ -1134,7 +1134,346 @@ body {
     
 
 
+      @media screen and (max-width: 720px) and (max-height: 1600px) {
+        /* Estilos específicos para o Moto G34 5G */
+        
+  /*cabeçalho*/
+  
+  .nav-item{
+    margin-left: -3px;
 
+  }
+
+  .nav-link{
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav-bar{
+    font-size: 5px;
+    padding: 0.3rem 0.3rem;
+    margin-top: 50px;
+
+  }
+  .nav-list{
+    word-spacing: -2px;
+  }
+
+  .login-button{
+    margin-top: -50px;
+    margin-left: -220px; 
+    height: 100%;
+  }
+
+  .login-button button{
+    width: 200px;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .icon{
+    display: none;
+  }
+
+  header{
+    
+    width: 100%;
+    min-width: 320px;  /* Garante que a div não fique menor que 320px */
+    max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+   
+  }
+
+  /* fim cabeçalho*/
+
+
+  .geral{
+    height: 100%;
+    width:  100%;
+        min-width: 320px;
+        max-width: 1200px;
+  }
+
+  .container1{
+  
+   
+    flex-direction: column;
+    width:  100%;
+    
+
+  
+  }
+
+
+  .box1{
+    width: 100%;
+    display: flex;
+   border-radius: 0;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    height: 600px;    
+  
+  }
+      
+    
+      .box1 h1{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top:50px;
+        width: 300px;
+        height: fit-content;
+   
+      }
+
+      .content1{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top:50px;
+        width: 90%;
+        
+        
+      }
+
+      .box2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box2 h2{
+        margin-top: -120px;
+      }
+      
+      .content2{
+        text-align: justify;
+        word-spacing: -2px;
+        margin: 0;
+        padding: 0;
+        margin-top:-40px;
+        width:90%;
+      }
+
+      .descricao2{
+        margin: 0;
+        margin-top: -20px;
+      }
+
+      .container2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+
+      }
+
+      .container2 img{
+        display: none;
+      }
+
+      
+      .content3{
+        
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+        width: 90%;
+        height: 60%;
+        word-spacing: -6px;
+      }
+
+      .content3 p{
+        word-spacing: -5;
+      }
+    
+
+      .container3{
+        flex-direction: column;
+        height: max-content;
+        
+      
+      }
+
+      .box3{
+        width:100%;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        
+
+      
+      }
+    
+      .content4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin:0;
+        padding: 0;
+        height: 100%; /* Garante que a div ocupe 100% da altura da janela */
+        /**/
+        margin-top: 50px;
+        width: 100%;
+        padding-bottom: 50px;
+
+
+        
+      }
+      .content4 p{
+       
+        font-size: 18px;
+        margin-top: 10px;
+        font-weight: bold;
+        text-align:justify;
+      }
+
+      .content4 img{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top:60px;
+        display: flex
+;
+        justify-content: center;
+        
+        
+         
+      }
+
+      .content5{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin:0;
+        padding: 0;
+        height: 100%; /* Garante que a div ocupe 100% da altura da janela */
+        /**/
+        margin-top: 50px;
+        width: 100%;
+        padding-bottom: 50px;
+      }
+      .content5 p{
+        font-size: 18px;
+        margin-top: 10px;
+        font-weight: bold;
+        text-align:justify;
+       
+      }
+
+      .content5 img{
+     
+        height:140px;
+        
+          margin-top: 60px;
+          font-weight: bold;
+    
+      }
+
+      .content6{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin:0;
+        padding: 0;
+        height: 100%; /* Garante que a div ocupe 100% da altura da janela */
+        /**/
+        margin-top: 50px;
+        width: 100%;
+        padding-bottom: 50px;
+      }
+      .content6 p{
+        font-size: 18px;
+        margin-top: 10px;
+        font-weight: bold;
+        text-align:justify;
+      }
+
+      .content6 img{
+        margin-top:60px;
+      }
+
+      .container4{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+      }
+
+      .box4{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+      .box4 img{
+        display: none;
+      }
+
+      .tittle_2{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+     
+      }
+
+
+
+      .box5 {
+        
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+        
+      }
+
+      .box5 ul{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        text-align: justify;
+        padding:20px 20px 20px 25px;
+        
+        
+     
+      }
+    
+      .box5 ul li p{
+   
+      }
+
+      }
+      
  
   
 
