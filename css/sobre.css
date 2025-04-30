@@ -513,7 +513,7 @@ body {
 
 
     .geral{
-      
+        background-color: #a26cd0;
         height: 100%;
         width:  100%;
         min-width: 320px;
@@ -528,24 +528,27 @@ body {
       margin: 0;
       padding: 0;
       margin-top: -140px;
-      height: 1400px;
+      background: none;
+      
       
 
     }
 
     .box1 h1{
-      margin-left: 50px;
+      margin-left: 170px;
       font-size: 40px;
       justify-content: center;
     
     }
 
       .box2 {
-        width: 100%;
+        max-width: 480px;
+        min-width: 360px;
         height: 100%;
         margin-left: -430px;
         padding-top: 50px;
         padding-bottom: 50px;
+       
     
        
 
@@ -554,9 +557,10 @@ body {
       .box2 ul{
         margin: 0;
         height: 600px;
-        width: 300px;
+        width: 80%;
         font-size: 20px;
         padding-top: 20px;
+        padding-left: 50px;
       
       }
 
