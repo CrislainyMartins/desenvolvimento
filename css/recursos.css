@@ -395,6 +395,7 @@ body {
 
       footer{
         margin-top: 820px;
+
       }
 
 
@@ -613,14 +614,25 @@ body {
         width: 100%;
         min-width: 320px;  /* Garante que a div não fique menor que 320px */
         max-width: 1200px; /* Garante que a div não fique maior que 1200px */
-        margin-top: 500px;
-        margin-top: 450px;
+        height: max-content;
        
       }
 
       
 
     }
+
+    @media screen and (max-width: 360px) {
+
+      footer{
+        width: 100%;
+        min-width: 320px;  /* Garante que a div não fique menor que 320px */
+        max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+        padding-top: 150px;
+       
+      }
+    }
+
 
 
 
