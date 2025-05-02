@@ -248,7 +248,7 @@ body {
 /*fim menus*/
 
     .geral{
-      height: 100vh;
+      height: 100%;
       margin-top: 30px;
     }
 
@@ -333,6 +333,10 @@ body {
       height: 300px;
       /*background-color: ;se não quiser usar a imagem de fundo, é só apagar da body e coloar uma cor aqui*/
       
+    }
+
+    footer{
+
     }
 
     @media screen and (min-width: 1025px){
@@ -478,6 +482,7 @@ body {
         width: 100%;
         min-width: 320px;
         max-width: 1200px;
+        height: 100%;
        
       }
 
@@ -615,10 +620,17 @@ body {
         min-width: 320px;  /* Garante que a div não fique menor que 320px */
         max-width: 1200px; /* Garante que a div não fique maior que 1200px */
         height: max-content;
+        margin-top: 0;
+  
        
       }
 
       
+.logo-3-footer{
+  margin-top: 0;
+  
+
+}
 
     }
 
@@ -628,9 +640,16 @@ body {
         width: 100%;
         min-width: 320px;  /* Garante que a div não fique menor que 320px */
         max-width: 1200px; /* Garante que a div não fique maior que 1200px */
-        padding-top: 150px;
+        margin-top: 0;
+      
        
       }
+           
+.logo-3-footer{
+  margin-top: 0;
+  
+
+}
     }
 
 
