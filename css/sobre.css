@@ -625,12 +625,13 @@ body {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center;      /* Centraliza verticalmente (opcional) */
+    margin-left: -45px;
 
   }
   .nav-list{
     word-spacing: -2px;
     gap: 3px;
-    
+   
     
     
   }
@@ -644,9 +645,10 @@ body {
 
   .login-button{
     margin-top: -50px;
-    margin-left: -120px;
     margin-bottom: 40px;
   }
+
+
   
 
   .logo{
