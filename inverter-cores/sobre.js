@@ -1,17 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('blackAndWhiteFilter.js carregado com sucesso para depoimentos.html');
-    console.log('Posição do botão: Desktop (top: 120px, right: 10px), Tablet (top: 100px, right: 10px), Celular (top: 140px, right: 5px)');
+    console.log('blackAndWhiteFilter.js carregado com sucesso'); // Verificar se o script está carregando
 
-    // Remover qualquer botão existente com o mesmo ID para evitar duplicatas
-    const existingButton = document.getElementById('blackAndWhiteButton');
-    if (existingButton) existingButton.remove();
-
-    // Criar o botão com um ID único
+    // Criar o botão
     const button = document.createElement('button');
-    button.id = 'blackAndWhiteButton';
     button.textContent = 'Ativar Filtro Preto e Branco';
     button.style.position = 'fixed';
-    button.style.top = '120px'; // Exatamente como index.html, informacoes.html, sobre.html, recursos.html
+    button.style.top = '120px'; // Posição abaixo do cabeçalho no desktop
     button.style.right = '10px';
     button.style.zIndex = '1000'; // Acima do header (z-index: 2) e menu hamburguer (z-index: 4)
     button.style.padding = '8px 12px';
@@ -23,11 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
     button.style.fontWeight = 'bold';
     button.style.cursor = 'pointer';
     button.style.transition = 'all 0.3s ease-out';
-    button.style.boxSizing = 'border-box'; // Garantir que padding não afete o tamanho
 
-    // Efeito hover
+    // Efeito hover para combinar com o estilo da página
     button.addEventListener('mouseover', () => {
-        button.style.backgroundColor = '#af86ff'; // Cor consistente com outras páginas
+        button.style.backgroundColor = '#af86ff'; // Cor da lista em .box2
         button.style.transform = 'scale(1.1)';
     });
     button.addEventListener('mouseout', () => {
@@ -51,12 +44,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Ajustes de responsividade
     const updateButtonStyles = () => {
         if (window.innerWidth <= 480) {
-            button.style.top = '140px'; // Exatamente como nas páginas com cabeçalho
+            button.style.top = '140px'; // Ajustado para celular, considerando o login-button
             button.style.right = '5px';
             button.style.padding = '6px 10px';
             button.style.fontSize = '0.9rem';
         } else if (window.innerWidth <= 768) {
-            button.style.top = '100px'; // Exatamente como nas páginas com cabeçalho
+            button.style.top = '100px'; // Ajustado para tablet
             button.style.right = '10px';
             button.style.padding = '7px 11px';
             button.style.fontSize = '0.95rem';
@@ -66,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
             button.style.padding = '8px 12px';
             button.style.fontSize = '1rem';
         }
-        console.log(`Posição atual do botão: top=${button.style.top}, right=${button.style.right}`);
     };
 
     // Aplicar estilos iniciais
