@@ -639,7 +639,7 @@ body {
   .nav-list ul li{
     margin: 0;       /* Remove espaço externo */
     padding: 2px ;  /* Ajusta o espaço interno */
-    margin-left: 5px;
+    margin-left: 20px;
     
   }
 
