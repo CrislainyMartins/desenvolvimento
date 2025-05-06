@@ -341,7 +341,7 @@ body {
 
     @media screen and (min-width: 1025px){
      .geral{
-      margin-bottom: -100px;
+      margin-bottom: - 100px;
      }
     }
   
@@ -409,6 +409,10 @@ body {
 
     
     @media screen and (max-width: 768px){
+       body{
+        height: max-content;
+       }
+
       .container1{
         flex-direction: column;
         

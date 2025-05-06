@@ -601,9 +601,12 @@
   }
 
   .container{
-    max-width:300px;
+    width:100%;
     display: flex;
     flex-direction: column;
+
+    
+    
    
 
   }
@@ -758,7 +761,13 @@ header{
   }
 
   .hr-titlle{
-    width: 100%;
+   margin-left: -5px;
+
+  }
+
+  .hr-titlle-1{
+   margin-left: -5px;
+
   }
 
   .header-title h1{
@@ -774,18 +783,7 @@ header{
 
   .container{
    
-    flex-direction: column;
-    margin-left: 0;
-    padding: 0;
-
-
-    flex-wrap: wrap;
-        
-    width: 100%;
-    min-width: 320px;  /* Garante que a div não fique menor que 320px */
-    max-width: 1200px; /* Garante que a div não fique maior que 1200px */
-    margin: 0 auto;    /* Centraliza a div horizontalmente */
-
+    
     
 
   }

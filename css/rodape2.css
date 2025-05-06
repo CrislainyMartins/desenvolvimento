@@ -120,12 +120,19 @@ footer{
     border-radius: 4px;
     background-color: white;
     color: black;
+    height: 45px;
+ 
+    
+   
 }
 
 #input_group input{
     all: unset;
     padding: 0.75rem;
     width: 100%;
+    background-color: #f5f5f5;
+
+  
 }
 
 #input_group button{
@@ -138,6 +145,7 @@ footer{
     border-radius: 0px 4px 4px 0px;
     cursor: pointer;
     transition: all 0.4s;
+    margin-top: 50px;
 }
 
 #input_group button:hover{
@@ -167,6 +175,21 @@ footer{
     #footer_content{
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
+
     }
+
+
+.footer_contacts{
+    margin-top: 0;
+}
+    
+.logo-3-footer{
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 100px;
+
+}
+
+
 }
 
