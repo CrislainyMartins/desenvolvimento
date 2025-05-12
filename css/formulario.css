@@ -1,12 +1,26 @@
 body {
+    
+    font-family: Arial, sans-serif;
+    color: #333;
+   
+   
+}
+
+.geral{
     background-image: url('../imgs/fundo_formden.png');
     background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
-    font-family: Arial, sans-serif;
-    color: #333;
-    padding: 20px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+       
+
 }
+
 .form-container {
     max-width: 500px;
     margin: 0 auto;
@@ -38,9 +52,7 @@ body {
     font-size: 1rem;
     
 
-      border: 2px solid transparent; /* Define o tamanho da borda e a cor inicial transparente */
-      border-image: linear-gradient(to right, #c968d8, #5202ad, #f36cff); /* Define o gradiente de cores */
-      border-image-slice: 1; /* Aplica o gradiente ao redor da borda */
+      border: none;
       padding: 10px; /* Adiciona um pouco de espaço dentro do input */
 }
 .form-container button {
@@ -62,4 +74,4 @@ body {
     color: white;
     margin-top: -10px;
     margin-bottom: 10px;
-}
+} 
