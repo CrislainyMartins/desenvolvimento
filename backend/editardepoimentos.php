@@ -18,10 +18,10 @@ if ($result->num_rows > 0) {
     // Loop para exibir cada depoimento como uma linha na tabela
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
-        echo "<td>{$row['id']}</td>"; // ID da depoimento
-        echo "<td>{$row['nome']}</td>"; // nome
-        echo "<td>{$row['mensagem']}</td>"; // texto do depoimento
-        echo "<td>{$row['data_envio']}</td>"; // Data da depoimento
+        echo "<td data-label='Id'>{$row['id']}</td>"; // ID da depoimento
+        echo "<td data-label='Nome'>{$row['nome']}</td>"; // nome
+        echo "<td data-label='Mensagem'>{$row['mensagem']}</td>"; // texto do depoimento
+        echo "<td data-label='Data'>{$row['data_envio']}</td>"; // Data da depoimento
         echo "<td>
 
                 <a  href='backend/editdp.php?id={$row['id']}'>Editar</a> | 
