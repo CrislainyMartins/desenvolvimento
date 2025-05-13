@@ -991,6 +991,26 @@ header{
 /* fim cabeçalho*/
 
 
+.hr-titlle-1{
+  margin-left: 0;
+}
+
+.hr-titlle{
+  margin-left: 0;
+}
+
+
+  .desc ul li{
+    margin-left: 20px;
+  }
+
+   
+ a{
+  margin-left: 30px;
+  
+  }
+
+
 }
 
 
