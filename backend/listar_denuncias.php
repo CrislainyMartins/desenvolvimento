@@ -18,11 +18,11 @@ if ($result->num_rows > 0) {
     // Loop para exibir cada denúncia como uma linha na tabela
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
-        echo "<td>{$row['id']}</td>"; // ID da denúncia
-        echo "<td>{$row['descricao']}</td>"; // Descrição
-        echo "<td>{$row['localizacao']}</td>"; // Localização
-        echo "<td>{$row['data_envio']}</td>"; // Data da denúncia
-        echo "<td>{$row['status']}</td>";
+        echo "<td data-label='Id'>{$row['id']}</td>"; // ID da denúncia
+        echo "<td data-label='Descricao'>{$row['descricao']}</td>"; // Descrição
+        echo "<td data-label='Localizacao'>{$row['localizacao']}</td>"; // Localização
+        echo "<td data-label='Data'>{$row['data_envio']}</td>"; // Data da denúncia
+        echo "<td data-label='Status'>{$row['status']}</td>";
         echo "<td>
 
                 <a  href='editar.php?id={$row['id']}'>Editar</a> | 

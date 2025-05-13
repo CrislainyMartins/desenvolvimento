@@ -105,3 +105,57 @@ a:hover{
 .botoes{
     display: flex;
 }
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Esconde o cabeçalho da tabela em telas pequenas */
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 1.5rem;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background: #fafafa;
+        border-radius: 6px;
+    }
+
+    
+    
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        width: 100px;
+        flex-shrink: 0;
+        padding-right: 10px;
+        text-align: center; /* ou 'right' se quiser que fique mais encostado no valor */
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #6200ee;
+        color: white;
+        border-radius: 5px;
+        
+    }
+
+    td:last-child {
+        border-bottom: none;
+    }
+}
