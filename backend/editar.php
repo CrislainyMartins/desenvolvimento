@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label for="localizacao">Localização:</label><br>
                 <input type="text" name="localizacao" id="localizacao" value="<?php echo $denuncia['localizacao']; ?>" required><br><br>
 
-                <button><a href="provas.php">Ver provas</a></button><!--ajeitar-->
+                <button id="ver-prova"><a href="provas.php">Ver provas</a></button><!--ajeitar-->
 
                 <label for="status">Status:</label><br>
                 <select name="status" id="status" required>
@@ -69,9 +69,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <option value="Resolvido" <?php echo $denuncia['status'] == 'Resolvido' ? 'selected' : ''; ?>>Resolvido</option>
                 </select><br><br>
 
-                <button type="submit" onclick="window.location.href='admin.php'">Salvar Alterações</button><!--ajeitar-->
+                <button id="salvar-alt" type="submit" onclick="window.location.href='admin.php'">Salvar Alterações</button><!--ajeitar-->
 
-                <a href="../admin.php">Cancelar</a>
+                <a href="../restrito/admin.php">Cancelar</a>
+                <button id="ver-prova"><a href="admin.php">Voltar</a></button>
             </form>
         </div>
 

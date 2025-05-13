@@ -2,25 +2,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; 
+    background-color: #f5f5f5;
+       
+
 }
 
 
 
 .container {
-    background-color: #fff;
+    background-color:#210037 ;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 400px;
+    padding: 20px ;
+    width: 450px;
+    color:white;
 }
 h1 {
     text-align: center;
-    color: #333;
+    color:white;
 }
 form {
     display: flex;
@@ -29,13 +32,16 @@ form {
 }
 label {
     font-weight: bold;
+    font-size: 20px;
 }
 input, textarea, select {
     width: 100%;
-    padding: 10px;
+    /*padding: 10px;*/
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 20px;
+    height: 30px;
+    margin-top: -28px;/*acrescentei para o input ficar mais proximo da legenda*/
 }
 textarea {
     resize: none;
@@ -48,6 +54,8 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+
+    margin-top: -40px;
 }
 button:hover {
     background-color: #0056b3;
@@ -66,4 +74,20 @@ button:hover {
 }
 .cancelar a:hover {
     color: #0056b3;
+}
+
+#ver-prova{
+    width: 50%;
+    
+}
+
+/*ajeitar os links dos botao*/
+
+#salvar-alt{
+    width: 50%;
+    margin-top: 15px;
+
+}
+
+@media screen  and (max-width: 360px){
 }
