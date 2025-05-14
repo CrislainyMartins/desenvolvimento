@@ -66,6 +66,9 @@ button:hover {
 .cancelar {
     text-align: center;
     margin-top: 10px;
+     width: 50%;
+    margin-top: 15px;
+    margin: 5px;
 }
 .cancelar a {
     text-decoration: none;
@@ -78,6 +81,7 @@ button:hover {
 
 #ver-prova{
     width: 50%;
+    margin: 5px;
     
 }
 
@@ -86,6 +90,7 @@ button:hover {
 #salvar-alt{
     width: 50%;
     margin-top: 15px;
+    margin: 5px;
 
 }
 
