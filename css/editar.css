@@ -65,15 +65,16 @@ button:hover {
 
 .cancelar {
     text-align: center;
-    margin-top: 10px;
-     width: 50%;
-    margin-top: 15px;
+    width: 50%;
     margin: 5px;
+    color: #fff;
 }
 .cancelar a {
+
     text-decoration: none;
-    color: #007bff;
+    color: white;
     font-weight: bold;
+    
 }
 .cancelar a:hover {
     color: #0056b3;
@@ -82,7 +83,14 @@ button:hover {
 #ver-prova{
     width: 50%;
     margin: 5px;
+     font-weight: bold;
     
+}
+
+#ver-prova a{
+    text-decoration: none;
+    color: white;
+     font-weight: bold;
 }
 
 /*ajeitar os links dos botao*/
@@ -91,8 +99,20 @@ button:hover {
     width: 50%;
     margin-top: 15px;
     margin: 5px;
+     font-weight: bold;
 
 }
 
-@media screen  and (max-width: 360px){
+@media screen  and (max-width: 480px){
+    
+     .geral{
+        width: 100%;
+ min-width: 320px;  /* Garante que a div não fique menor que 320px */
+ max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+     }
+    .container{
+     width: 80%;
+     margin: 0 auto;
+    }
+
 }
