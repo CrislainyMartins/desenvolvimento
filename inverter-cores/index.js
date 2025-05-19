@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Criar o botão
     const button = document.createElement('button');
-    button.textContent = 'Ativar Filtro Preto e Branco';
+    button.textContent = 'Ativar Filtro ';
     button.style.position = 'fixed';
     button.style.top = '120px'; // Posição abaixo do cabeçalho no desktop
     button.style.right = '10px';
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', () => {
         isBlackAndWhite = !isBlackAndWhite;
         document.documentElement.style.filter = isBlackAndWhite ? 'grayscale(100%)' : 'none';
-        button.textContent = isBlackAndWhite ? 'Desativar Filtro' : 'Ativar Filtro Preto e Branco';
+        button.textContent = isBlackAndWhite ? 'Desativar Filtro' : 'Ativar Filtro ';
     });
 
     // Ajustes de responsividade
