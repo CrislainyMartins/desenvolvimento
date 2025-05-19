@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="text" name="username" placeholder="Usuário" required>
             <input type="password" name="password" placeholder="Senha" required>
             <button type="submit">Entrar</button>
-            <button onclick="window.location.href='/desenvolvimento/inicio.html'">Voltar ao inicio</button>
+            <button onclick="window.location.href='/desenvolvimento/index.html'">Voltar ao inicio</button>
 
         </form>
     </div>
