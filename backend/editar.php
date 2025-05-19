@@ -73,9 +73,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 
                 <button id="salvar-alt" type="submit" onclick="window.location.href='admin.php'">Salvar Alterações</button><!--ajeitar-->
 
-                <button id="ver-prova"><a href="admin.php">Voltar</a></button>
+                <button id="ver-prova" type="reset"><a href="admin.php">Voltar</a></button>
                 
-                <button class="cancelar"><a href="../restrito/admin.php"  >Cancelar</a></button>
+                <button class="cancelar" type="reset"> <a href="../backend/admin.php"  >Cancelar</a></button>
                  
                 
             </form>
