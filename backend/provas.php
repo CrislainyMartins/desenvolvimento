@@ -55,16 +55,16 @@ function buscarMidias() {
         // Exibir as mídias
         foreach ($midias as $midia) {
             $arquivo = $midia['arquivo'];
-            $extensao = pathinfo($arquivo, PATHINFO_EXTENSION);
-            echo '<div class="media-item">';
-            if (in_array($extensao, ['.jpg', '.jpeg', '.png', '.gif'])) {
-                echo "<img src='$arquivo' alt='{$midia['nome']}'>";
-            } elseif (in_array($extensao, ['mp4', 'webm', 'ogg'])) {
-                echo "<video controls><source src='$arquivo' type='video/$extensao'></video>";
-            } else {
-                echo "<p>Formato não suportado</p>";
-            }
-            echo '</div>';
+         $extensao = strtolower(pathinfo($arquivo, PATHINFO_EXTENSION));
+
+if (in_array($extensao, ['jpg', 'jpeg', 'png', 'gif'])) {
+    echo "<img src='$arquivo' alt='" . htmlspecialchars($midia['nome'], ENT_QUOTES, 'UTF-8') . "'>";
+} elseif (in_array($extensao, ['mp4', 'webm', 'ogg'])) {
+    echo "<video controls><source src='$arquivo' type='video/$extensao'></video>";
+} else {
+    echo "<p>Formato não suportado</p>";
+}
+
         }
         ?>
     </div>
