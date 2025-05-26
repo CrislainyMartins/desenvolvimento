@@ -53,10 +53,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="container">
     <form method="POST">
         <label for="nome">Nome:</label><br>
-        <textarea name="nome" id="nome" rows="4" required><?php echo $nome['nome']; ?></textarea><br><br>
+        <textarea name="nome" id="nome" rows="4" required><?php echo $depoimento['nome']; ?></textarea><br><br>
 
         <label for="mensagem">mensagem:</label><br>
-        <input type="text" name="mensagem" id="mensagem" value="<?php echo $denuncia['mensagem']; ?>" required><br><br>
+        <input type="text" name="mensagem" id="mensagem" value="<?php echo $depoimento['mensagem']; ?>" required><br><br>
 
 
         <button type="submit" ><a href="gerenciar_depoimento.php">Salvar Alterações</a></button>
