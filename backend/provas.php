@@ -1,72 +1,91 @@
 <?php
-include '../backend/conexao.php';
-
-
-// Função para buscar as mídias
-function buscarMidias() {
-    global $conn;
-    $sql = "SELECT id, nome, arquivo FROM denuncias";
-    $result = $conn->query($sql);
-
-    $midias = [];
-    if ($result->num_rows > 0) {
-        // Armazenando as mídias em um array
-        while($row = $result->fetch_assoc()) {
-            $midias[] = $row;
-        }
-    }
-    return $midias;
-}
-
-// Fechar a conexão com o banco de dados
-//$conn->close();
-
-
+include 'conexao.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exibição de Mídias</title>
+    <title>Provas das Denúncias</title>
     <style>
-        .media-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
         }
-        .media-item {
-            width: 200px;
-            margin: 10px;
+        h2 {
+            text-align: center;
+            margin-top: 30px;
         }
-        img, video {
-            width: 100%;
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .prova {
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .prova img {
+            max-width: 100%;
             height: auto;
+            display: block;
+            margin-top: 10px;
+        }
+        .mensagem {
+            text-align: center;
+            font-style: italic;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <h1>Galeria de Mídias</h1>
-    <div class="media-container">
-        <?php
-        // Buscar as mídias
-        $midias = buscarMidias();
 
-        // Exibir as mídias
-        foreach ($midias as $midia) {
-            $arquivo = $midia['arquivo'];
-         $extensao = strtolower(pathinfo($arquivo, PATHINFO_EXTENSION));
+    <h2>Provas das Denúncias</h2>
+    <div class="container">
 
-if (in_array($extensao, ['jpg', 'jpeg', 'png', 'gif'])) {
-    echo "<img src='$arquivo' alt='" . htmlspecialchars($midia['nome'], ENT_QUOTES, 'UTF-8') . "'>";
-} elseif (in_array($extensao, ['mp4', 'webm', 'ogg'])) {
-    echo "<video controls><source src='$arquivo' type='video/$extensao'></video>";
+    <?php
+    $sql = "SELECT id, descricao, data_envio, arquivo FROM denuncias WHERE arquivo IS NOT NULL AND arquivo != '' ORDER BY data_envio DESC LIMIT 20";
+    $result = $conn->query($sql);
+
+    if (!$result) {
+        echo "<p class='mensagem'>Erro na consulta: " . $conn->error . "</p>";
+    } elseif ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            echo "<div class='prova'>";
+            echo "<strong>Descrição:</strong> " . htmlspecialchars($row['descricao']) . "<br>";
+            echo "<strong>Data:</strong> " . htmlspecialchars($row['data_envio']) . "<br>";
+            echo "<strong>Prova:</strong><br>";
+
+         $arquivo = htmlspecialchars($row['arquivo']);
+$ext = pathinfo($arquivo, PATHINFO_EXTENSION);
+$caminho = "http://localhost/desenvolvimento/backend/uploads/$arquivo";
+/*
+echo "Caminho da imagem: $caminho<br>";*/
+
+if (in_array(strtolower($ext), ['jpg', 'jpeg', 'png', 'gif', 'webp'])) {
+    echo "<img src='$caminho' alt='Prova da denúncia'>";
 } else {
-    echo "<p>Formato não suportado</p>";
+    echo "<a href='$caminho' download>Download da prova</a>";
 }
 
+
+            echo "</div>";
         }
-        ?>
+    } else {
+        echo "<p class='mensagem'>Nenhuma prova enviada ainda.</p>";
+    }
+
+    $conn->close();
+    ?>
+    
+
     </div>
+    
 </body>
 </html>
