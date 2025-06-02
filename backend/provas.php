@@ -1,4 +1,29 @@
 <?php
+include '../backend/conexao.php';
+
+
+
+
+// Função para buscar as mídias
+function buscarMidias() {
+    global $conn;
+    $sql = "SELECT id, nome, arquivo FROM denuncias";
+    $result = $conn->query($sql);
+
+    $midias = [];
+    if ($result->num_rows > 0) {
+        // Armazenando as mídias em um array
+        while($row = $result->fetch_assoc()) {
+            $midias[] = $row;
+        }
+    }
+    return $midias;
+}
+
+// Fechar a conexão com o banco de dados
+//$conn->close();
+
+
 include 'conexao.php';
 ?>
 
@@ -86,6 +111,12 @@ if (in_array(strtolower($ext), ['jpg', 'jpeg', 'png', 'gif', 'webp'])) {
     
 
     </div>
-    
+
+
+     <div style="text-align: center; margin-top: 30px;">
+  <a href="../backend/editar.php">
+    <button style="padding: 10px 20px; font-size: 16px;">Voltar</button>
+  </a> 
+</div>
 </body>
 </html>

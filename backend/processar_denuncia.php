@@ -11,7 +11,7 @@ $nome = $_POST['nome'] ?? null;
 $descricao = $_POST['descricao'] ?? null;
 $localizacao = $_POST['localizacao'] ?? null;
 $contato = $_POST['contato'] ?? null;
-$arquivo = null;
+$arquivo = $_POST['arquivo'] ?? null;
 
 // Processar upload de arquivo
 if (isset($_FILES['provas']) && $_FILES['provas']['error'] === UPLOAD_ERR_OK) {
