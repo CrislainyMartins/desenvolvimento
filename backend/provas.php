@@ -113,10 +113,9 @@ if (in_array(strtolower($ext), ['jpg', 'jpeg', 'png', 'gif', 'webp'])) {
     </div>
 
 
-     <div style="text-align: center; margin-top: 30px;">
-  <a href="../backend/editar.php">
-    <button style="padding: 10px 20px; font-size: 16px;">Voltar</button>
-  </a> 
-</div>
+    <a href='editar.php?id={$row["id"]}'>
+  <button style='padding: 10px 20px; font-size: 16px;'>Voltar</button>
+</a>
+
 </body>
 </html>
