@@ -1,44 +1,8 @@
-/* blackAndWhiteFilter + zoom de fonte
+/* zoom de fonte - botões no canto inferior esquerdo
    =============================================================== */
 document.addEventListener('DOMContentLoaded', () => {
-    /* ------------------------------------------------------------------
-       Referência ao <nav> e garantia de que ele seja o “pai” posicionado
-    ------------------------------------------------------------------ */
     const nav = document.querySelector('nav');
-    if (nav) nav.style.position = 'relative';   // referência para os absolutes
-
-    /* =========================  BOTÃO FILTRO  ========================= */
-    const filtroBtn = document.createElement('button');
-    filtroBtn.textContent = 'Ativar filtro preto e branco';
-    Object.assign(filtroBtn.style, {
-        position: 'absolute',
-        top: '10px',
-        right: '180px',
-        padding: '8px 12px',
-        background: '#210037',
-        color: '#fff',
-        border: 'none',
-        borderRadius: '10px',
-        fontSize: '1rem',
-        fontWeight: 'bold',
-        cursor: 'pointer',
-        transition: 'all .3s ease',
-        zIndex: 1000,
-    });
-    filtroBtn.onmouseover = () => {
-        filtroBtn.style.background = '#af86ff';
-        filtroBtn.style.transform = 'scale(1.1)';
-    };
-    filtroBtn.onmouseout  = () => {
-        filtroBtn.style.background = '#210037';
-        filtroBtn.style.transform = 'scale(1)';
-    };
-    let filtroLigado = false;
-    filtroBtn.onclick = () => {
-        filtroLigado = !filtroLigado;
-        document.documentElement.style.filter = filtroLigado ? 'grayscale(100%)' : 'none';
-        filtroBtn.textContent = filtroLigado ? '☀' : '☾';
-    };
+    if (nav) nav.style.position = 'relative';
 
     /* =====================  BOTÕES A+ / A-  ========================== */
     const estiloBase = {
@@ -54,11 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const btnMais  = document.createElement('button');
     btnMais.textContent = 'A+';
-    Object.assign(btnMais.style, estiloBase, { right: '90px',  background: '#4CAF50', color: '#fff' });
+    Object.assign(btnMais.style, estiloBase, { left: '90px',  background: '#4CAF50', color: '#fff' });
 
     const btnMenos = document.createElement('button');
     btnMenos.textContent = 'A-';
-    Object.assign(btnMenos.style, estiloBase, { right: '30px', background: '#f44336', color: '#fff' });
+    Object.assign(btnMenos.style, estiloBase, { left: '30px', background: '#f44336', color: '#fff' });
 
     /* ----------   lógica de aumento/diminuição de fonte   ------------ */
     let passosFonte = 0;
@@ -80,28 +44,22 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ------------------  atalhos de teclado Ctrl+/-  ------------------ */
     document.addEventListener('keydown', e => {
         if (!e.ctrlKey) return;
-        if (e.key === '+') { e.preventDefault(); ajustarFonte( 2); }
-        if (e.key === '-') { e.preventDefault(); ajustarFonte(-2); }
+        if (e.key === '+' || (e.key === '=' && e.shiftKey)) {
+            e.preventDefault(); ajustarFonte(2);
+        }
+        if (e.key === '-') {
+            e.preventDefault(); ajustarFonte(-2);
+        }
     });
-
-    /* ================  responsividade do botão filtro  ================ */
-    function reajustarFiltro() {
-        if (innerWidth <= 480)      filtroBtn.style.right = '140px';
-        else if (innerWidth <= 768) filtroBtn.style.right = '160px';
-        else                        filtroBtn.style.right = '180px';
-    }
-    window.addEventListener('resize', reajustarFiltro);
-    reajustarFiltro();
 
     /* ------------------  inserir elementos no DOM  -------------------- */
     if (nav) {
-        nav.append(filtroBtn, btnMais, btnMenos);
-    } else {                       // fallback: joga no body em posição fixed
-        filtroBtn.style.position = btnMais.style.position = btnMenos.style.position = 'fixed';
-        filtroBtn.style.top  = '120px';
+        nav.append(btnMais, btnMenos);
+    } else {
+        btnMais .style.position = btnMenos.style.position = 'fixed';
         btnMais .style.bottom = btnMenos.style.bottom = '20px';
-        btnMais .style.right  = '160px';
-        btnMenos.style.right  = '90px';
-        document.body.append(filtroBtn, btnMais, btnMenos);
+        btnMais .style.left   = '90px';
+        btnMenos.style.left   = '30px';
+        document.body.append(btnMais, btnMenos);
     }
 });
