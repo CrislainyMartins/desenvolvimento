@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* =====================  BOTÕES A+ / A-  ========================== */
     const estiloBase = {
         position: 'absolute',
-        bottom: '10px',
+        bottom: '40px',
         padding: '6px 10px',
         border: 'none',
         borderRadius: '5px',
@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const btnMais  = document.createElement('button');
     btnMais.textContent = 'A+';
-    Object.assign(btnMais.style, estiloBase, { left: '90px',  background: '#4CAF50', color: '#fff' });
+    Object.assign(btnMais.style, estiloBase, { left: '110px',  background: '#fff', color: '#000' });
 
     const btnMenos = document.createElement('button');
     btnMenos.textContent = 'A-';
-    Object.assign(btnMenos.style, estiloBase, { left: '30px', background: '#f44336', color: '#fff' });
+    Object.assign(btnMenos.style, estiloBase, { left: '60px', background: '#fff', color: '#000' });
 
     /* ----------   lógica de aumento/diminuição de fonte   ------------ */
     let passosFonte = 0;

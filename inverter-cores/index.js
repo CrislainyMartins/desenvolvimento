@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Criar o botão
     const button = document.createElement('button');
-    button.textContent = 'Ativar filtro preto e branco';
+    button.textContent = '☾';
     button.style.position = 'absolute';
     button.style.top = '10px';
     button.style.left = '180px';
@@ -50,9 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
             button.style.padding = '7px 11px';
             button.style.fontSize = '0.95rem';
         } else {
-            button.style.top = '30px';
-            button.style.left = '100px';
-            button.style.padding = '8px 12px';
+            button.style.top = '7px';
+            button.style.left = '170px';
+            button.style.padding = '6px 12px';
             button.style.fontSize = '1rem';
         }
     };
