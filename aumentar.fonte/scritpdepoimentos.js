@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const btnMais  = document.createElement('button');
     btnMais.textContent = 'A+';
-    Object.assign(btnMais.style, estiloBase, { left: '110px',  background: '#fff', color: '#000' });
+    Object.assign(btnMais.style, estiloBase, { left: '130px',  background: '#fff', color: '#000' });
 
     const btnMenos = document.createElement('button');
     btnMenos.textContent = 'A-';
-    Object.assign(btnMenos.style, estiloBase, { left: '60px', background: '#fff', color: '#000' });
+    Object.assign(btnMenos.style, estiloBase, { left: '80px', background: '#fff', color: '#000' });
 
     /* ----------   lógica de aumento/diminuição de fonte   ------------ */
     let passosFonte = 0;
