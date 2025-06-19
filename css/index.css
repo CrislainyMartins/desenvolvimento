@@ -603,6 +603,7 @@ body {
     width: 100%;
     min-width: 320px;  /* Garante que a div não fique menor que 320px */
     max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+    height: 170px;
    
   }
 
@@ -639,6 +640,7 @@ body {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 40px; /*tive que colocar par a afastar a imagem do menu 19-06*/
     min-width: 320px;  /* Garante que a div não fique menor que 320px */
     max-width: 1200px; /* Garante que a div não fique maior que 1200px */
   }
