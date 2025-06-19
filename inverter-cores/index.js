@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     button.style.left = '180px';
     button.style.zIndex = '1000';
     button.style.padding = '8px 12px';
-    button.style.backgroundColor = '#fff';
+    button.style.backgroundColor = 'white';
     button.style.color = '#000';
     button.style.border = 'none';
     button.style.borderRadius = '5px';
@@ -19,14 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
     button.style.transition = 'all 0.3s ease-out';
 
     // Efeito hover
-    button.addEventListener('mouseover', () => {
-        button.style.backgroundColor = '#af86ff';
-        button.style.transform = 'scale(1.1)';
-    });
-    button.addEventListener('mouseout', () => {
-        button.style.backgroundColor = '#210037';
-        button.style.transform = 'scale(1)';
-    });
+    //button.addEventListener('mouseover', () => {
+    //    button.style.backgroundColor = '#af86ff';
+       /* button.style.transform = 'scale(1.1)';*/
+    //});
+    //button.addEventListener('mouseout', () => {
+     //   button.style.backgroundColor = '#210037';
+      /*  button.style.transform = 'scale(1)';*/
+    //});
 
     // Estado do filtro
     let isBlackAndWhite = false;
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Responsividade
     const updateButtonStyles = () => {
         if (window.innerWidth <= 480) {
-            button.style.top = '10px';
+            button.style.top = '7px';
             button.style.left = '30px';
             button.style.padding = '6px 10px';
             button.style.fontSize = '0.9rem';
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             button.style.fontSize = '0.95rem';
         } else {
             button.style.top = '7px';
-            button.style.left = '170px';
+            button.style.left = '190px';
             button.style.padding = '6px 12px';
             button.style.fontSize = '1rem';
         }
