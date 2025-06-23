@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Inserir no banco de dados
     $sql = "INSERT INTO feedbacks (	nome, avaliacao, sugestao) VALUES (?, ?)";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $nome, $avaliacao,  $sugestao);
+    $stmt->bind_param("sis", $nome, $avaliacao,  $sugestao);
 
     if ($stmt->execute()) {
         echo "Feedback enviado com sucesso!";
