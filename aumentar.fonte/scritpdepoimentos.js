@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const estiloBase = {
         position: 'absolute',
         bottom: '40px',
-        padding: '6px 10px',
+        padding: '6px ',
         border: 'none',
         borderRadius: '5px',
         fontSize: '1rem',
