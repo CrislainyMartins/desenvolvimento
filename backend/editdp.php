@@ -59,9 +59,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="text" name="mensagem" id="mensagem" value="<?php echo $depoimento['mensagem']; ?>" required><br><br>
 
 
-        <button type="submit" ><a href="gerenciar_depoimento.php">Salvar Alterações</a></button>
+        <a href="../gerenciar_depoimento.php"><button type="submit" >Salvar Alterações</button></a>
          
-        <a href="../admin.php">Cancelar</a>
+        <a href="../gerenciar_depoimento.php"><button >Cancelar</button></a>
     </form>
     </div>
 
