@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Inserir no banco de dados
     $sql = "INSERT INTO depoimentos (nome, mensagem) VALUES (?, ?)";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $nome, $mensagem);
+    $stmt->bind_param("sis", $nome, $mensagem);
 
     if ($stmt->execute()) {
         echo "Depoimento enviado com sucesso!";
