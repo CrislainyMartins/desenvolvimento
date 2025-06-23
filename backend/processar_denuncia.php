@@ -42,7 +42,6 @@ if ($stmt->execute()) {
     echo "Erro ao enviar denúncia: " . $stmt->error;
 }
 
-
 // Fechar conexão
 $stmt->close();
 $conn->close();
