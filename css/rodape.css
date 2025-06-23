@@ -118,8 +118,18 @@ footer{
     align-items: center;
     background-color: 4px;
     border-radius: 4px;
-    background-color: white;
+    background-color: none;
     color: black;
+}
+
+#feed button{
+    background-color: #7f37c9;
+    height: 50px;
+    width: 50px;
+   border-radius: 15px;
+    transition: all 0.4s;
+
+   
 }
 
 #input_group input{
@@ -140,8 +150,10 @@ footer{
     transition: all 0.4s;
 }
 
-#input_group button:hover{
+#feed button:hover{
     opacity: 0.8;
+    transform: scale(1.2);
+   
 }
 
 #footer_copyright{
