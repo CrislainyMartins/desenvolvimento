@@ -1,22 +1,28 @@
 <?php
-// Inclua a conexão com o banco de dados
 include 'conexao.php';
 
-// Verifica se foi passado um ID pela URL
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
-    $id = $_GET['id'];
+    $id = (int)$_GET['id'];
 
-    // Query para deletar o depoimento
-    $sql = "DELETE FROM depoimentos WHERE id = $id";
+    $stmt = $conn->prepare("DELETE FROM depoimentos WHERE id = ?");
+    $stmt->bind_param("i", $id);
 
-    if ($conn->query($sql)) {
-        echo "Depoimento excluído com sucesso.";
+    if ($stmt->execute()) {
+        // Reorganizar IDs após a exclusão
+        $conn->query("SET @count = 0");
+        $conn->query("UPDATE depoimentos SET id = (@count := @count + 1)");
+        $conn->query("ALTER TABLE depoimentos AUTO_INCREMENT = 1");
+
         header("Location: ../gerenciar_depoimento.php");
         exit;
     } else {
-        echo "Erro ao excluir o depoimento: " . $conn->error;
+        echo "Erro ao excluir o depoimento: " . $stmt->error;
     }
+
+    $stmt->close();
 } else {
     echo "ID inválido.";
 }
+
+$conn->close();
 ?>
