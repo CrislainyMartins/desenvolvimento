@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
         echo "<td data-label='Id'>{$row['id']}</td>"; // ID da depoimento
         echo "<td data-label='Nome'>{$row['nome']}</td>"; // nome
         echo "<td data-label='Avaliação'>{$row['avaliacao']}</td>"; // texto do depoimento
-        echo "<td data-label='Data'>{$row['data_envio']}</td>"; // Data da depoimento
+        echo "<td data-label='sugestão'>{$row['sugestao']}</td>"; // Data da depoimento
         echo "<td>
 
                 
