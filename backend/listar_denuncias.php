@@ -19,6 +19,7 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
         echo "<td data-label='Id'>{$row['id']}</td>"; // ID da denúncia
+         echo "<td data-label='Nome'>{$row['nome']}</td>"; // Descrição
         echo "<td data-label='Descricao'>{$row['descricao']}</td>"; // Descrição
         echo "<td data-label='Localizacao'>{$row['localizacao']}</td>"; // Localização
         echo "<td data-label='Data'>{$row['data_envio']}</td>"; // Data da denúncia

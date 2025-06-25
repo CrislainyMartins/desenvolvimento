@@ -23,6 +23,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
 // Verifica se o formulário foi enviado
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nome = $_POST['nome'];
     $descricao = $_POST['descricao'];
     $localizacao = $_POST['localizacao'];
     $arquivo=$_POST['arquivo'];
@@ -55,6 +56,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="geral">
         <div class="container">
             <form method="POST">
+
+               <label for="nome">Nome:</label><br>
+                <textarea name="nome" id="nome" rows="4" required><?php echo $denuncia['nome']; ?></textarea><br><br>
+
+
                 <label for="descricao">Descrição:</label><br>
                 <textarea name="descricao" id="descricao" rows="4" required><?php echo $denuncia['descricao']; ?></textarea><br><br>
 
