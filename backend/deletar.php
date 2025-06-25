@@ -13,7 +13,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         // Reorganizar IDs após a exclusão
         $conn->query("SET @count = 0");
         $conn->query("UPDATE denuncias SET id = (@count := @count + 1)");
-        $conn->query("ALTER TABLE depoimentos AUTO_INCREMENT = 1");
+        $conn->query("ALTER TABLE denuncias AUTO_INCREMENT = 1");
 
         header("Location: ../backend/admin.php");
         exit;
