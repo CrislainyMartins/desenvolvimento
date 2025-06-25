@@ -26,6 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nome'];
     $descricao = $_POST['descricao'];
     $localizacao = $_POST['localizacao'];
+    $contato = $_POST['contato'];
     $arquivo=$_POST['arquivo'];
     $status = $_POST['status'];
 
@@ -66,6 +67,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <label for="localizacao">Localização:</label><br>
                 <input type="text" name="localizacao" id="localizacao" value="<?php echo $denuncia['localizacao']; ?>" required><br><br>
+
+                    <label for="contato">Contato:</label><br>
+                <input type="number" name="contato" id="contato" value="<?php echo $denuncia['contato']; ?>" required><br><br>
 
                 <button id="ver-prova"><a href="provas.php">Ver provas</a></button><!--ajeitar-->
 

@@ -22,6 +22,7 @@ if ($result->num_rows > 0) {
          echo "<td data-label='Nome'>{$row['nome']}</td>"; // Descrição
         echo "<td data-label='Descricao'>{$row['descricao']}</td>"; // Descrição
         echo "<td data-label='Localizacao'>{$row['localizacao']}</td>"; // Localização
+        echo "<td data-label='contato'>{$row['contato']}</td>";
         echo "<td data-label='Data'>{$row['data_envio']}</td>"; // Data da denúncia
         echo "<td data-label='Status'>{$row['status']}</td>";
         echo "<td>

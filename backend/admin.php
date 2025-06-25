@@ -29,6 +29,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
                      <th>Nome</th>
                     <th>Descrição</th>
                     <th>Localização</th>
+                      <th>Contato</th>
                     <th>Data</th>
                     <th>Status</th>
                     <th>Ações</th>
