@@ -263,15 +263,15 @@ body {
 
   .box1{
    
-    background-color: #a26cd0;
+    background-color:;
     width: 1000px;
   }
 
   .box1 h1{
     margin-top: 300px;
     margin-left: 100px;
-    background-color: #8127bd;
-    color: white;
+    background-color: ;
+    color: #210037;
     width: 300px;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
@@ -300,7 +300,7 @@ body {
   
   .box2{
    
-    background-color: #550c86;
+   
     height: 900px;
     width: 1500px;
     margin-left: -150px;
@@ -311,7 +311,7 @@ body {
 
   .box2 ul{
     
-    background-color: #af86ff;
+    background-color:  #f7f7f7;
     margin-top:100px ;
     font-size: 25px;
     width: 800px;

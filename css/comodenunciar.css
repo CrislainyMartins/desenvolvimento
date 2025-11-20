@@ -250,7 +250,7 @@ body {
 
   .geral {
     min-height: 120vh;
-    background-image: url(../imgs/img2.jpg);
+   
     margin-top: 70px;
    
   }
@@ -260,18 +260,18 @@ body {
   }
 
   .box1{
-    background-color: #550c86;
+    background-color: white;
     width: 1000px;
     height: 800px;
   }
 
   .box1 h1{
-    color: white;
+    color: #4e0082;
     margin-top: 100px;
     height: 80px;
     width: 500px;
     margin-left: 100px;
-    background-color: #4e0082;
+   background-color:  #f7f7f7;;
     border-radius: 20px;
     font-weight: bolder;
     font-size: 40px;
@@ -300,7 +300,7 @@ body {
   .box2{
     width: 1000px; 
     height: 800px;
-    background-color: #a26cd0;
+    background-color: white;
     
   }
 
@@ -322,7 +322,7 @@ body {
 
   .content2 p{
     margin-top: 70px;
-    color: white;
+    color: #4e0082;
     font-size: 25px;
   }
 
