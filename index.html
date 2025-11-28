@@ -188,6 +188,43 @@
 
 
     <link rel="stylesheet" href="/js/menumobile.js">
+         <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("sucesso") === "1") {
+
+        
+        const msg = document.createElement("div");
+        msg.textContent = "Denúncia enviada com sucesso!";
+        msg.style.position = "fixed";
+        msg.style.top = "20px";
+        msg.style.right = "20px";
+        msg.style.padding = "15px 20px";
+        msg.style.background = "#9D00FF";
+        msg.style.color = "white";
+        msg.style.borderRadius = "8px";
+        msg.style.boxShadow = "0 0 10px #0003";
+        msg.style.fontSize = "16px";
+        msg.style.zIndex = "9999";
+        msg.style.animation = "fadeout 1s ease 3s forwards";
+
+        document.body.appendChild(msg);
+
+        // remove após animação
+        setTimeout(() => msg.remove(), 4000);
+
+        const newUrl = window.location.pathname;
+        window.history.replaceState({}, "", newUrl);
+    }
+</script>
+
+<style>
+@keyframes fadeout {
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+</style>
 
     <script src="inverter-cores/index.js"></script>
     <script src="aumentar.fonte/scritpdepoimentos.js"></script>

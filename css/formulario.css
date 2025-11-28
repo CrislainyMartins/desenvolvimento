@@ -7,10 +7,8 @@ body {
 }
 
 .geral{
-    background-image: url('../imgs/fundo_formden.png');
-    background-size: cover; /* Faz a imagem cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Impede que a imagem se repita */
+  
+    background-color: rgb(135, 125, 139); 
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -25,7 +23,7 @@ body {
     max-width: 500px;
     margin: 0 auto;
     background: #4e0082;
-    opacity: 75%;
+    opacity: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
