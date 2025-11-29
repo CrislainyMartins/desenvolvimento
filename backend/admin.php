@@ -66,7 +66,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
             <table id="tabela">
                 <thead>
                     <tr>
-                        <th>ID</th>
+                        <th>N°</th>
                         <th>Nome</th>
                         <th>Descrição</th>
                         <th>Localização</th>
