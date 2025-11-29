@@ -45,12 +45,19 @@
             border-radius: 5px 5px 0 0;
         }
 
-        .filtros #busca, .filtros #filtroStatus {
+        .filtros #busca {
             padding: 8px;
-            width: 200px;
+            width: 500px;
             border: 1px solid #6200ee;
             border-radius: 5px;
         }
+
+         .filtros #filtroStatus{
+              padding: 8px;
+            width: 200px;
+            border: 1px solid #6200ee;
+            border-radius: 5px;
+         }
 
         .container {
             max-width: 1200px;
