@@ -7,7 +7,7 @@ function descriptografar($texto) {
     return $texto ? openssl_decrypt($texto, 'AES-256-CBC', CHAVE_CRIPTO, 0, IV_CRIPTO) : null;
 }
 
-$sql = "SELECT * FROM denuncias ORDER BY data_envio DESC";
+$sql = "SELECT * FROM denuncias ORDER BY data_envio ASC";
 $result = $conn->query($sql);
 
 $contador = 1;
@@ -40,7 +40,7 @@ if ($result->num_rows > 0) {
               </td>";
 
         echo "<td data-label='Ações'>
-                <a class='acao-ver' href='ver.php?id={$row['id']}'>Ver</a>
+                <a class='acao-ver' href='denuncia_view.php?id={$row['id']}'>Ver</a>
               </td>";
 
         echo "</tr>";

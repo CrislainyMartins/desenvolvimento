@@ -43,8 +43,8 @@ if (!isset($_SESSION['admin_logged_in'])) {
             </div>
 
             <div class="card">
-                <h3>Finalizadas</h3>
-                <p id="count-finalizadas">0</p>
+                <h3>Resolvidas</h3>
+                <p id="count-resolvidas">0</p>
             </div>
         </div>
 
@@ -117,20 +117,20 @@ document.getElementById("filtroStatus").addEventListener("change", function () {
 
         // ------- CONTAR STATUS -------
         function atualizarContadores() {
-            let pendentes = 0, analise = 0, finalizadas = 0;
+            let pendentes = 0, analise = 0, resolvidas = 0;
             let statusList = document.querySelectorAll(".status");
 
             statusList.forEach(s => {
                 switch (s.dataset.status) {
                     case "pendente": pendentes++; break;
                     case "analise": analise++; break;
-                    case "finalizada": finalizadas++; break;
+                    case "resolvida": resolvidas++; break;
                 }
             });
 
             document.getElementById("count-pendentes").innerText = pendentes;
             document.getElementById("count-analise").innerText = analise;
-            document.getElementById("count-finalizadas").innerText = finalizadas;
+            document.getElementById("count-resolvidas").innerText = resolvidas;
         }
 
         atualizarContadores();

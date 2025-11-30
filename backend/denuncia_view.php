@@ -22,11 +22,15 @@ $d = $resp->fetch_assoc();
 <head>
     <meta charset="UTF-8">
     <title>Detalhes da denúncia</title>
-    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/denunciaView.css">
 </head>
 <body>
+    <section class="geral">
+            
 <!-- Detalhes da denúncia -->
 <h1>Denúncia #<?= $d['id'] ?></h1>
+
+
 
 <p><strong>Nome:</strong> <?= $d['nome'] ?></p>
 <p><strong>Descrição:</strong> <?= nl2br($d['descricao']) ?></p>
@@ -49,10 +53,12 @@ $d = $resp->fetch_assoc();
     </select>
 
     <button type="submit">Salvar</button>
+    <a href="admin.php">Voltar</a>
 </form>
 
 <br>
-<a href="admin.php">Voltar</a>
 
+
+</section>
 </body>
 </html>
