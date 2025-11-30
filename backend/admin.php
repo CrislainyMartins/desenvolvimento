@@ -22,7 +22,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
         <h2>Painel Administrativo</h2>
 
         <div class="topbar-actions">
-            <a href="../gerenciar_depoimento.php" class="btn-topbar">Depoimentos</a>
+            <a href="../backend/gerenciar_depoimento.php" class="btn-topbar">Depoimentos</a>
             <a href="../backend/gerenciar_feedback.php" class="btn-topbar">Feedbacks</a>
             <a href="../restrito/logout.php" class="btn-logout">Sair</a>
         </div>

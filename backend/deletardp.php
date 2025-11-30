@@ -13,7 +13,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         $conn->query("UPDATE depoimentos SET id = (@count := @count + 1)");
         $conn->query("ALTER TABLE depoimentos AUTO_INCREMENT = 1");
 
-        header("Location: ../gerenciar_depoimento.php");
+        header("Location: gerenciar_depoimento.php");
         exit;
     } else {
         echo "Erro ao excluir o depoimento: " . $stmt->error;

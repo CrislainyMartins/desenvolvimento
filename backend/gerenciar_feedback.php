@@ -10,6 +10,17 @@
 </head>
 
 <body>
+
+    <div class="topbar">
+        <h2>Painel Administrativo</h2>
+
+        <div class="topbar-actions">
+            <a href="../backend/gerenciar_depoimento.php" class="btn-topbar">Depoimentos</a>
+            <a href="../backend/admin.php" class="btn-topbar">Denúncias</a>
+            <a href="../restrito/logout.php" class="btn-logout">Sair</a>
+        </div>
+    </div>
+
     <!--inicio da tabela de depoimentos-->
     <div class="container">
         <h1>Gerenciamento de Feedbacks</h1>
@@ -17,18 +28,18 @@
         <table>
             <thead>
                 <tr>
-                    <th>id</th>
+                    <th>N°</th>
                     <th>Nome</th>
                     <th>Avaliação</th>
                     <th>Sugestão</th>
-                    <th>Ações</th>
+                   
 
 
                 </tr>
             </thead>
             <tbody>
                 <?php
-                include("editarfeedback.php");
+                include("listarfeedback.php");
                 ?>
 
                 <!-- Depoimentos serão exibidas aqui dinamicamente -->
