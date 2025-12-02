@@ -1,0 +1,14 @@
+footer {
+    background-image: linear-gradient(to bottom, white, gray);
+    height: 100%;
+}
+
+.contetFooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+.linhaDeBaixo{
+    background-color: #1f0052;
+    height: 10px;
+}
