@@ -256,14 +256,19 @@ body {
   .geral {
     margin-top: 20px;
     min-height: 100vh;
-    display: flex;
+    
     justify-content: center;
     justify-content: space-evenly;
   }
 
+  .container1{
+    display: flex;
+
+  }
+
   .box1{
    
-    background-color:;
+    background-color:green;
     width: 1000px;
   }
 
@@ -288,19 +293,16 @@ body {
     
     height: 88px;
     width: 150px;
+    margin-left: 150px;
     
   }
 
-  .img_hexagono{
-    margin-left: -330px;
-   
-  }
-
+  
 
   
   .box2{
    
-   
+   background-color: aqua;
     height: 900px;
     width: 1500px;
     margin-left: -150px;
@@ -332,6 +334,24 @@ body {
     padding-bottom: 10px;
     margin-top: 30px;
   }
+
+#translateFooter{
+  display: flex;
+}
+
+.midias-F img{
+  width: 30px;
+  height: 30px;
+}
+
+.midias-F{
+  margin-left: 150px;
+  background-color: #210037;
+}
+
+
+
+
 
   .img_nmmulheres{
    
