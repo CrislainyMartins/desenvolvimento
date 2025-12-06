@@ -1,29 +1,32 @@
 footer {
-   /* background-image: linear-gradient(to bottom, white, gray);*/
    background: white;
-    height: 100%;
    align-items: center;
-    margin: 0 auto;
-    font-family: sans-serif;
-    
+   margin: 0 auto;
+   font-family: sans-serif;
+
+   /* ESSENCIAIS PARA NÃO ESTICAR NO CELULAR */
+   width: 100%;
+   padding: 10px 0;
+   height: auto !important;   /* garante que não estica */
 }
 
+/* Ajustes do conteúdo */
 .conteudoFooter{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0 auto;
-    
-    
 
+    padding: 0;              /* remove espaço extra vertical */
+    margin: 0;
 }
 
 .footerColuna{
-    flex: 1 1 200px;
-  margin: 10px;
-  
-  
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .footerImagem{
@@ -33,69 +36,69 @@ footer {
 
 .footerLogo{
     width: 100px;
+    transition: 0.2s ease;
     
 }
 
+.footerLogo:hover{
+    transform: scale(1.05);
+}
 
 .footerLinks {
-  margin: 10px 0;
-  display: grid;
+  margin: 0;
+  display: flex;       /* trocado de grid para flex (fica mais compacto) */
+  flex-direction: column;
+  gap: 4px;
   justify-content: center;
-  
+  align-items: center;
 }
 
 .footerLinks a {
-  color: #222;
+  color: #333;
   text-decoration: none;
-  margin:5px 12px;
   font-size: 16px;
-
-
-
+  font-weight: 500;
 }
 
-
+.footerLinks a:hover {
+  color: #6a0dad;    /* roxinho suave */
+  transform: translateY(-2px);
+}
 
 .linhaDeBaixo{
-    background-color: #1f0052;
-    height: 10px;
-}
-
-/* Responsividade do Rodapé */
-@media (max-width: 768px) {
-  .conteudoFooter {
-    flex-direction: column;
     text-align: center;
-    align-items: center;
-  }
-
-  .footerColuna {
-    height: fit-content;
-    margin: 15px 0;
-    align-items: center;
-  }
-
-  .footerLogo {
-    width: 80px;
-  }
-
-  .footerLinks a {
-    font-size: 15px;
-    margin: 6px;
-  }
+    padding: 10px 5px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444;
 }
 
-@media (max-width: 480px) {
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .conteudoFooter {
+    gap: 8px;
+    padding: 0;
+  }
+
   .footerLogo {
     width: 70px;
   }
 
-  #footer_copyright {
-    font-size: 14px;
-  }
-
   .footerLinks a {
     font-size: 14px;
   }
 }
 
+@media (max-width: 480px) {
+
+  .footerLogo {
+    width: 60px;
+  }
+
+  .linhaDeBaixo {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
