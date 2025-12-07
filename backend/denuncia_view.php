@@ -28,7 +28,7 @@ $d = $resp->fetch_assoc();
     <section class="geral">
             
 <!-- Detalhes da denúncia -->
-<h1>Denúncia #<?= $d['id'] ?></h1>
+<h1>Denúncia</h1>
 
 
 
@@ -38,6 +38,8 @@ $d = $resp->fetch_assoc();
 <p><strong>Contato:</strong> <?= $d['contato'] ?></p>
 <p><strong>Data:</strong> <?= $d['data_envio'] ?></p>
 <p><strong>Status atual:</strong> <?= $d['status'] ?></p>
+
+<a href="provas.php">Ver Prova</a>
 
 <hr>
 

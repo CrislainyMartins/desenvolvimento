@@ -37,6 +37,7 @@ body {
       justify-content: space-between;
       padding: 1.5rem 6rem;
       height: 80px;
+      width: 100%;
   }
   
   .logo{

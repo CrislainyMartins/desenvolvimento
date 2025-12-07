@@ -29,7 +29,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
     </div>
 
     <div class="container">
-
+             <h1>Gerenciamento de Denúncias</h1>
         <!-- Cards de contagem -->
         <div class="cards">
             <div class="card">
@@ -63,6 +63,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
 
         <!-- Tabela -->
         <div class="tabela-container">
+       
             <table id="tabela">
                 <thead>
                     <tr>

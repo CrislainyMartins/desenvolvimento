@@ -67,11 +67,25 @@ include 'conexao.php';
             font-style: italic;
             color: #666;
         }
+
+        button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #6200ee;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    }
+
+
     </style>
 </head>
 <body>
 
-    <h2>Provas das Denúncias</h2>
+    <h2>Prova da Denúncia</h2>
     <div class="container">
 
     <?php
@@ -103,7 +117,7 @@ if (in_array(strtolower($ext), ['jpg', 'jpeg', 'png', 'gif', 'webp'])) {
             echo "</div>";
         }
     } else {
-        echo "<p class='mensagem'>Nenhuma prova enviada ainda.</p>";
+        echo "<p class='mensagem'>Nenhuma prova enviada.</p>";
     }
 
     $conn->close();
@@ -113,8 +127,8 @@ if (in_array(strtolower($ext), ['jpg', 'jpeg', 'png', 'gif', 'webp'])) {
     </div>
 
 
-    <a href='editar.php?id={$row["id"]}'>
-  <button style='padding: 10px 20px; font-size: 16px;'>Voltar</button>
+    <a href='admin.php?id={$row["id"]}'>
+  <button>Voltar</button>
 </a>
 
 </body>
