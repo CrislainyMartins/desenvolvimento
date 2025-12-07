@@ -171,30 +171,54 @@ body {
   /*menu hamburguer*/
     /*teste menu hamburguer*/
   
-    .hamburger-menu{
+   
+    .hamburger-menu, .hamburger-mobile{
       position: absolute;
   
     }
     
-    #menu__toggle {
-      opacity: 0;
-   
-      
-    }
-    #menu__toggle:checked + .menu__btn > span {
-      transform: rotate(45deg);
-    }
-    #menu__toggle:checked + .menu__btn > span::before {
-      top: 0;
-      transform: rotate(0deg);
-    }
-    #menu__toggle:checked + .menu__btn > span::after {
-      top: 0;
-      transform: rotate(90deg);
-    }
-    #menu__toggle:checked ~ .menu__box {
-      left: 0 !important;
-    }
+    #menu_toggle_desktop {
+  opacity: 0;
+  position: absolute;
+  left: -9999px;
+}
+
+#menu_toggle_desktop:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu_toggle_desktop:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu_toggle_desktop:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu_toggle_desktop:checked ~ .menu__box {
+  left: 0 !important;
+}
+
+#menu_toggle_mobile {
+  opacity: 0;
+  position: absolute;
+  left: -9999px;
+}
+
+#menu_toggle_mobile:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu_toggle_mobile:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu_toggle_mobile:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu_toggle_mobile:checked ~ .menu__box {
+  left: 0 !important;
+}
+
     .menu__btn {
       position: fixed;
       top: 20px;
@@ -251,6 +275,10 @@ body {
       background-color: #CFD8DC;
       color: black;
     }
+
+     .mobile-only { display: none; }
+    .desktop-only { display: block; }
+
   /*fim menus*/
 
 .geral{
@@ -590,13 +618,7 @@ button:hover {
     display: none;
   }
 
-  header{
-    
-    width: 100%;
-    min-width: 320px;  /* Garante que a div não fique menor que 320px */
-    max-width: 1200px; /* Garante que a div não fique maior que 1200px */
-   
-  }
+
 
   
 
@@ -668,6 +690,37 @@ button:hover {
 
   }
 
+   header{
+    height: 70px;
+    width: 100%;
+    min-width: 320px;  /* Garante que a div não fique menor que 320px */
+    max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+   
+  }
+
+  .nav-list{
+    display: none;
+  }
+
+ .desktop-only { display: none; }
+  .mobile-only { display: block; }
+
+  /* ajustar posição do botão mobile (canto esquerdo) */
+  .mobile-only .menu__btn { top: 16px; left: 12px; }
+
+  /* garantir botão DENUNCIE visível no topo direito */
+  .login-button {
+    display: block;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 1002;
+  }
+
+  /* ajustar largura do menu mobile menor, se quiser */
+  .mobile-only .menu__box { width: 260px; }
+
+
   .geral{
     max-width:710px;
   }
@@ -683,52 +736,6 @@ button:hover {
 
     
   /*cabeçalho*/
-
-.nav-item{
- margin-left: -3px;
- margin-top: 50px;
-
-}
-
-.nav-link{
- margin: 0;
- text-align: center;
- font-size: 16px;
- 
-
-
-}
-
-.nav-bar{
- font-size: 5px;
- padding: 0.3rem 0.3rem;
- margin-top: 50px;
- display: flex;
- justify-content: center; /* Centraliza horizontalmente */
- align-items: center;      /* Centraliza verticalmente (opcional) */
- margin-left: -45px;
-
-}
-.nav-list{
- word-spacing: -2px;
- gap: 3px;
-
- 
- 
-}
-
-.nav-list ul li{
- margin: 0;       /* Remove espaço externo */
- padding: 2px ;  /* Ajusta o espaço interno */
- margin-left: 20px;
- 
-}
-
-.login-button{
-   margin-top: -15px;
- margin-left: -220px;
- height: 100%;
-}
 
 
 

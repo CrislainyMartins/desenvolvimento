@@ -166,30 +166,54 @@ body {
 /*menu hamburguer*/
   /*teste menu hamburguer*/
 
-  .hamburger-menu{
-    position: absolute;
-
-  }
-  
-  #menu__toggle {
-    opacity: 0;
  
+    .hamburger-menu, .hamburger-mobile{
+      position: absolute;
+  
+    }
     
-  }
-  #menu__toggle:checked + .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked + .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0deg);
-  }
-  #menu__toggle:checked + .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    left: 0 !important;
-  }
+    #menu_toggle_desktop {
+  opacity: 0;
+  position: absolute;
+  left: -9999px;
+}
+
+#menu_toggle_desktop:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu_toggle_desktop:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu_toggle_desktop:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu_toggle_desktop:checked ~ .menu__box {
+  left: 0 !important;
+}
+
+#menu_toggle_mobile {
+  opacity: 0;
+  position: absolute;
+  left: -9999px;
+}
+
+#menu_toggle_mobile:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu_toggle_mobile:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu_toggle_mobile:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu_toggle_mobile:checked ~ .menu__box {
+  left: 0 !important;
+}
+
   .menu__btn {
     position: fixed;
     top: 20px;
@@ -246,7 +270,11 @@ body {
     background-color: #CFD8DC;
     color: black;
   }
-/*fim menus*/
+
+ .mobile-only { display: none; }
+    .desktop-only { display: block; }
+
+  /*fim menus*/
 
     .geral{
       height: 100%;
@@ -410,9 +438,46 @@ body {
 
     
     @media screen and (max-width: 768px){
-       body{
+
+
+
+
+      body{
         height: max-content;
        }
+
+       /**/
+ header{
+        height: 70px;
+        width: 100%;
+        min-width: 320px;  /* Garante que a div não fique menor que 320px */
+        max-width: 1200px; /* Garante que a div não fique maior que 1200px */
+       
+      }
+
+       .nav-list{
+    display: none;
+  }
+
+ .desktop-only { display: none; }
+  .mobile-only { display: block; }
+
+  /* ajustar posição do botão mobile (canto esquerdo) */
+  .mobile-only .menu__btn { top: 16px; left: 12px; }
+
+  /* garantir botão DENUNCIE visível no topo direito */
+  .login-button {
+    display: block;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 1002;
+  }
+
+  /* ajustar largura do menu mobile menor, se quiser */
+  .mobile-only .menu__box { width: 260px; }
+
+       /**/
 
       .container1{
         flex-direction: column;
@@ -611,15 +676,6 @@ body {
         display: none;
       }
 
-      header{
-        
-        width: 100%;
-        height: 170px;
-        min-width: 320px;  /* Garante que a div não fique menor que 320px */
-        max-width: 1200px; /* Garante que a div não fique maior que 1200px */
-        
-       
-      }
 
       footer{
         width: 100%;
@@ -890,13 +946,7 @@ body {
         display: none;
       }
 
-      header{
-        
-        width: 100%;
-        min-width: 320px;  /* Garante que a div não fique menor que 320px */
-        max-width: 1200px; /* Garante que a div não fique maior que 1200px */
-       
-      }
+     
 
       footer{
         width: 100%;
@@ -961,14 +1011,6 @@ body {
   display: none;
 }
 
-header{
-  
-  width: 100%;
-  min-width: 320px;  /* Garante que a div não fique menor que 320px */
-  max-width: 1200px; /* Garante que a div não fique maior que 1200px */
-  height: 170px;
- 
-}
 
 
 
