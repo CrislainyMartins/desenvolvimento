@@ -113,6 +113,7 @@ body {
     border-radius: 10px;
     font-weight:bolder ;
     font-size: 1rem;
+    margin-block-start:auto ;
 
   }
 
@@ -664,7 +665,7 @@ button:hover {
     padding: 20px;
     margin: 20px;
     margin-top:250px ;
-  }
+  } 
 
   .card{
     width: 180px;
@@ -704,7 +705,7 @@ button:hover {
   }
 
  .desktop-only { display: none; }
-  .mobile-only { display: block; }
+  .mobile-only { display: block; }  
 
   /* ajustar posição do botão mobile (canto esquerdo) */
   .mobile-only .menu__btn { top: 16px; left: 12px; }
@@ -716,6 +717,7 @@ button:hover {
     top: 12px;
     right: 12px;
     z-index: 1002;
+    margin: auto;
   }
 
   /* ajustar largura do menu mobile menor, se quiser */

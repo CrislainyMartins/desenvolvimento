@@ -6,11 +6,12 @@ body {
   max-height: 100%;
   }
 
-*{
-    padding: 0;
+* {
+    box-sizing: border-box;
     margin: 0;
-    
-}
+    padding: 0;
+    font-family: sans-serif;
+  }
 /*mexi para deixar o menu fixo: position: fixed;
   top: 0;
   left: 0;
@@ -293,7 +294,7 @@ body {
 
   .box1{
    
-    background-color:green;
+    
     width: 1000px;
     height: 600px;
   }
@@ -301,7 +302,6 @@ body {
   .box1 h1{
     margin-top: 200px;
     margin-left: 100px;
-    background-color: ;
     color: #210037;
     width: 300px;
     text-align: center;
@@ -328,7 +328,7 @@ body {
   
   .box2{
    
-   background-color: aqua;
+  
     height: 600px;
     width: 1500px;
     margin-left: -150px;
@@ -364,6 +364,7 @@ body {
 #translateFooter{
   display: flex;
   width: 100%;
+   background-color:  #f7f7f7;
 
  
 }
@@ -422,7 +423,7 @@ body {
 }
 
 .right-O-F{
-  background-color: antiquewhite;
+ 
   width: 1000px;
   text-align: center;
   align-items: center;
@@ -434,7 +435,7 @@ body {
 }
 
 .list{
-  background-color: #464646;
+
    font-size: 1.15rem;
    
 
@@ -443,6 +444,9 @@ body {
 .list  li{
   text-align: center;
   list-style: none;
+ margin: 20px;
+  display: flex;
+  font-size: 1.25rem;
  
  
 }
@@ -451,17 +455,12 @@ body {
  
 }
 
-.list li a{ 
-  margin: 20px;
 
- 
- 
-}
 
 
   .img_nmmulheres{
    
-    margin-left: 950px;
+    margin-left: 1200px;
     margin-top:-10px ;
     
   }
@@ -636,7 +635,7 @@ body {
     width: 100%;
     min-width: 320px;  /* Garante que a div não fique menor que 320px */
     max-width: 1200px; /* Garante que a div não fique maior que 1200px */
-    height: 170px;
+    height: 70px;
    
   }
 
