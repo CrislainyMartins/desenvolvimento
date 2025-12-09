@@ -295,8 +295,8 @@ body {
   .box1{
    
     
-    width: 1000px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
   }
 
   .box1 h1{
@@ -383,7 +383,7 @@ body {
 
 .left-logo-icones{
 
-  width: 520px;
+  width: 100%;
   align-items: center;
   display: grid;
   
@@ -392,6 +392,7 @@ body {
 .left-logo-icones h2{
   margin-top: 40px;
   text-align: center;
+  font-size: 28px;
 }
 
 .midias-F{
@@ -424,22 +425,24 @@ body {
 
 .right-O-F{
  
-  width: 1000px;
+  width: 100%;
   text-align: center;
   align-items: center;
   display: flex;
   justify-content: center;
-
-  
+  position: relative;
 
 }
 
 .list{
 
    font-size: 1.15rem;
+   margin-bottom: 50px;
    
 
 }
+
+
 
 .list  li{
   text-align: center;
@@ -447,15 +450,8 @@ body {
  margin: 20px;
   display: flex;
   font-size: 1.25rem;
- 
- 
+  
 }
-
-.list ul{
- 
-}
-
-
 
 
   .img_nmmulheres{
@@ -516,9 +512,7 @@ body {
 
  /*responsividade*/
  @media screen  and (max-width: 768px){
-  .geral{
-    justify-content: unset;
-  }
+
 
   .nav-list{
     display: none;
@@ -541,35 +535,54 @@ body {
 
   /* ajustar largura do menu mobile menor, se quiser */
   .mobile-only .menu__box { width: 260px; }
+  
+  .geral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
+  .container1{
+    flex-direction: column;
+   display: flex;
+    justify-content: center;
+    align-items: center;  }
 
   .box1{
-    margin-top: -150px;
-    width: 100%;
-    
-  
+    margin-top: 10px;
+    width: 100%;  
+    align-items: center;
   }
 
   .box1 h1{
-   
-  margin-left: 230px;
+   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  
   }
  .box2{
-  height: 700px;
-  width: 750px;
-  margin-top: 300px;
-  margin-left: -760px;
-  padding-left: 50px;
- 
-
+  height: min-content;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  
  }
 
  .box2 ul{
-  width: 650px;
+  width: 100%;
   padding-left: 50px;
   border-radius: 20px;
-  height: 500px;
+  height: 100%;
 
+ }
+
+ #translateFooter{
+  margin: 40px 20px;
+  flex-direction: column;
+  width: fit-content;
+  padding: 100px;
+  border-radius: 20px;
  }
 
  
@@ -585,6 +598,7 @@ body {
   display: none;
  }
 
+ 
  
   
 }
@@ -623,86 +637,92 @@ body {
 
 
 
-    .geral{
-        height: 100%;
-        width:  100%;
-        min-width: 320px;
-        max-width: 1200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+  .nav-list{
+    display: none;
+  }
 
-    }
-    
+ .desktop-only { display: none; }
+  .mobile-only { display: block; }
 
-    .box1{
-      min-width: 320px;
-      max-width: 1200px;
-      margin: 0;
-      padding: 0;
-      margin-top: -140px;
-      background: none;
-      height: 100%;
-      margin-bottom: 100px;
-      
-      
+  /* ajustar posição do botão mobile (canto esquerdo) */
+  .mobile-only .menu__btn { top: 16px; left: 12px; }
 
-    }
+  /* garantir botão DENUNCIE visível no topo direito */
+  .login-button {
+    display: block;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 1002;
+  }
 
-    .box1 h1{
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin-top: 300px;
-      width: 100%;
-      font-size: 40px;
-      justify-content: center;
-    
-    }
+  /* ajustar largura do menu mobile menor, se quiser */
+  .mobile-only .menu__box { width: 260px; }
+  
+  .geral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-      .box2 {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        
+  .container1{
+    flex-direction: column;
+   display: flex;
+    justify-content: center;
+    align-items: center;  }
 
+  .box1{
+    margin-top: 10px;
+    width: 100%;  
+    align-items: center;
+  }
 
-       
-    
-       
-
-      }
-
-      .box2 ul{
-        margin: 0;
-        padding:0;
-        height: max-content;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        width:max-content;
-        font-size: 20px;
-        padding: 30px;
-        
-       
-        
-      
-      }
-
-      .box2 ul li{
-        margin-top: 20px;
-      }
-
-      .container1{
-  flex-direction: column;
+  .box1 h1{
+   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+ .box2{
+  height: min-content;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  
  }
+
+ .box2 ul{
+  width: 100%;
+  padding-left: 50px;
+  border-radius: 20px;
+  height: 100%;
+
+ }
+
+ #translateFooter{
+  margin: 40px 20px;
+  flex-direction: column;
+  width: fit-content;
+  padding: 100px;
+  border-radius: 20px;
+ }
+
+ 
+ .img_nmmulheres{
+  display: none;
+ }
+
+ .img_seta{
+  display: none;
+ }
+
+ .img_hexagono{
+  display: none;
+ }
+
+ 
+ 
 
 
      
@@ -730,78 +750,94 @@ body {
 
 
 
-    .geral{
-        min-height: 100%;
-        max-height: 1600px;
-        width:  100%;
-        min-width: 320px;
-        max-width: 1200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding-top: 150px;
-   
+  .nav-list{
+    display: none;
+  }
 
-    }
-    
+ .desktop-only { display: none; }
+  .mobile-only { display: block; }
 
-    .box1{
-      min-width: 320px;
-      max-width: 1200px;
-      margin: 0;
-      padding: 0;
-      background: none;
-      height: 60%;
-      
-      
+  /* ajustar posição do botão mobile (canto esquerdo) */
+  .mobile-only .menu__btn { top: 16px; left: 12px; }
 
-    }
+  /* garantir botão DENUNCIE visível no topo direito */
+  .login-button {
+    display: block;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 1002;
+  }
 
-    .box1 h1{
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      width: 100%;
-      font-size: 40px;
-      justify-content: center;
-    
-    }
+  /* ajustar largura do menu mobile menor, se quiser */
+  .mobile-only .menu__box { width: 260px; }
+  
+  .geral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-      .box2 {
-        margin: 0;
-        width: 100%;
-        height: 100%; 
-        padding-top: 50px;
-        padding-bottom: 50px;
+  .container1{
+    flex-direction: column;
+   display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: 20px 20px;
+  }
 
-      }
+  .box1{
+    margin-top: 10px;
+    width: 100%;  
+    align-items: center;
+  }
 
-      .box2 ul{
-        margin: 0;
-        padding:0;
-        height: max-content;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        width:90%;
-        font-size: 20px;
-        padding-top: 20px;
-        padding: 20px;
-        height: 100%;
-        
-       
-        
-      
-      }
+  .box1 h1{
+   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+ .box2{
+  height: min-content;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  
+ }
 
-      .box2 ul li{
-        margin-top: 20px;
+ .box2 ul{
+  width: 100%;
+  padding-left: 50px;
+  border-radius: 20px;
+  height: 100%;
 
-      }
+ }
+
+ #translateFooter{
+  margin: 40px 20px;
+  flex-direction: column;
+  width: fit-content;
+  padding: 50px;
+  border-radius: 20px;
+ }
+
+ 
+ .img_nmmulheres{
+  display: none;
+ }
+
+ .img_seta{
+  display: none;
+ }
+
+ .img_hexagono{
+  display: none;
+ }
+
+ 
+ 
 
      
 
