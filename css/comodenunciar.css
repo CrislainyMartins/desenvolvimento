@@ -567,174 +567,6 @@ body {
 
 
 
-/*Responsividade para tablet em pé*/
-@media screen and (max-width: 768px){
-  body{
-        overflow-x: hidden;
-
-    height: 100%;
-  }
-
-  /*menu*/
-  header{
-    height: 70px;
-    width: 100%;
-    min-width: 320px;  /* Garante que a div não fique menor que 320px */
-    max-width: 1200px; /* Garante que a div não fique maior que 1200px */
-   
-  }
-
-.nav-list{
-    display: none;
-  }
-
- .desktop-only { display: none; }
-  .mobile-only { display: block; }
-
-  /* ajustar posição do botão mobile (canto esquerdo) */
-  .mobile-only .menu__btn { top: 16px; left: 12px; }
-
-  /* garantir botão DENUNCIE visível no topo direito */
-  .login-button {
-    display: block;
-    position: fixed;
-    top: 12px;
-    right: 50px;
-    z-index: 1002;
-    margin: auto;
-  }
-
-  /* ajustar largura do menu mobile menor, se quiser */
-  .mobile-only .menu__box { width: 260px; }
-
-
-
-  .geral{
-    height: 100%;
-    width:  100%;
-        min-width: 320px;
-        max-width: 1200px;
-        
-  }
-
-
-  .container1{
-    flex-direction: column;
-
-  
-  }
-
-  .box1{
-    width: 100%;
-    display: flex;
-   border-radius: 0;
-    flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-    
-      .box1 h1{
-        margin-left:-0px;
-        margin-top:150px;
-      }
-
-      .content1{
-        margin-top:100px;
-        margin-left:60px;
-        
-      }
-
-      .box2{
-        width:500px;
-        height:800px;
-      }
-      
-      .content2{
-        margin-left:70px;
-        margin-top:-40px;
-        width:350px;
-      }
-
-      .content3{
-        height:220px;
-      }
-    
-      .container2 img{
-        
-      }
-
-      .container3{
-        height:1000px;
-      }
-
-      .box3{
-        width:600px;
-      }
-    
-      .content4{
-        height:250px;
-        width:500px;
-        margin-left:-40px;
-        
-      }
-      .content4 p{
-        width:300px;
-        text-align:justify;
-      }
-
-      .content4 img{
-        margin-top:60px;
-      }
-
-      .content5{
-        height:250px;
-        width:500px;
-        margin-left:-40px;
-        
-      }
-      .content5 p{
-        width:300px;
-        text-align:justify;
-        margin-top:40px;
-      }
-
-      .content5 img{
-        margin-top:60px;
-        height:140px;
-      }
-
-      .content6{
-        height:250px;
-        width:500px;
-        margin-left:-40px;
-        
-      }
-      .content6 p{
-        width:300px;
-        text-align:justify;
-        margin-top:50px;
-      }
-
-      .content6 img{
-        margin-top:60px;
-      }
-
-      .box4{
-       
-        width:420px;
-      }
-
-      .box5 ul{
-        height:600px;
-        width:500px;
-        margin-left:170px;
-        
-      }
-      .box5 ul li{
-       padding-top:20px;
-      }
-
-}
 /*responsividade para tablet*/
 @media screen and (max-width: 1024px) {
   body{
@@ -1202,7 +1034,337 @@ body {
     
 
 
-      @media screen and (max-width: 720px) and (max-height: 1600px) {
+      @media screen and (max-width: 768px) and (max-height: 1600px) {
+        /* Estilos específicos para o Moto G34 5G */
+        
+  /*cabeçalho*/
+  header{
+    height: 70px;
+  }
+
+
+  .nav-list{
+    display: none;
+  }
+
+ .desktop-only { display: none; }
+  .mobile-only { display: block; }
+
+  /* ajustar posição do botão mobile (canto esquerdo) */
+  .mobile-only .menu__btn { top: 16px; left: 12px; }
+
+  /* garantir botão DENUNCIE visível no topo direito */
+  .login-button {
+    display: block;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 1002;
+  }
+
+  /* ajustar largura do menu mobile menor, se quiser */
+  .mobile-only .menu__box { width: 260px; }
+
+  .logo{
+    display: none;
+  }
+
+  .icon{
+    display: none;
+  }
+
+
+
+  /* fim cabeçalho*/
+
+
+  .geral{
+    height: 100%;
+    width:  100%;
+        min-width: 320px;
+        max-width: 1200px;
+  }
+
+  .container1{
+  
+   
+    flex-direction: column;
+    width:  100%;
+    
+
+  
+  }
+
+
+  .box1{
+    width: 100%;
+    display: flex;
+   border-radius: 0;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    height: 600px;    
+  
+  }
+      
+    
+      .box1 h1{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top:50px;
+        width: 300px;
+        height: fit-content;
+   
+      }
+
+      .content1{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top:50px;
+        width: 90%;
+        
+        
+      }
+
+      .box2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box2 h2{
+        margin-top: -120px;
+      }
+      
+      .content2{
+        text-align: justify;
+        word-spacing: -2px;
+        margin: 0;
+        padding: 0;
+        margin-top:-40px;
+        width:90%;
+      }
+
+      .descricao2{
+        margin: 0;
+        margin-top: -20px;
+      }
+
+      .container2{
+        width: 100%;
+        display: flex;
+         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+
+      }
+
+      .container2 img{
+        display: none;
+      }
+
+      
+      .content3{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        margin-top: 50px;
+        width: 90%;
+        height: fit-content;
+        
+      }
+
+     
+    
+
+      .container3{
+        flex-direction: column-reverse;
+        height: max-content;
+        align-items: center; 
+      
+      }
+
+      .box3{
+        width:100%;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        
+
+      
+      }
+    
+      .content4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin:0;
+        padding: 0;
+        height: 100%; /* Garante que a div ocupe 100% da altura da janela */
+        /**/
+        margin-top: 50px;
+        width: 100%;
+        padding-bottom: 50px;
+
+
+        
+      }
+      .content4 p{
+       
+        font-size: 18px;
+        margin-top: 10px;
+        font-weight: bold;
+        text-align:justify;
+      }
+
+      .content4 img{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top:60px;
+        display: flex
+;
+        justify-content: center;
+        
+        
+         
+      }
+
+      .content5{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin:0;
+        padding: 0;
+        height: 100%; /* Garante que a div ocupe 100% da altura da janela */
+        /**/
+        margin-top: 50px;
+        width: 100%;
+        padding-bottom: 50px;
+      }
+      .content5 p{
+        font-size: 18px;
+        margin-top: 10px;
+        font-weight: bold;
+        text-align:justify;
+       
+      }
+
+      .content5 img{
+     
+        height:140px;
+        
+          margin-top: 60px;
+          font-weight: bold;
+    
+      }
+
+      .content6{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin:0;
+        padding: 0;
+        height: 100%; /* Garante que a div ocupe 100% da altura da janela */
+        /**/
+        margin-top: 50px;
+        width: 100%;
+        padding-bottom: 50px;
+      }
+      .content6 p{
+        font-size: 18px;
+        margin-top: 10px;
+        font-weight: bold;
+        text-align:justify;
+      }
+
+      .content6 img{
+        margin-top:60px;
+      }
+
+      .container4{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+      }
+
+      .box4{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+      .box4 img{
+        display: none;
+      }
+
+      .tittle_2{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+     
+      }
+
+
+
+      .box5 {
+        
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+        
+      }
+
+      .box5 ul{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        text-align: justify;
+        padding:20px 20px 20px 25px;
+        
+        
+     
+      }
+    
+      .box5 ul li p{
+   
+      }
+
+      }
+      
+ 
+   @media screen and (max-width: 720px) and (max-height: 1600px) {
         /* Estilos específicos para o Moto G34 5G */
         
   /*cabeçalho*/
@@ -1358,7 +1520,7 @@ body {
     
 
       .container3{
-        flex-direction: column;
+        flex-direction: column-reverse;
         height: max-content;
         
       
@@ -1538,5 +1700,7 @@ body {
       
  
   
+
+     
 
      

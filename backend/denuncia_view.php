@@ -39,7 +39,7 @@ $d = $resp->fetch_assoc();
 <p><strong>Data:</strong> <?= $d['data_envio'] ?></p>
 <p><strong>Status atual:</strong> <?= $d['status'] ?></p>
 
-<a href="provas.php">Ver Prova</a>
+<a href="provas.php?id=<?= $d['id'] ?>">Ver Prova</a>
 
 <hr>
 
