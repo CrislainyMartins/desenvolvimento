@@ -2,6 +2,11 @@
 // Verifica se o usuário está logado como admin
 
 include '../backend/conexao.php';
+require_once("chave_criptografia.php");
+
+function descriptografar($texto) {
+    return $texto ? openssl_decrypt($texto, 'AES-256-CBC', CHAVE_CRIPTO, 0, IV_CRIPTO) : null;
+}
 
 // Obtém o ID da denúncia
 $id = $_GET['id'] ?? 0;
@@ -16,6 +21,8 @@ if($resp->num_rows == 0){
 }
 
 $d = $resp->fetch_assoc();
+
+$d["contato"] = descriptografar($d["contato"]);
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">

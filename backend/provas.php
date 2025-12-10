@@ -1,7 +1,7 @@
 <?php
 include '../backend/conexao.php';
 
-
+$id = $_GET['id'] ?? 0;
 
 
 // Função para buscar as mídias
@@ -143,9 +143,10 @@ include 'conexao.php';
     </div>
 
 
-    <a href='admin.php?id={$row["id"]}'>
+    <a href="denuncia_view.php?id=<?= $id ?>">
         <button>Voltar</button>
     </a>
+
 
 </body>
 
